@@ -21,3 +21,15 @@ Route::get('/get-environment',function() {
     echo "Environment: ".App::environment();
 
 });
+
+Route::get('mysql-test', function() {
+	
+		#Print environment
+		echo 'Environment: '.App::environment().'<br>';
+		
+		# Use the DB component to show the databases
+		$results = DB::select('SHOW DATABASES;');
+		
+		# If the "Pre" package is not installed, use print_r instead
+		echo Pre::render($results);
+});
