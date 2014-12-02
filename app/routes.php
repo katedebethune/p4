@@ -16,6 +16,13 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+/**
+* Debug
+* (Implicit Routing)
+*/
+Route::controller('debug', 'DebugController');
+
+/*
 Route::get('/get-environment',function() {
 
     echo "Environment: ".App::environment();
@@ -78,4 +85,4 @@ Route::get('/debug', function() {
 
     echo '</pre>';
 
-});
+}); */

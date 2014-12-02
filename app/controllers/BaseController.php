@@ -2,6 +2,10 @@
 
 class BaseController extends Controller {
 
+	public function __construct() {
+       // do whatever you want here for this and any derivative classes, e.g. Pruebas
+      // but do not call Controller 
+    }
 	/**
 	 * Setup the layout used by the controller.
 	 *
