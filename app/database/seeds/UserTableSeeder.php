@@ -10,7 +10,8 @@ class UserTableSeeder extends Seeder {
 		'firstname'=>'Kate',
 		'lastname'=>'deBethune',
 		'email'=>'kdebethune@gmail.com',
-		'password'=>'blah',
+		'password'=> Hash::make('blah'),
+		'pwd_unhashed'=>'blah',
 		'remember_token'=>'YES',
 		'admin' => 1
 		));
@@ -19,12 +20,13 @@ class UserTableSeeder extends Seeder {
 		
 		for ($i = 0; $i < 10; $i++)
 		{
+			$pwd = $faker->word;
 			$user = User::create(array(
 			'firstname'=>$faker->firstName,
 			'lastname'=>$faker->lastName,
 			'email'=>$faker->email,
-			'password'=>$faker->word,
-			//'password' => Hash::make("password");
+			'password' => Hash::make($pwd),
+			'pwd_unhashed'=>$pwd,
 			'remember_token'=>'YES',
 			'admin' => 0
 		));

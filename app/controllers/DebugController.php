@@ -222,6 +222,21 @@ class DebugController extends BaseController {
 	    echo "<script>document.querySelector('[name=_token]').type='text'</script>";
 	    echo "<br><br>";
 	}
+	
+	
+	/**
+	* Truncates tables for db rebuild
+	*/
+	public function getClearTables() {
+
+    # Clear the tables to a blank slate
+		DB::statement('SET FOREIGN_KEY_CHECKS=0'); # Disable FK constraints so that all rows can be deleted, even if there's an associated FK
+		DB::statement('TRUNCATE users');
+		DB::statement('TRUNCATE orders');
+		DB::statement('TRUNCATE foods');
+		DB::statement('TRUNCATE sessions');
+		DB::statement('TRUNCATE food_order');
+	}
 
 }
 
