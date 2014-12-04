@@ -1,0 +1,166 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Application Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register all of the routes for an application.
+| It's a breeze. Simply tell Laravel the URIs it should respond to
+| and give it the Closure to execute when that URI is requested.
+|
+*/
+
+Route::get('/', function()
+{
+	return View::make('index');
+});
+
+/**
+* User
+* (Explicit Routing)
+*/
+Route::get('/signup','UserController@getSignup' );
+Route::get('/login', 'UserController@getLogin' );
+Route::post('/signup', 'UserController@postSignup' );
+Route::post('/login', 'UserController@postLogin' );
+Route::get('/logout', 'UserController@getLogout' );
+
+/**
+* Debug
+* (Implicit Routing)
+*/
+Route::controller('debug', 'DebugController');
+
+Route::get('/practice-reading-orders', function() {
+
+    #return View::make('order_index');
+    
+    #try {
+	#	    $order    = Order::findOrFail($id);
+	#	    $authors = Author::getIdNamePair();
+	#	}
+	#	catch(exception $e) {
+	#	    return Redirect::to('/book')->with('flash_message', 'Book not found');
+	#	}
+    
+    
+    #return View::make('book_edit')
+    #		->with('book', $book)
+    #		->with('authors', $authors);
+    
+    #if(Auth::check()) {
+    #    $userID = Auth::user()->id;
+    #    echo "Inside /practice-reading-orders route, user id = ".$userID;
+    #    echo '<br>';
+    #    echo '<br>';
+    #}
+    
+    #$id = Session::get('id');
+    #$orders = Order::with('user')->get();
+    #$book = Book::where('author', 'LIKE', '%Scott%')->first();
+    #$orders = Order::where('user_id', '=', '4')->first();
+    #$orders = Order::find(1);
+    #$album = Album::find(1);
+    #return $album->title;
+    #$orders = Order::with(array('session' => function($query)
+    #{
+    #	$query->where('id', '=', '$userID');
+    #}))->get();
+    
+    #$posts = Post::whereHas('comments', function($q)
+	#{
+    #	$q->where('content', 'like', 'foo%');
+	#})->get();
+    
+    ########
+    
+    #$id = Auth::user()->id;  
+    #$orders = Order::where('user_id', $id)->get();
+    
+    #$user = Auth::user();
+    #$orders = $user->order;
+    #$foods = new Food();
+    #$foods->get();
+    #$foods = Food::where('order()->user_id', '=', '$user->id');
+    #$foods = Food::with('order')->find('user_id');
+    #$foods = Food::with('order')->where('user_id', '=', '$user->id')->get();
+    #$users = Food::whereRaw('age > ? and votes = 100', array(25))->get();
+    #$platform = Platform::with('user')->where('platform_id', 1)->first();
+    #$foods = $orders->food()->select('name', 'quantity')->get();
+    #$foods = Food::whereHas('order', function($q)
+    #{
+    #	$q->where('id', '=', order()->id);
+    #})->get();
+    #$orders = $user->order->lists('id');
+    
+    
+    # Eager load tags and authors with the books
+	#$books = Book::with('tags','author')->get(); 
+	#$orders = Order::with('user', 'food')->get();
+
+	/*
+	foreach($books as $book) {
+
+    echo $book->title.' by '.$book->author->name.'<br>';
+    	foreach($book->tags as $tag) {
+        	echo $tag->name.", ";
+        }
+
+    	echo "<br><br>";
+
+	} */
+    
+    #$orders = Order::whereHas('user', function($q)
+    #{
+    #	$q->where('user_id', '=', '4');
+    #})->get();
+    
+    #$user = Auth::user();
+	#$attending = $user->event->lists('id');
+	#$orders = $user->order
+
+	  
+    #$orders = Order::with('user')
+    #	->where('user_id', '=', '4')
+    #   ->get();
+        
+    
+    #$orders = Order::where('user_id', '=', '4')
+    #	->get(array('id', 'due'));
+    
+   
+    
+    #$users = User::with(array('posts' => function($query)
+	#{
+    #	$query->where('title', 'like', '%first%');
+	#}))->get();
+    
+    #return View::make('order_index', array('orders' => $orders));
+    
+    #return View::make('order_index')
+    #	->with('orders', $orders);
+    #	#->with('id', $id);
+
+    
+    
+    //$order_ds = Order::with('food_order')->get();
+    
+    $orders = Order::with('user')->get();
+    foreach($orders as $order) {
+    	echo $order->user->id.' '.$order->user->firstname.' '.$order->user->lastname.' due: '.$order->due.'<br>';
+    	foreach($order->food()->select('name', 'quantity')->get() as $food){
+    		print '<li>' . $food->name . ' ' . $food->quantity;
+		}
+    	echo '<br>';
+    }
+    
+    //if($book) {
+    //    return $book->title;
+    //}
+    //else {
+    //   return 'Book not found.';
+    //}
+
+});
+

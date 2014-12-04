@@ -35,25 +35,14 @@ Route::controller('debug', 'DebugController');
 Route::get('/practice-reading-orders', function() {
 
     $orders = Order::with('user')->get();
-    //$order_ds = Order::with('food_order')->get();
-    
     foreach($orders as $order) {
-    	echo $order->user->firstname.' '.$order->user->lastname.' due: '.$order->due.'<br>';
-    	//foreach($order->foods as $food) {
-    	//	print '<li>' . $food->name . ' ' . $food->quantity;
-    	//}
-    	foreach($order->food()->select('name', 'quantity')->get() as $food){
-    		print '<li>' . $food->name . ' ' . $food->quantity;
+    	echo $order->user->id.' '.$order->user->firstname.' '.$order->user->lastname.' due: '.$order->due.'<br>';
+    	foreach($order->food()->select('name', 'quantity', 'price')->get() as $food){
+    		print '<li>' . $food->name . ' ' . $food->quantity . ' ' . $food->price;
 		}
     	echo '<br>';
     }
     
-    //if($book) {
-    //    return $book->title;
-    //}
-    //else {
-    //   return 'Book not found.';
-    //}
 
 });
 
