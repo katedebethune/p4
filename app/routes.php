@@ -32,6 +32,14 @@ Route::post('/login', 'UserController@postLogin' );
 Route::get('/logout', 'UserController@getLogout' );
 
 /**
+* Orders
+* TRYING TO DECIDE BETWEEN IMPLICIT AND EXPLICIT CONTROLLER
+* Think explicit is the way to go; implicit was adding extra file to URL
+*/
+#Route::controller('orders', 'OrderController');
+Route::get('/orders','OrderController@getOrders' );
+
+/**
 * Debug
 * (Implicit Routing)
 */
@@ -48,7 +56,8 @@ Route::get('/practice-reading-orders', function() {
      	$id = Auth::id();
 	} 
 	else {
-		$id = '3';
+		#$id = '3';
+		return Redirect::to('/login');
 	}
     
    
@@ -94,3 +103,13 @@ Route::get('/practice-reading-orders', function() {
 
 });
 
+/*
+Route::get('/response-demo', function() {
+
+	$response = Response::make($contents, $statusCode);
+
+	$response->header('Content-Type', $value);
+
+	return $response;
+});
+*/
