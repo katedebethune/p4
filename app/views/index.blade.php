@@ -14,6 +14,7 @@
 <h2>About</h2>
 <h2>Cafe Menu</h2>
 	@foreach($foods as $food)
+	 @if ($food->menu_code == 'cafe' || $food->menu_code == 'both')
   <hr>
   {{ $food->name }} 
   <br><br>
@@ -21,18 +22,17 @@
   <br><br>
   {{ $food->price }}
   
-  
-  @if ($food->sold_by == 'unit' && $food->menu_code == 'catering')
-  	per person
-  @elseif ($food->sold_by == 'weight' )
-  	per pound
-  @elseif ( $food->sold_by == 'unit' )
-  	each
-  @else
-  	per ounce
+ 
+	  @if ($food->sold_by == 'weight' )
+		per pound
+	  @elseif ( $food->sold_by == 'unit' )
+		each
+	  @else
+		per ounce
+	  @endif
   @endif
   
-  
+ 
   
   {{--
   <div class="row">
@@ -57,6 +57,30 @@
 
 <h2>Catering</h2>
   <h3>Catering Menu</h3>
+   @foreach($foods as $food)
+	 @if ($food->menu_code == 'catering' || $food->menu_code == 'both')
+	  <hr>
+	  {{ $food->name }} 
+	  <br><br>
+	  {{ $food->description }}
+	  <br><br>
+	  {{ $food->price }}
+  
+  	  @if ($food->sold_by == 'unit' && $food->menu_code == 'catering')
+  		per person 
+	  @elseif ($food->sold_by == 'weight' )
+		per pound
+	  @elseif ( $food->sold_by == 'unit' )
+		each
+	  @else
+		per ounce
+	  @endif
+  @endif
+  
+@endforeach
+
+   
+  
   <h2>Contact</h2>
 	
 	{{--
