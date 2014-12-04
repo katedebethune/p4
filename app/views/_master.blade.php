@@ -24,10 +24,6 @@
 		<ul>
 		@if(Auth::check())
 			<li><a href='/logout'>Log out {{ Auth::user()->email; }}</a></li>
-			<li><a href='/book'>All Books</a></li>
-			<li><a href='/book/search'>Search Books (w/ Ajax)</a></li>
-			<li><a href='/tag'>All Tags</a></li>
-			<li><a href='/book/create'>+ Add Book</a></li>
 			<li><a href='/debug/routes'>Routes</a></li>
 		@else
 			<li><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></li>
@@ -35,7 +31,7 @@
 		</ul>
 	</nav>
 
-	<a href='https://github.com/susanBuck/foobooks'>View on Github</a>
+	<a href='https://github.com/katedebethune/p4'>p4 on Github</a>
 
 	@yield('content')
 
