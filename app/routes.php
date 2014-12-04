@@ -14,7 +14,7 @@
 Route::get('/', function()
 {
 	
-  $foods = food::all();
+  $foods = Food::all();
   #return View::make('index', array('foods'=>$foods));
   return View::make('index')
   		->with('foods', $foods);
