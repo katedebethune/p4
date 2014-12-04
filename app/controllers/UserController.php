@@ -99,7 +99,7 @@ class UserController extends BaseController {
 
 		# Note we don't have to hash the password before attempting to auth - Auth::attempt will take care of that for us
 		if (Auth::attempt($credentials, $remember = false)) {
-			return Redirect::intended('/practice-reading-orders')->with('flash_message', 'Welcome Back '.$email.'!');
+			return Redirect::intended('/orders')->with('flash_message', 'Welcome Back '.$email.'!');
 		}
 		else {
 			return Redirect::to('/login')

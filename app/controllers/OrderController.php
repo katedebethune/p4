@@ -18,8 +18,8 @@ class OrderController extends BaseController {
     }
     
     /**
-	* Display all books
-	* @return View
+	* Display orders for the currently logged in user
+	*
 	*/
 	public function getOrders() {
 		 
