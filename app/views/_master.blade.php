@@ -6,7 +6,7 @@
 	<meta charset='utf-8'>
 
 	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
-	<link rel='stylesheet' href='/css/foobooks.css' type='text/css'>
+	<link rel='stylesheet' href='/styles/styles.css' type='text/css'>
 
 	@yield('head')
 
@@ -18,7 +18,7 @@
 		<div class='flash-message'>{{ Session::get('flash_message') }}</div>
 	@endif
 
-	<a href='/'><img class='logo' src='/images/laravel-foobooks-logo@2x.png' alt='Foobooks logo'></a>
+	{{-- <a href='/'><img class='logo' src='/images/laravel-foobooks-logo@2x.png' alt='Foobooks logo'></a> --}}
 
 	<nav>
 		<ul>

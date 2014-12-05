@@ -39,6 +39,8 @@ Route::get('/logout', 'UserController@getLogout' );
 #Route::controller('orders', 'OrderController');
 Route::get('/orders','OrderController@getOrders' );
 Route::get('/ordersSQL','OrderController@getOrdersSQL' );
+Route::get('/orders/create', 'OrderController@getCreate');
+#Route::get('/orders/create', 'OrderController@postCreate');
 
 /**
 * Debug

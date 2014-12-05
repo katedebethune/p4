@@ -58,6 +58,51 @@ class OrderController extends BaseController {
 			->with('extended_price', $extended_price); */
 	}
 	
+	
+	/**
+	* Show the "Create an Order Form"
+	* @return View
+	*/
+	public function getCreate() {
+
+		if (Auth::check()) {
+			$id = Auth::id();
+		} 
+		else {
+			return Redirect::to('/login');
+		}
+		
+		$foods = Food::all();
+
+    	return View::make('order_create')->with('foods',$foods);
+
+	}
+
+
+	/**
+	* Process the "Add a book form"
+	* @return Redirect
+	*/
+	public function postCreate() {
+
+		# Instantiate the book model
+		$book = new Book();
+
+		$book->fill(Input::all());
+		$book->save();
+
+		# Magic: Eloquent
+		$book->save();
+
+		return Redirect::action('BookController@getIndex')->with('flash_message','Your book has been added.');
+
+	}
+
+	
+	
+	
+	
+	
 	 /**
 	* SQL tests for /order page
 	*
