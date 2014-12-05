@@ -38,6 +38,7 @@ Route::get('/logout', 'UserController@getLogout' );
 */
 #Route::controller('orders', 'OrderController');
 Route::get('/orders','OrderController@getOrders' );
+Route::get('/ordersSQL','OrderController@getOrdersSQL' );
 
 /**
 * Debug
