@@ -39,6 +39,15 @@
   			@endif
   
 		@endforeach
+		<hr>
+		{{ Form::label('date', 'date & time needed') }}
+		{{ Form::text('date', '', array('id'=>'datepicker', 'class'=>'')) }}
+		{{-- <p>Date: <input type="text" id="datepicker"></p> --}}
+		<hr>
+		{{ Form::label('comments', 'Comments') }}
+		{{ Form::textarea('comments', '') }}
+		
+		
 
 		<br><br>
 		{{ Form::submit('Place my order!'); }}

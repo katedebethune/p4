@@ -37,9 +37,25 @@ class OrderController extends BaseController {
 			$q->where('id', '=', $id);
 	
 		})->get();
-
+		
+		/*$food_detail = $orders->food()->select('name', 'quantity', 'price')->get();
+		
+		
+	
+		/* moved to view */
+		/*foreach($orders as $order) {
+			echo $order->user->id.' '.$order->user->firstname.' '.$order->user->lastname.' due: '.$order->due.'<br>';
+			foreach($order->food()->select('name', 'quantity', 'price')->get() as $food){
+				$ep = $food->price * $food->quantity;
+				print '<li>' . $food->name . ' ' . $food->quantity . ' ' . $food->price;
+				array_push($extended_price, $ep);
+			}
+			echo '<br>';
+		} */
+		/* print_r($extended_price); */
 		return View::make('order_index')
 			->with('orders', $orders);
+			/*->with('extended_price', $extended_price); */
 	}
 	
 	
