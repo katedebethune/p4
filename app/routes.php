@@ -40,7 +40,8 @@ Route::get('/logout', 'UserController@getLogout' );
 Route::get('/orders','OrderController@getOrders' );
 Route::get('/ordersSQL','OrderController@getOrdersSQL' );
 Route::get('/orders/create', 'OrderController@getCreate');
-#Route::get('/orders/create', 'OrderController@postCreate');
+Route::get('/orders/create2', 'OrderController@getCreate2');
+Route::post('/orders/create', 'OrderController@postCreate');
 
 /**
 * Debug
@@ -106,13 +107,50 @@ Route::get('/practice-reading-orders', function() {
 
 });
 
-/*
-Route::get('/response-demo', function() {
+Route::get('/practice-creating-order', function() {
 
-	$response = Response::make($contents, $statusCode);
+	
+	$user = new User;
+	$user->firstname = 'John';
+	$user->lastname = 'smith';
+	$user->email = 'panda@blag.com';
+	$user->password = Hash::make('blah');
+	$user->pwd_unhashed = 'blah';
+	#$user->password = 'blah';
+	$remember_token = 'YES';
+	$user->save(); 
+	
+	#Instantiate new Order model class
+	$order = new Order();
 
-	$response->header('Content-Type', $value);
+	# Set
+	$order->due = '2014-12-24 10:00:00';
+	$order->status = 'open';
+	$order->comments = 'lorem ipsum dolor amit';
+	//$order->user_id = 2;
+	$order->user()->associate($user); #associate a user with this order
 
-	return $response;
+	$order->save();
+	
+	$now = date("Y-m-d H:i:s");
+	$order->food()->attach(5, array('quantity' => 4, 'created_at' => $now));
+	$order->food()->attach(7, array('quantity' => 1, 'created_at' => $now));
+	$order->food()->attach(9, array('quantity' => 1, 'created_at' => $now));
+	$order->food()->attach(3, array('quantity' => 3, 'created_at' => $now));
+	$order->food()->attach(10, array('quantity' => 8, 'created_at' => $now));
+	$order->food()->attach(6, array('quantity' => 12, 'created_at' => $now));
+	
+	return 'A new order has been added! Check your database to see . . .';
 });
-*/
+
+/*
+Route::get('input-test', function() {
+  $foods = Food::all();
+  return View::make('array_test')
+  	->with $foods;
+});
+
+Route::post('input-test', function() {
+	print_r($_POST);
+  //return Redirect::back()->withInput(Input::all());
+}); */

@@ -58,28 +58,143 @@ class OrderController extends BaseController {
 		
 		$foods = Food::all();
 
-    	return View::make('order_create')->with('foods',$foods);
+    	return View::make('order_create')->with('foods', $foods);
+
+	}
+	
+	/**
+	* Show the "Create an Order Form"
+	* @return View
+	*/
+	public function getCreate2() {
+
+		
+		
+		if (Auth::check()) {
+			$id = Auth::id();
+		} 
+		else {
+			return Redirect::to('/login');
+		}
+		
+		$food_options = Food::lists('id', 'name', 'price');
+		$foods = Food::all();
+
+    	return View::make('order_create2')
+    		->with('foods', $foods)
+    		->with('food_options', $food_options);
 
 	}
 
 
 	/**
-	* Process the "Add a book form"
+	* Process the "Create an order form"
 	* @return Redirect
 	*/
 	public function postCreate() {
 
-		# Instantiate the book model
-		$book = new Book();
+		#print_r($_POST); 
+		
+		echo '<pre>';
+		print_r($_POST);
+		echo '</pre>';
+		//'<br><br>';
+	
+	#Instantiate new Order model class
+	$order = new Order();
+	#create a variable for the current user;
+	$user = Auth::user();
+	$order->fill(Input::all());
+	
+	# CREATE TIME DATE FROM POST ARRAY VARIABLES
+	#$date_time_due = $_POST['date_due'].' '.$_POST['time_due'];
+	#$date_time_due = new DateTime($date_time_due);
+	
+	# SET ORDER VARIABLES
+	#$order->due = $date_time_due;
+	#$order->status = $_POST['status'];
+	#$order->comments = $_POST['comments'];
+	#$order->user()->associate(Auth::user());
 
-		$book->fill(Input::all());
-		$book->save();
-
-		# Magic: Eloquent
-		$book->save();
-
-		return Redirect::action('BookController@getIndex')->with('flash_message','Your book has been added.');
-
+	# SAVE ORDER
+	$order->save();
+	
+	/*Array ( [_token] => LhwAQuRzdBrOeuR46cwIgVvl7yBS11V7MfmfCaeW 
+	[1] => 2 [3] => 1 [4] => 3 [5] => 1 [6] => 1 [10] => 2 [11] => 2 
+	[date_due] => 12/27/2014 [time_due] => 9:00 
+	[comments] => no capers, please! [status] => open ) */
+	#$now = date("Y-m-d H:i:s");
+	
+	#$je_post = json_encode($_POST);
+	#$jd_post = json_decode($je_post, true);
+	
+	#echo $je_post['0']['id'];
+	#echo $jd_post['_token'];
+	#print_r($jd_post);
+	
+	#foreach( $jd_post as $key => $val ) {
+	#	if ( $key == '1' ) {
+	#		
+	#		echo "a food item should have been added to food order.";
+	#		
+	#	}
+	}
+	
+	# EXAMPLE OF HOW TO ATTACH LINE ITEM TO FOOD_ORDER TABLE.
+	# NEED FOOD KEY-VAL PAIRS TO BE IN THEIR OWN ARRAY FOR THIS ATTACH STEP
+	# HAVING TROUBLE FIGURING OUT HOW TO DO THIS IN THE VIEW.
+	//$order->food()->attach(5, array('quantity' => 4, 'created_at' => $now));
+	
+	/*foreach($_POST as $key => $val){
+     print "<tr><td>" . $key . "</td><td>" . $val . "</td></tr>";
+	}*/
+	
+	/*
+	foreach( $_POST as $stuff => $val ) {
+		if( is_array( $stuff ) ) {
+    		foreach( $stuff as $thing) {
+        	echo $thing;
+    	}
+		} else {
+    		echo $stuff.' ';
+    		echo $val;
+    		echo "<br>";
+		}
+	}*/
+	/*foreach( $_POST as $key => $val ) {
+		if ( ctype_digit($key) ) {
+			echo "a food item should have been added to food order.";
+			
+		}
+	}*/
+	
+	//dd($_POST);
+	/*$max = sizeof($_POST);
+	for($i = 0; $i < $max;$i++)
+	{
+		if (ctype_digit($_POST[$i])) {
+			echo "a food item should have been added to food order.";
+			$order->food()->attach($_POST, array('quantity' => $_POST[$i], 'created_at' => $now));
+		}
+			
+	} */
+	
+	/* foreach ($_POST as $key => $val) {
+    	if (ctype_digit($key)) {
+        	echo "The string $key => $val consists of all digits.\n";
+    	} else {
+        	echo "The string $key => $val does not consist of all digits.\n";
+    	}
+	} */
+	
+	/*foreach ($_POST as $key => $val) {
+    	if (ctype_digit($val)) {
+    		echo "$key => $val <br>";
+    	}
+	} */
+	
+	#return 'A new order has been added! Check your database to see . . .';
+		
 	}
 
 	

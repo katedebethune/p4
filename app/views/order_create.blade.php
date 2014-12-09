@@ -28,24 +28,42 @@
 			  @else
 				per ounce
 			  @endif
+			
+			 
 			  <br><br>
 			  {{ Form::label($food->name, $food->name) }}
-			  {{ Form::select('$food->name', array(
-					'-'		=> '0',
+			  {{-- Form::select($food->id, array($food->id, array( 
+					'0'		=> '-',
+					'1'       => '1',
+					'2'     => '2',
+					'3'     => '3'
+						), '0') ) --}}
+						
+			{{ Form::select($food->id, array( 
+					'0'		=> '-',
 					'1'       => '1',
 					'2'     => '2',
 					'3'     => '3'
 						), '0') }}
+			  {{-- Form::text($food->id, '3') --}}
+			  {{-- Form::checkbox($food->id, '0', false) --}}
+			  
   			@endif
   
 		@endforeach
 		<hr>
 		{{ Form::label('date', 'date & time needed') }}
-		{{ Form::text('date', '', array('id'=>'datepicker', 'class'=>'')) }}
-		{{-- <p>Date: <input type="text" id="datepicker"></p> --}}
+		{{ Form::text('date_due', '', array('id'=>'datepicker', 'class'=>'')) }}
+		{{ Form::text('time_due', '10:00') }}
+		
+		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
+		{{-- Form::text('time', '', array('id'=>'datetimepicker1', 'class'=>'')) --}}
+		{{-- <input id="datetimepicker" type="text" > --}}
+		{{--<p>Enter your time: <input type="text" id="defaultEntry" size="10"></p> --}}
 		<hr>
 		{{ Form::label('comments', 'Comments') }}
 		{{ Form::textarea('comments', '') }}
+		{{ Form::hidden('status', 'open') }}
 		
 		
 

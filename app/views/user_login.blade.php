@@ -11,9 +11,9 @@
 {{ Form::open(array('url' => '/login')) }}
 
     {{ Form::label('email') }}
-    {{ Form::text('email','sam@gmail.com') }}
+    {{ Form::text('email','kdebethune@gmail.com') }}
 
-    {{ Form::label('password') }} (sam)
+    {{ Form::label('password') }}
     {{ Form::password('password') }}
 
     {{ Form::submit('Submit') }}

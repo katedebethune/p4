@@ -8,6 +8,9 @@
 	{{-- <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet"> --}}
 	{{-- <link rel='stylesheet' href='/styles/styles.css' type='text/css'> --}}
 	
+  	
+  	{{-- THIS AREA USED FOR DATE PICKER WIDGET --}}
+  	
   	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
   	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
   	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
@@ -16,26 +19,50 @@
   	$(function() {
     	$( "#datepicker" ).datepicker();
   	});
-  	</script>
-
- 
-
- 
-
-</html>
+  	</script> 
+  	
+  	
+  	{{-- USING THIS AREA TO TRY TO WORK OUT DATE TIME PICKER PLUG IN --}}
+  	
+  	{{--
+  	
+  	<link rel="stylesheet" type="text/css" href="datetimepicker/jquery.datetimepicker.css"/ >
+  	<script src="datetimepicker/jquery.js"></script>
+	<script src="datetimepicker/jquery.datetimepicker.js"></script>
 	
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	--}}
+	
+    
+    {{-- HTML::style('datetimepicker/jquery.datetimepicker.css') --}}
+    {{-- HTML::script('datetimepicker/jquery.js') --}}
+    {{-- HTML::script('datetimepicker/jquery.datetimepicker.js') --}}
+  	
+  	{{--
+  	<script>
+	$('#datetimepicker1').datetimepicker({
+		datepicker:false,
+		format:'H:i',
+		step:5
+	});
+	</script>
+	--}}
+	
+	{{-- END OF AREA FOR DATETIME PICKER EXPERIMENT --}}
+  	
+  
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
 
-		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-		{{ HTML::style('styles/styles.css') }}
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+	{{ HTML::style('styles/styles.css') }}
 
 	@yield('head')
 
