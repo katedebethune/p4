@@ -13,8 +13,7 @@
 <h1>Judith's Kitchen</h1>
 <h2>About</h2>
 <h2>Cafe Menu</h2>
-	@foreach($foods as $food)
-	 @if ($food->menu_code == 'cafe' || $food->menu_code == 'both')
+	@foreach($cafe_menu as $food)
   <hr>
   {{ $food->name }} 
   <br><br>
@@ -30,7 +29,6 @@
 	  @else
 		per ounce
 	  @endif
-  @endif
   
  
   
@@ -57,8 +55,7 @@
 
 <h2>Catering</h2>
   <h3>Catering Menu</h3>
-   @foreach($foods as $food)
-	 @if ($food->menu_code == 'catering' || $food->menu_code == 'both')
+   @foreach($catering_menu as $food)
 	  <hr>
 	  {{ $food->name }} 
 	  <br><br>
@@ -75,8 +72,6 @@
 	  @else
 		per ounce
 	  @endif
-  @endif
-  
 @endforeach
 
    

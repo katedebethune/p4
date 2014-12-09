@@ -1,14 +1,22 @@
 @extends('_master')
 
 @section('title')
-	Create a new Catering Order
+	Edit or Delete a Catering Order
 @stop
 
 @section('content')
 
-	<h1>Create a New Catering Order</h1>
+	<h1>Edit your Catering Order</h1>
 
-	{{ Form::open(array('url' => '/orders/create')) }}
+	{{ Form::open(array('url' => '/orders/edit')) }}
+	
+	{{ Form::hidden('id',$order['id']); }}
+	
+	{{ 'Order #'.$order['id'].': Due on '.$order['due'].'<br>' }}
+		
+		@foreach($order->food()->select('name','quantity', 'price')->get() as $food)
+				{{ $food['quantity'].' '.$food['name'].' '.$food['price'].'<br>' }}
+			@endforeach
 		
 		@foreach($foods as $food)
 				<hr>
@@ -31,13 +39,30 @@
 			 
 			  <br><br>
 			  {{ Form::label($food->name, $food->name) }}	
-			  {{ Form::select($food->id, array( 
+			  {{-- Form::select($food->id, array( 
 					'0'		=> '-',
 					'1'       => '1',
 					'2'     => '2',
 					'3'     => '3'
-						), '0') }}
-			  {{-- Form::text($food->id, '3') --}}
+						), '0') 
+			   --}}
+			  if ($order->food()->select('quantity') > 0 ) {
+			  	$order->food()->select('quantity')->get() as $qt;
+			  } 
+			  else {
+			  	$qt = '-';
+			  }
+			  	
+			  {{-- $qt or "-" --}}
+			  {{-- Form::text($food->id, isset($qt) ? $qt : '-';) --}}
+			  {{ Form::text($food->id, $qt') }}
+			  //$order->food()->select('name','quantity', 'price')->get() as $food
+			  
+			  
+			  {{-- $Variable or "default value" --}}
+				//it will turn this into ternary operators
+				//echo isset($Variable) ? $Variable : 'default value'; 
+			  
 			  {{-- Form::checkbox($food->id, '0', false) --}}
   
 		@endforeach
@@ -63,3 +88,4 @@
 	{{ Form::close() }}
 
 @stop
+

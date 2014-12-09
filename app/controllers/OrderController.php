@@ -54,7 +54,8 @@ class OrderController extends BaseController {
 			return Redirect::to('/login');
 		}
 		
-		$foods = Food::all();
+		//$foods = Food::all();
+		$foods = Food::cateringMenu();
 
     	return View::make('order_create')->with('foods', $foods);
 
@@ -74,6 +75,7 @@ class OrderController extends BaseController {
 		 * 2) redo unit
 		 * 3) add calculated fields to db
 		 * 4) form validation
+		 * 5) wrap this in a transaction
 		 */
 		
 		# INSTANTIATE NEW Order MODEL CLASS
@@ -105,6 +107,93 @@ class OrderController extends BaseController {
 		 }
 		//return 'A new order has been added! Check your database to see . . .';
 		return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
+	}
+	
+	/**
+	* Show the "Edit an order form"
+	* @return View
+	* $id will be a hidden field with the order id, coming from the order/index view
+	*/
+	 public function getEdit($id) {
+
+		try {
+		    $order = Order::findOrFail($id);
+		    $foods = Food::cateringMenu();
+		    //create a variable of key -> quantity pairs.
+		    //pass this to view and use this to fill select boxes on form
+		}
+		catch(exception $e) {
+		    return Redirect::to('/orders')->with('flash_message', 'Order not found');
+		}
+
+    	return View::make('order_edit')
+    		->with('order', $order)
+    		->with('foods', $foods);
+
+	} 
+	
+	/**
+	* Process the "Edit a book form"
+	* @return Redirect
+	*/
+	/*
+	public function postEdit() {
+
+		try {
+	        $book = Book::findOrFail(Input::get('id'));
+	    }
+	    catch(exception $e) {
+	        return Redirect::to('/book')->with('flash_message', 'Book not found');
+	    }
+
+	    # http://laravel.com/docs/4.2/eloquent#mass-assignment
+	    $book->fill(Input::all());
+	    $book->save();
+
+	   	return Redirect::action('BookController@getIndex')->with('flash_message','Your changes have been saved.');
+
+	} */
+
+	
+	/**
+	* Process order deletion -ORIG
+	*
+	* @return Redirect
+	*/
+	/*
+	public function postDelete() {
+
+		try {
+	        $book = Book::findOrFail(Input::get('id'));
+	    }
+	    catch(exception $e) {
+	        return Redirect::to('/book/')->with('flash_message', 'Could not delete book - not found.');
+	    }
+
+	    Book::destroy(Input::get('id'));
+
+	    return Redirect::to('/book/')->with('flash_message', 'Book deleted.');
+
+	}*/
+	
+	/**
+	* Process order deletion
+	*
+	* @return Redirect
+	*/
+	public function postDelete() {
+
+		try {
+	        $order = Order::findOrFail(Input::get('id'));
+	    }
+	    catch(exception $e) {
+	        return Redirect::to('/orders/')->with('flash_message', 'Could not delete book - not found.');
+	    }
+
+	    Order::destroy(Input::get('id'));
+
+	    return Redirect::to('/orders/')->with('flash_message', 'Order deleted.');
+
 	}
 	
 }

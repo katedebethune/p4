@@ -14,11 +14,11 @@
 Route::get('/', function()
 {
 	
-  $foods = Food::all();
-  #return View::make('index', array('foods'=>$foods));
+  $cafe_menu = Food::cafeMenu();
+  $catering_menu = Food::cateringMenu();
   return View::make('index')
-  		->with('foods', $foods);
-  #return View::make('index');
+  		->with('cafe_menu', $cafe_menu)
+  		->with('catering_menu', $catering_menu);
 });
 
 /**
@@ -41,6 +41,9 @@ Route::get('/orders','OrderController@getOrders' );
 Route::get('/ordersSQL','OrderController@getOrdersSQL' );
 Route::get('/orders/create', 'OrderController@getCreate');
 Route::post('/orders/create', 'OrderController@postCreate');
+Route::get('/orders/edit/{id}', 'OrderController@getEdit');
+Route::post('/orders/edit', 'OrderController@postEdit');
+Route::post('/orders/delete', 'OrderController@postDelete');
 
 /**
 * Debug

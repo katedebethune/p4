@@ -1,14 +1,18 @@
 @extends('_master')
 
 @section('title')
-	Create a new Catering Order
+	Edit or Delete a Catering Order
 @stop
 
 @section('content')
 
-	<h1>Create a New Catering Order</h1>
+	<h1>Edit your Catering Order</h1>
 
-	{{ Form::open(array('url' => '/orders/create')) }}
+	{{ Form::open(array('url' => '/orders/edit')) }}
+	
+	{{ Form::hidden('id',$order['id']); }}
+	
+	{{ 'Order #'.$order['id'].': Due on '.$order['due'].'<br>' }}
 		
 		@foreach($foods as $food)
 				<hr>
@@ -31,14 +35,30 @@
 			 
 			  <br><br>
 			  {{ Form::label($food->name, $food->name) }}	
-			  {{ Form::select($food->id, array( 
+			  {{-- Form::select($food->id, array( 
 					'0'		=> '-',
 					'1'       => '1',
 					'2'     => '2',
 					'3'     => '3'
-						), '0') }}
-			  {{-- Form::text($food->id, '3') --}}
-			  {{-- Form::checkbox($food->id, '0', false) --}}
+						), '0') 
+			   --}}
+			  
+			  {{ $qt = $order->food()->select('quantity') }}
+			  
+			  @if ($qt > 0 ) 
+			  	 $qt = $qt 
+			  @else 
+			  	 $qt = '-' 
+			  @endif
+			
+			  	
+			  {{-- $qt or "-" --}}
+			  {{ Form::text($food->id, isset($qt) ? $qt : '-') }}
+			  {{-- Form::text($food->id, $qt) --}}
+			  
+			  
+			
+				
   
 		@endforeach
 		<hr>
@@ -58,8 +78,9 @@
 		
 
 		<br><br>
-		{{ Form::submit('Place my order!'); }}
+		{{ Form::submit('Update my order!'); }}
 
 	{{ Form::close() }}
 
 @stop
+
