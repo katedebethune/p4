@@ -40,7 +40,6 @@ Route::get('/logout', 'UserController@getLogout' );
 Route::get('/orders','OrderController@getOrders' );
 Route::get('/ordersSQL','OrderController@getOrdersSQL' );
 Route::get('/orders/create', 'OrderController@getCreate');
-Route::get('/orders/create2', 'OrderController@getCreate2');
 Route::post('/orders/create', 'OrderController@postCreate');
 
 /**
@@ -48,6 +47,11 @@ Route::post('/orders/create', 'OrderController@postCreate');
 * (Implicit Routing)
 */
 Route::controller('debug', 'DebugController');
+
+/**
+ *
+ * NON -CONTROLLER TEST ROUTES
+ */
 
 Route::get('/practice-reading-orders', function() {
 
@@ -143,14 +147,4 @@ Route::get('/practice-creating-order', function() {
 	return 'A new order has been added! Check your database to see . . .';
 });
 
-/*
-Route::get('input-test', function() {
-  $foods = Food::all();
-  return View::make('array_test')
-  	->with $foods;
-});
 
-Route::post('input-test', function() {
-	print_r($_POST);
-  //return Redirect::back()->withInput(Input::all());
-}); */
