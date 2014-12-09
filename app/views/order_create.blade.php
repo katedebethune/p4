@@ -19,27 +19,20 @@
 				<br>
 				{{ "$".$food->price }}
   
-			  @if ($food->sold_by == 'unit' && $food->menu_code == 'catering')
-				per person 
-			  @elseif ($food->sold_by == 'weight' )
-				per pound
-			  @elseif ( $food->sold_by == 'unit' )
-				each
-			  @else
-				per ounce
-			  @endif
+				  @if ($food->sold_by == 'unit' && $food->menu_code == 'catering')
+					per person 
+				  @elseif ($food->sold_by == 'weight' )
+					per pound
+				  @elseif ( $food->sold_by == 'unit' )
+					each
+				  @else
+					per ounce
+				  @endif
 			
 			 
 			  <br><br>
-			  {{ Form::label($food->name, $food->name) }}
-			  {{-- Form::select($food->id, array($food->id, array( 
-					'0'		=> '-',
-					'1'       => '1',
-					'2'     => '2',
-					'3'     => '3'
-						), '0') ) --}}
-						
-			{{ Form::select($food->id, array( 
+			  {{ Form::label($food->name, $food->name) }}	
+			  {{ Form::select($food->id, array( 
 					'0'		=> '-',
 					'1'       => '1',
 					'2'     => '2',
