@@ -54,7 +54,6 @@ class OrderController extends BaseController {
 			return Redirect::to('/login');
 		}
 		
-		//$foods = Food::all();
 		$foods = Food::cateringMenu();
 
     	return View::make('order_create')->with('foods', $foods);
@@ -68,26 +67,54 @@ class OrderController extends BaseController {
 	public function postCreate() {
 	
 		$data = (Input::all());
-	
+		$count = 0;
+		var_dump($data);
 		/**
 		 * TO DO next: 
 		 * 1) move logic to model
-		 * 2) redo unit
+		 * 2) redo unit - done (sort of)
 		 * 3) add calculated fields to db
 		 * 4) form validation
 		 * 5) wrap this in a transaction
 		 */
+		/*
+		
+		# Step 1) Define the rules
+		$rules = array(
+			'firstname' => 'required|alpha|min:1',
+			'lastname' => 'required|alpha|min:2',
+			'email' => 'required|email|unique:users,email',
+			'password' => 'required|min:6'
+		);
+
+		# Step 2)
+		$validator = Validator::make(Input::all(), $rules);
+
+		# Step 3
+		if($validator->fails()) {
+
+			return Redirect::to('/signup')
+				->with('flash_message', 'Sign up failed; please fix the errors listed below.')
+				->withInput()
+				->withErrors($validator);
+		} */
+		
+		
 		
 		# INSTANTIATE NEW Order MODEL CLASS
 		$order = new Order();
+		$id = $order->id;
 		# CREATE AN INSTANCE FOR THE CURRENT USER
 		$user = Auth::user();
 	
 		# CREATE TIME DATE FROM POST ARRAY VARIABLES
 		$date_time_due = $data['date_due'].' '.$data['time_due'];
 		$date_time_due = new DateTime($date_time_due);
+		$date_due = new DateTime($data['date_due']);
 	
 		# SET ORDER VARIABLES
+		$order->due_date = $date_due;
+		$order->due_time = $data['time_due'];
 		$order->due = $date_time_due;
 		$order->status = $data['status'];
 		$order->comments = $data['comments'];
@@ -101,12 +128,20 @@ class OrderController extends BaseController {
 		$now = date("Y-m-d H:i:s");
 		foreach($data as $key => $val) {
 			if ( is_int($key) && $val > 0 ) {
+			//if ( (is_int($key) && is_int($val)) && ($val > 0) ) {
 				echo "$key => $val <br>";
+				$count++;
 				$order->food()->attach($key, array('quantity' => $val, 'created_at' => $now));
 			}
 		 }
-		//return 'A new order has been added! Check your database to see . . .';
-		return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
+		/*
+		if ( $count > 0 ) {
+			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
+		}
+		else {
+			return Redirect::action('OrderController@getEdit', array('id' => $order->id))
+			->with('flash_message', 'Please select at least one item for your order.');
+		}*/
 	}
 	
 	/**
@@ -147,12 +182,15 @@ class OrderController extends BaseController {
 	    }
 	    
 	    $data = (Input::all());
+	    $count = 0;
 	    
 		# CREATE TIME DATE FROM POST ARRAY VARIABLES
 		$date_time_due = $data['date_due'].' '.$data['time_due'];
 		$date_time_due = new DateTime($date_time_due);
 	
 		# UPDATE ORDER VARIABLES
+		$order->due_date = $data['date_due'];
+		$order->due_time = $data['time_due'];
 		$order->due = $date_time_due;
 		$order->status = $data['status'];
 		$order->comments = $data['comments'];
@@ -169,9 +207,16 @@ class OrderController extends BaseController {
 			if ( is_int($key) && $val > 0 ) {
 				echo "$key => $val <br>";
 				$order->food()->attach($key, array('quantity' => $val, 'created_at' => $now));
+				$count++;
 			}
 		 } 
-	   	return Redirect::action('OrderController@getOrders')->with('flash_message','Your changes have been saved.');
+	   if ( $count > 0 ) {
+			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
+		}
+		else {
+			return Redirect::action('OrderController@getEdit', array('id' => $order->id))
+			->with('flash_message', 'Please select at least one item for your order.');
+		}
 
 	} 
 

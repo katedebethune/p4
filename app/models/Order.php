@@ -15,6 +15,7 @@ class Order extends Eloquent {
 		return $this->belongsToMany('Food');
 	}
 	
+	
 	# Model events...
 	# http://laravel.com/docs/eloquent#model-events
 	public static function boot() {

@@ -36,20 +36,20 @@
 				{{ Form::label($food->name, $food->name) }}	
 				  @foreach($order_detail as $od) 
 					@if( $food->id == $od->food_id )
-						{{ Form::text($food->id, $od->quantity) }}
+						{{ Form::text($food->id, $od->quantity, array('id'=>'', 'class'=>'resizedTextbox')) }}
 						@if ($flag = 1) @endif
 					@endif
 				  @endforeach
 				  @if ($flag == 0)
-					{{ Form::text($food->id, "-") }}
+					{{ Form::text($food->id, '#', array('id'=>'', 'class'=>'resizedTextbox')) }}
 				  @endif
 				  @if ($flag = 0) @endif
 			  
 		@endforeach
 		<hr>
 		{{ Form::label('date', 'date & time needed') }}
-		{{ Form::text('date_due', $order->due, array('id'=>'datepicker', 'class'=>'')) }}
-		{{ Form::text('time_due', '10:00') }}
+		{{ Form::text('date_due', $order->due_date, array('id'=>'datepicker', 'class'=>'')) }}
+		{{ Form::text('time_due', $order->due_time) }}
 		
 		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
 		{{-- Form::text('time', '', array('id'=>'datetimepicker1', 'class'=>'')) --}}

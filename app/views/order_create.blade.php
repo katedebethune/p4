@@ -9,7 +9,6 @@
 	<h1>Create a New Catering Order</h1>
 
 	{{-- to do: --}}
-	{{-- 1. make edit links --}}
 	{{-- 2. create unit descriptors in dbase and get from there --}}
 	
 	{{ Form::open(array('url' => '/orders/create')) }}
@@ -19,36 +18,26 @@
 				
 				<h3>{{ $food->name }} </h3>
 				<small>{{ $food->description }} </small>
-				<br>
-				{{ "$".$food->price }}
-  
-				  @if ($food->sold_by == 'unit' && $food->menu_code == 'catering')
-					per person 
-				  @elseif ($food->sold_by == 'weight' )
-					per pound
-				  @elseif ( $food->sold_by == 'unit' )
-					each
-				  @else
-					per ounce
-				  @endif
+			
+				{{-- '$'.$food->price.' '.$food->sold_by_desc --}}
 			
 			 
 			  <br><br>
-			  {{ Form::label($food->name, $food->name) }}	
-			  {{ Form::select($food->id, array( 
+			  {{ Form::label('', '$'.$food->price.' '.$food->sold_by_desc) }}	
+			  {{-- Form::select($food->id, array( 
 					'0'		=> '-',
 					'1'       => '1',
 					'2'     => '2',
 					'3'     => '3'
-						), '0') }}
-			  {{-- Form::text($food->id, '3') --}}
+						), '0') --}} 
+			  {{ Form::text($food->id, '#', array('id'=>'', 'class'=>'resizedTextbox')) }}
 			  {{-- Form::checkbox($food->id, '0', false) --}}
   
 		@endforeach
 		<hr>
 		{{ Form::label('date', 'date & time needed') }}
 		{{ Form::text('date_due', '', array('id'=>'datepicker', 'class'=>'')) }}
-		{{ Form::text('time_due', '10:00') }}
+		{{ Form::text('time_due', 'hh:mm') }}
 		
 		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
 		{{-- Form::text('time', '', array('id'=>'datetimepicker1', 'class'=>'')) --}}

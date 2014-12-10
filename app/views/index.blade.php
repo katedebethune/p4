@@ -19,38 +19,8 @@
   <br><br>
   {{ $food->description }}
   <br><br>
-  {{ $food->price }}
-  
- 
-	  @if ($food->sold_by == 'weight' )
-		per pound
-	  @elseif ( $food->sold_by == 'unit' )
-		each
-	  @else
-		per ounce
-	  @endif
-  
- 
-  
-  {{--
-  <div class="row">
-    
-    <div class="col-md-12">
-    @for ($i=1; $i <= 5 ; $i++)
-      <span class="glyphicon glyphicon-star{{ ($i <= $review->rating) ? '' : '-empty'}}"></span>
-    @endfor
-    --}}
+  {{ '$'.$food->price.' '.$food->sold_by_desc }}
 
-    
-    {{--
-    {{ $review->user ? $review->user->name : 'Anonymous'}} <span class="pull-right">{{$review->timeago}}</span> 
-
-    <p>{{{$review->comment}}}</p> 
-    </div>
-     
-    
-  </div>
-  --}}
 @endforeach
 
 <h2>Catering</h2>
@@ -61,33 +31,10 @@
 	  <br><br>
 	  {{ $food->description }}
 	  <br><br>
-	  {{ $food->price }}
+	  {{ '$'.$food->price.' '.$food->sold_by_desc }}
   
-  	  @if ($food->sold_by == 'unit' && $food->menu_code == 'catering')
-  		per person 
-	  @elseif ($food->sold_by == 'weight' )
-		per pound
-	  @elseif ( $food->sold_by == 'unit' )
-		each
-	  @else
-		per ounce
-	  @endif
 @endforeach
 
-   
-  
   <h2>Contact</h2>
-	
-	{{--
-	{{ Form::open(array('url' => '/book', 'method' => 'GET')) }}
-
-		{{ Form::label('query','Search') }}
-
-		{{ Form::text('query'); }}
-
-		{{ Form::submit('Search'); }}
-
-	{{ Form::close() }}
-	--}}
 
 @stop
