@@ -35,23 +35,41 @@
 			 
 			  <br><br>
 			  {{ Form::label($food->name, $food->name) }}	
-			  {{-- Form::select($food->id, array( 
-					'0'		=> '-',
-					'1'       => '1',
-					'2'     => '2',
-					'3'     => '3'
-						), '0') 
-			   --}}
+			 
+			  
 			  @foreach($order_detail as $od) 
 			   	@if( $food->id == $od->food_id )
 			   		{{ Form::text($food->id, $od->quantity) }}
-			   		{{ $flag = 1; }}
+			   		@if ($flag = 1) @endif
 			   	@endif
 			  @endforeach
 			  @if ($flag == 0) {
 			  	{{ Form::text($food->id, "-") }}
 			  @endif
-			  {{ $flag = 0; }}
+			  @if ($flag = 0) @endif
+			
+			  
+			  
+			 {{--
+			  @foreach($order_detail as $od) 
+			   	@if( $food->id == $od->food_id )
+			   		{{ Form::select($food->id, $od->quantity) }}
+			   		@if ($flag = 1) @endif
+			   	@endif
+			  @endforeach
+			  @if ($flag == 0) {
+			  	{{  Form::select($food->id, array( 
+					'0'		=> '-',
+					'1'       => '1',
+					'2'     => '2',
+					'3'     => '3'
+						), '0') 
+			   }}
+			  @endif
+			  @if ($flag = 0) @endif
+			  --}}
+			 
+			  
 			  
 			  
 			  {{--
@@ -68,7 +86,7 @@
 		@endforeach
 		<hr>
 		{{ Form::label('date', 'date & time needed') }}
-		{{ Form::text('date_due', '', array('id'=>'datepicker', 'class'=>'')) }}
+		{{ Form::text('date_due', $order->due, array('id'=>'datepicker', 'class'=>'')) }}
 		{{ Form::text('time_due', '10:00') }}
 		
 		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
@@ -77,7 +95,7 @@
 		{{--<p>Enter your time: <input type="text" id="defaultEntry" size="10"></p> --}}
 		<hr>
 		{{ Form::label('comments', 'Comments') }}
-		{{ Form::textarea('comments', '') }}
+		{{ Form::textarea('comments', $order->comments) }}
 		{{ Form::hidden('status', 'open') }}
 		
 		
