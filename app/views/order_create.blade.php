@@ -7,9 +7,12 @@
 @section('content')
 
 	<h1>Create a New Catering Order</h1>
-
-	{{-- to do: --}}
-	{{-- 2. create unit descriptors in dbase and get from there --}}
+	
+	
+	 @foreach($errors->all() as $error)
+            <li>{{ $error }}</li>
+    @endforeach
+	
 	
 	{{ Form::open(array('url' => '/orders/create')) }}
 		
@@ -37,7 +40,7 @@
 		<hr>
 		{{ Form::label('date', 'date & time needed') }}
 		{{ Form::text('date_due', '', array('id'=>'datepicker', 'class'=>'')) }}
-		{{ Form::text('time_due', 'hh:mm') }}
+		{{ Form::text('time_due') }}
 		
 		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
 		{{-- Form::text('time', '', array('id'=>'datetimepicker1', 'class'=>'')) --}}

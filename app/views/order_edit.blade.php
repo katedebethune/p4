@@ -48,8 +48,9 @@
 		@endforeach
 		<hr>
 		{{ Form::label('date', 'date & time needed') }}
-		{{ Form::text('date_due', $order->due_date, array('id'=>'datepicker', 'class'=>'')) }}
-		{{ Form::text('time_due', $order->due_time) }}
+		{{ Form::text('date_due', date_format($dt, 'm/d/Y'), array('id'=>'datepicker', 'class'=>'')) }}
+		{{ Form::text('time_due', date_format($dt, 'g:i A')) }}
+		
 		
 		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
 		{{-- Form::text('time', '', array('id'=>'datetimepicker1', 'class'=>'')) --}}

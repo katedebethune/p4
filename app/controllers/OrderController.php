@@ -68,7 +68,6 @@ class OrderController extends BaseController {
 	
 		$data = (Input::all());
 		$count = 0;
-		var_dump($data);
 		/**
 		 * TO DO next: 
 		 * 1) move logic to model
@@ -77,14 +76,14 @@ class OrderController extends BaseController {
 		 * 4) form validation
 		 * 5) wrap this in a transaction
 		 */
-		/*
+		
 		
 		# Step 1) Define the rules
 		$rules = array(
-			'firstname' => 'required|alpha|min:1',
-			'lastname' => 'required|alpha|min:2',
-			'email' => 'required|email|unique:users,email',
-			'password' => 'required|min:6'
+			/*'date_due' => 'required|date_format:d/m/Y|after:now()+3',
+			'time_due' => 'required|date_format:g:i A|min:10:00 AM|max:4:00 PM'*/
+			'date_due' => 'required|date_format:n/j/Y|after:"+3 day"',
+			'time_due' => 'required|date_format:g:i A|after:"9:59 AM"|before:"4:01 PM"'
 		);
 
 		# Step 2)
@@ -93,11 +92,11 @@ class OrderController extends BaseController {
 		# Step 3
 		if($validator->fails()) {
 
-			return Redirect::to('/signup')
-				->with('flash_message', 'Sign up failed; please fix the errors listed below.')
+			return Redirect::to('/orders/create')
+				->with('flash_message', 'Order creation failed, please correct errors below')
 				->withInput()
 				->withErrors($validator);
-		} */
+		} 
 		
 		
 		
@@ -110,11 +109,8 @@ class OrderController extends BaseController {
 		# CREATE TIME DATE FROM POST ARRAY VARIABLES
 		$date_time_due = $data['date_due'].' '.$data['time_due'];
 		$date_time_due = new DateTime($date_time_due);
-		$date_due = new DateTime($data['date_due']);
 	
 		# SET ORDER VARIABLES
-		$order->due_date = $date_due;
-		$order->due_time = $data['time_due'];
 		$order->due = $date_time_due;
 		$order->status = $data['status'];
 		$order->comments = $data['comments'];
@@ -128,20 +124,19 @@ class OrderController extends BaseController {
 		$now = date("Y-m-d H:i:s");
 		foreach($data as $key => $val) {
 			if ( is_int($key) && $val > 0 ) {
-			//if ( (is_int($key) && is_int($val)) && ($val > 0) ) {
 				echo "$key => $val <br>";
 				$count++;
 				$order->food()->attach($key, array('quantity' => $val, 'created_at' => $now));
 			}
 		 }
-		/*
+		
 		if ( $count > 0 ) {
 			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
 		}
 		else {
 			return Redirect::action('OrderController@getEdit', array('id' => $order->id))
 			->with('flash_message', 'Please select at least one item for your order.');
-		}*/
+		}
 	}
 	
 	/**
@@ -156,6 +151,7 @@ class OrderController extends BaseController {
 		    $foods = Food::cateringMenu();
 		    $order_detail = $order->food()->select('food_id', 'quantity')->get();
 		    $flag = 0;
+		    $dt = new DateTime($order->due);
 		}
 		catch(exception $e) {
 		    return Redirect::to('/orders')->with('flash_message', 'Order not found');
@@ -163,8 +159,10 @@ class OrderController extends BaseController {
     	  return View::make('order_edit')
     		->with('order', $order)
     		->with('foods', $foods)
+    		->with('order_detail', $order_detail)
     		->with('flag', $flag)
-    		->with('order_detail', $order_detail); 
+    		->with('dt', $dt);
+    		
 	} 
 	
 	/**
@@ -189,8 +187,6 @@ class OrderController extends BaseController {
 		$date_time_due = new DateTime($date_time_due);
 	
 		# UPDATE ORDER VARIABLES
-		$order->due_date = $data['date_due'];
-		$order->due_time = $data['time_due'];
 		$order->due = $date_time_due;
 		$order->status = $data['status'];
 		$order->comments = $data['comments'];
