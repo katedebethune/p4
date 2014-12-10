@@ -120,60 +120,17 @@ class OrderController extends BaseController {
 		try {
 		    $order = Order::findOrFail($id);
 		    $foods = Food::cateringMenu();
-		    //$order_detail = Array();
 		    $order_detail = $order->food()->select('food_id', 'quantity')->get();
 		    $flag = 0;
-		    //$od = $order_detail->toArray();
-		    //$order_detail = $order->food()->select('food_id', 'quantity')->toArray();
-		    //$roles = User::find(1)->roles->toArray();
-		    //create a variable of key -> quantity pairs.
-		    //pass this to view and use this to fill select boxes on form
 		}
 		catch(exception $e) {
 		    return Redirect::to('/orders')->with('flash_message', 'Order not found');
 		}
-		
-		if ($order_detail->contains('food_id', '=', '3'))
-		{
-			echo "$order_detail contains 3";
-		}
-		/*
-		foreach($order_detail as $od) {
-			echo $od->food_id.'<br>';
-		}
-		
-		foreach($foods as $food) {
-			echo $food->id;
-		}
-		
-		//bool array_key_exists ( mixed $key , array $array )
-		//var_dump($foods);
-		
-		foreach($foods as $food) {
-			if (array_key_exists($food->id, $order_detail->food_id))
-			 {
-				echo "key exists";
-			}
-		} 
-		
-		
-		
-		//var_dump($order_detail);
-		echo Paste\Pre::render($order_detail,'order_detail');
-		//echo Paste\Pre::render($foods,'foods');
-		
-		$search_array = array('first' => 1, 'second' => 4);
-		if (array_key_exists('first', $search_array)) {
-    			echo "The 'first' element is in the array";
-		}*/
-		
-
     	  return View::make('order_edit')
     		->with('order', $order)
     		->with('foods', $foods)
     		->with('flag', $flag)
     		->with('order_detail', $order_detail); 
-
 	} 
 	
 	/**
@@ -199,26 +156,7 @@ class OrderController extends BaseController {
 	} */
 
 	
-	/**
-	* Process order deletion -ORIG
-	*
-	* @return Redirect
-	*/
-	/*
-	public function postDelete() {
-
-		try {
-	        $book = Book::findOrFail(Input::get('id'));
-	    }
-	    catch(exception $e) {
-	        return Redirect::to('/book/')->with('flash_message', 'Could not delete book - not found.');
-	    }
-
-	    Book::destroy(Input::get('id'));
-
-	    return Redirect::to('/book/')->with('flash_message', 'Book deleted.');
-
-	}*/
+	
 	
 	/**
 	* Process order deletion
@@ -231,7 +169,7 @@ class OrderController extends BaseController {
 	        $order = Order::findOrFail(Input::get('id'));
 	    }
 	    catch(exception $e) {
-	        return Redirect::to('/orders/')->with('flash_message', 'Could not delete book - not found.');
+	        return Redirect::to('/orders/')->with('flash_message', 'Could not delete order - not found.');
 	    }
 
 	    Order::destroy(Input::get('id'));

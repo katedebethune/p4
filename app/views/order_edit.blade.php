@@ -30,23 +30,19 @@
 					each
 				  @else
 					per ounce
+				  @endif 
+				  <br><br>
+				{{ Form::label($food->name, $food->name) }}	
+				  @foreach($order_detail as $od) 
+					@if( $food->id == $od->food_id )
+						{{ Form::text($food->id, $od->quantity) }}
+						@if ($flag = 1) @endif
+					@endif
+				  @endforeach
+				  @if ($flag == 0)
+					{{ Form::text($food->id, "-") }}
 				  @endif
-			
-			 
-			  <br><br>
-			  {{ Form::label($food->name, $food->name) }}	
-			 
-			  
-			  @foreach($order_detail as $od) 
-			   	@if( $food->id == $od->food_id )
-			   		{{ Form::text($food->id, $od->quantity) }}
-			   		@if ($flag = 1) @endif
-			   	@endif
-			  @endforeach
-			  @if ($flag == 0)
-			  	{{ Form::text($food->id, "-") }}
-			  @endif
-			  @if ($flag = 0) @endif
+				  @if ($flag = 0) @endif
 			  
 		@endforeach
 		<hr>
@@ -68,6 +64,12 @@
 		<br><br>
 		{{ Form::submit('Update my order!'); }}
 
+	{{ Form::close() }}
+	
+	{{---- DELETE -----}}
+	{{ Form::open(array('url' => '/orders/delete')) }}
+		{{ Form::hidden('id',$order['id']); }}
+		{{ Form::submit('Delete my order') }}
 	{{ Form::close() }}
 
 @stop
