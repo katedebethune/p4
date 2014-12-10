@@ -42,24 +42,29 @@
 					'3'     => '3'
 						), '0') 
 			   --}}
-			  
-			  {{ $qt = $order->food()->select('quantity') }}
-			  
-			  @if ($qt > 0 ) 
-			  	 $qt = $qt 
-			  @else 
-			  	 $qt = '-' 
+			  @foreach($order_detail as $od) 
+			   	@if( $food->id == $od->food_id )
+			   		{{ Form::text($food->id, $od->quantity) }}
+			   		{{ $flag = 1; }}
+			   	@endif
+			  @endforeach
+			  @if ($flag == 0) {
+			  	{{ Form::text($food->id, "-") }}
 			  @endif
-			
-			  	
-			  {{-- $qt or "-" --}}
-			  {{ Form::text($food->id, isset($qt) ? $qt : '-') }}
+			  {{ $flag = 0; }}
+			  
+			  
+			  {{--
+			  @if (in_array($food->id, $od))
+				{{ "key in array:". $food->id }} 
+			  @else
+				 Record missing;
+			  @endif --}}
+			  
+			  
+			  {{-- Form::text($food->id, isset($qt) ? $qt : '-') --}}
 			  {{-- Form::text($food->id, $qt) --}}
 			  
-			  
-			
-				
-  
 		@endforeach
 		<hr>
 		{{ Form::label('date', 'date & time needed') }}
@@ -83,4 +88,5 @@
 	{{ Form::close() }}
 
 @stop
+
 
