@@ -43,45 +43,10 @@
 			   		@if ($flag = 1) @endif
 			   	@endif
 			  @endforeach
-			  @if ($flag == 0) {
+			  @if ($flag == 0)
 			  	{{ Form::text($food->id, "-") }}
 			  @endif
 			  @if ($flag = 0) @endif
-			
-			  
-			  
-			 {{--
-			  @foreach($order_detail as $od) 
-			   	@if( $food->id == $od->food_id )
-			   		{{ Form::select($food->id, $od->quantity) }}
-			   		@if ($flag = 1) @endif
-			   	@endif
-			  @endforeach
-			  @if ($flag == 0) {
-			  	{{  Form::select($food->id, array( 
-					'0'		=> '-',
-					'1'       => '1',
-					'2'     => '2',
-					'3'     => '3'
-						), '0') 
-			   }}
-			  @endif
-			  @if ($flag = 0) @endif
-			  --}}
-			 
-			  
-			  
-			  
-			  {{--
-			  @if (in_array($food->id, $od))
-				{{ "key in array:". $food->id }} 
-			  @else
-				 Record missing;
-			  @endif --}}
-			  
-			  
-			  {{-- Form::text($food->id, isset($qt) ? $qt : '-') --}}
-			  {{-- Form::text($food->id, $qt) --}}
 			  
 		@endforeach
 		<hr>
