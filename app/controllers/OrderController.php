@@ -94,7 +94,6 @@ class OrderController extends BaseController {
 		# ASSOCIATE THE USER WITH THIS ORDER
 		$order->user()->associate(Auth::user());
 		
-
 		# SAVE ORDER
 		$order->save();
 	
@@ -134,30 +133,48 @@ class OrderController extends BaseController {
 	} 
 	
 	/**
-	* Process the "Edit a book form"
+	* Process the input from the getEdit form
 	* @return Redirect
 	*/
-	/*
+	
 	public function postEdit() {
 
 		try {
-	        $book = Book::findOrFail(Input::get('id'));
+	        $order = Order::findOrFail(Input::get('id'));
 	    }
 	    catch(exception $e) {
-	        return Redirect::to('/book')->with('flash_message', 'Book not found');
+	        return Redirect::to('/orders')->with('flash_message', 'Order not found');
 	    }
-
-	    # http://laravel.com/docs/4.2/eloquent#mass-assignment
-	    $book->fill(Input::all());
-	    $book->save();
-
-	   	return Redirect::action('BookController@getIndex')->with('flash_message','Your changes have been saved.');
-
-	} */
-
+	    
+	    $data = (Input::all());
+	    
+		# CREATE TIME DATE FROM POST ARRAY VARIABLES
+		$date_time_due = $data['date_due'].' '.$data['time_due'];
+		$date_time_due = new DateTime($date_time_due);
 	
+		# UPDATE ORDER VARIABLES
+		$order->due = $date_time_due;
+		$order->status = $data['status'];
+		$order->comments = $data['comments'];
+		
+		# SAVE ORDER
+		$order->save();
+		
+		#DELETE ASSOCIATED ROWS IN food_order
+		$order->food()->detach();
 	
-	
+		# ADD UPDATED ORDER LINE ITEMS TO food_order
+		$now = date("Y-m-d H:i:s");
+		foreach($data as $key => $val) {
+			if ( is_int($key) && $val > 0 ) {
+				echo "$key => $val <br>";
+				$order->food()->attach($key, array('quantity' => $val, 'created_at' => $now));
+			}
+		 } 
+	   	return Redirect::action('OrderController@getOrders')->with('flash_message','Your changes have been saved.');
+
+	} 
+
 	/**
 	* Process order deletion
 	*
@@ -181,5 +198,7 @@ class OrderController extends BaseController {
 }
 
 ?>
+
+
 
 

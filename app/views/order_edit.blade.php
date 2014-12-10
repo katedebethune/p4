@@ -8,7 +8,8 @@
 
 	<h1>Edit your Catering Order</h1>
 
-	{{ Form::open(array('url' => '/orders/edit')) }}
+	{{-- Form::open(array('url' => '/orders/edit/'.$order->id.'')) --}}
+	{{ Form::open(array('url' => '/orders/edit/')) }}
 	
 	{{ Form::hidden('id',$order['id']); }}
 	

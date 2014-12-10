@@ -8,6 +8,10 @@
 
 	<h1>Create a New Catering Order</h1>
 
+	{{-- to do: --}}
+	{{-- 1. make edit links --}}
+	{{-- 2. create unit descriptors in dbase and get from there --}}
+	
 	{{ Form::open(array('url' => '/orders/create')) }}
 		
 		@foreach($foods as $food)
