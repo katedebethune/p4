@@ -79,8 +79,10 @@
 	<nav>
 		<ul>
 		@if(Auth::check())
+			<li><a href='/'>Home</a></li>
 			<li><a href='/logout'>Log out {{ Auth::user()->email; }}</a></li>
 			<li><a href='/debug/routes'>Routes</a></li>
+			<li><a href='/orders'>My Orders</a></li>
 		@else
 			<li><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></li>
 		@endif

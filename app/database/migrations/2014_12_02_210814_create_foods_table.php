@@ -27,6 +27,7 @@ class CreateFoodsTable extends Migration {
 			$table->string('name');
 			$table->text('description');
 			$table->string('sold_by');
+			$table->string('sold_by_desc');
 			$table->string('size');
 			$table->float('price');
 			$table->string('menu_code');

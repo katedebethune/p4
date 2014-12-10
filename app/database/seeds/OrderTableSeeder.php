@@ -17,26 +17,23 @@ class OrderTableSeeder extends Seeder {
 		$food_min_id = DB::table('foods')->min('id');
 		$food_max_id = DB::table('foods')->max('id');
 		
-		
-    	
-    	
-		
-		
 		$now = date("Y-m-d H:i:s");
 		
 		for ($i = 0; $i < 40; $i++)
 		{
+			$date = $faker->dateTimeBetween($startDate = 'now', $endDate = '+1 month');
+			//$date = $faker->date($format = 'Y-m-d', $max = 'now');
 			$order = Order::create(array(
 			'user_id'=>$faker->numberBetween($min, $max),
-			'due'=>$faker->dateTimeBetween($startDate = 'now', $endDate = '+1 year'),
+			'due'=>$date,
+			'due_date'=>$date,
+			'due_time'=>$faker->time($format = 'H:i:s', $min = 'now'),
 			'status'=>'open',
 			'comments' => $faker->realText($maxNbChars = 60, $indexSize = 2)
 			));
 			$order->save();
 			
 			# POPULATE food_order PIVOT TABLE with a random # of unique food ids.
-			#$rand = $faker->numberBetween(1, 10);
-			#for ($j = 0; $j < $rand; $j++)
 			$selected = array(0);
 			for ($k = 0; $k < $food_max_id; $k++) {
     				array_push($selected, 0);
@@ -49,7 +46,6 @@ class OrderTableSeeder extends Seeder {
 				$rand_qt = $faker->numberBetween(1, 10);
 		
     			if ($selected[$rand_fd_id] == 1) {
-    				#$rand_fd_id = $faker->numberBetween($food_min_id, $food_max_id)
     				continue;
     			} 
     			else {
@@ -57,7 +53,6 @@ class OrderTableSeeder extends Seeder {
 					$selected[$rand_fd_id] = 1;
 					$rand_fd_id = $faker->numberBetween($food_min_id, $food_max_id);
 				}
-				#$order->food()->attach(3, array('quantity' => $rand, 'created_at' => $now));
 			}
 		}
 	}
