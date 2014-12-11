@@ -9,12 +9,17 @@
 	<h1>Orders for {{ Auth::user()->firstname; }} {{ Auth::user()->lastname;}}</h1>
 	
 	@foreach($orders as $order)
+	{{'Order #'.$order['id'].': Due on '.$order['due'].'<br>' }}
 			<table class="table table-bordered">
+			
+			
+				
 			<tr>
-				<td>
-			{{'Order #'.$order['id'].': Due on '.$order['due'].'<br>' }}
-				</td>
-			</tr>
+   				<th>Quantity</th>
+   				<th>Food</th>
+   				<th>Unit Price</th>
+   				<th>Extended Price</th>
+ 			</tr>
 			
 			@foreach($order->food()->select('name','quantity', 'sold_by_desc', 'extended_price', 'price')->get() as $food)
 			<tr>
@@ -40,10 +45,10 @@
 				<td>
 					{{ 'Grand Total (excluding tax): $'.$order['order_total'].'<br>' }}
 				</td>
+				<td>
+					<a class="btn btn-default btn-xs" href="/orders/edit/{{$order['id']}}">Edit or Delete</a>
+				</td>
 			</tr>
-			
-			<a class="btn btn-default btn-xs" href="/orders/edit/{{$order['id']}}">Edit or Delete</a>
-			'<br><br>'
 			</table>
 	@endforeach
 
