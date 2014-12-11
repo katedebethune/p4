@@ -21,6 +21,7 @@ Route::get('/', function()
   		->with('catering_menu', $catering_menu);
 });
 
+
 /**
 * User
 * (Explicit Routing)
