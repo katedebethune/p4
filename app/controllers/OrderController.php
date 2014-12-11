@@ -219,7 +219,7 @@ class OrderController extends BaseController {
 	   if ( $count > 0 ) {
 			$order->order_total = $order_total;
 			$order->save();
-			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
+			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been updated.');
 		}
 		else {
 			return Redirect::action('OrderController@getEdit', array('id' => $order->id))
