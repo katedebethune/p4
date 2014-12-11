@@ -44,6 +44,7 @@
 					{{ Form::text($food->id, '#', array('id'=>'', 'class'=>'resizedTextbox')) }}
 				  @endif
 				  @if ($flag = 0) @endif
+				  
 			  
 		@endforeach
 		<hr>
@@ -60,9 +61,6 @@
 		{{ Form::label('comments', 'Comments') }}
 		{{ Form::textarea('comments', $order->comments) }}
 		{{ Form::hidden('status', 'open') }}
-		
-		
-
 		<br><br>
 		{{ Form::submit('Update my order!'); }}
 

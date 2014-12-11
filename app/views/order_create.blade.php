@@ -8,10 +8,15 @@
 
 	<h1>Create a New Catering Order</h1>
 	
+	@if($errors->all())
+		{{ 'Please correct the input errors listed below' }}
+	@endif
 	
+	{{--
 	 @foreach($errors->all() as $error)
             <li>{{ $error }}</li>
     @endforeach
+    --}}
 	
 	
 	{{ Form::open(array('url' => '/orders/create')) }}
@@ -38,9 +43,14 @@
   
 		@endforeach
 		<hr>
+		
+		
 		{{ Form::label('date', 'date & time needed') }}
 		{{ Form::text('date_due', '', array('id'=>'datepicker', 'class'=>'')) }}
 		{{ Form::text('time_due') }}
+		<br>
+		{{ $errors->first('date_due') }}
+		{{ $errors->first('time_due') }}
 		
 		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
 		{{-- Form::text('time', '', array('id'=>'datetimepicker1', 'class'=>'')) --}}
