@@ -36,9 +36,9 @@
 <br>
 
 @if(!Auth::check())
-<a class="btn btn-primary" href="orders/create">Login or Sign up to place a catering order</a>
+<a class="btn btn-primary btn-lg" href="orders/create">Login or Sign up to place a catering order</a>
 @else
-<a class="btn btn-primary" href="orders/create">Place a catering order</a>
+<a class="btn btn-primary btn-lg" href="orders/create">Place a catering order</a>
 @endif
 
   <h2>Contact</h2>

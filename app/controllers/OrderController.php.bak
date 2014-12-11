@@ -22,8 +22,6 @@ class OrderController extends BaseController {
 	*
 	*/
 	public function getOrders() {
-		 
-		/*$extended_price = array(0); */
 		
 		if (Auth::check()) {
 			$id = Auth::id();
@@ -31,31 +29,17 @@ class OrderController extends BaseController {
 		else {
 			return Redirect::to('/login');
 		}
-	
+		
 		$orders = Order::whereHas('user', function($q) use($id)
 		{
 			$q->where('id', '=', $id);
 	
-		})->get();
-		
-		/*$food_detail = $orders->food()->select('name', 'quantity', 'price')->get();
-		
-		
-	
-		/* moved to view */
-		/*foreach($orders as $order) {
-			echo $order->user->id.' '.$order->user->firstname.' '.$order->user->lastname.' due: '.$order->due.'<br>';
-			foreach($order->food()->select('name', 'quantity', 'price')->get() as $food){
-				$ep = $food->price * $food->quantity;
-				print '<li>' . $food->name . ' ' . $food->quantity . ' ' . $food->price;
-				array_push($extended_price, $ep);
-			}
-			echo '<br>';
-		} */
-		/* print_r($extended_price); */
+		})->orderBy('due', 'ASC')->get();
+
 		return View::make('order_index')
 			->with('orders', $orders);
-			/*->with('extended_price', $extended_price); */
+			
+		/* $posts = Post::orderBy('id', 'DESC')->get(); */
 	}
 	
 	
@@ -72,146 +56,201 @@ class OrderController extends BaseController {
 			return Redirect::to('/login');
 		}
 		
-		$foods = Food::all();
+		$foods = Food::cateringMenu();
 
-    	return View::make('order_create')->with('foods',$foods);
+    	return View::make('order_create')->with('foods', $foods);
 
 	}
-
-
+	
 	/**
-	* Process the "Add a book form"
+	* Process the "Create an order form"
 	* @return Redirect
 	*/
 	public function postCreate() {
-
-		# Instantiate the book model
-		$book = new Book();
-
-		$book->fill(Input::all());
-		$book->save();
-
-		# Magic: Eloquent
-		$book->save();
-
-		return Redirect::action('BookController@getIndex')->with('flash_message','Your book has been added.');
-
-	}
-
 	
-	
-	
-	
-	
-	 /**
-	* SQL tests for /order page
-	*
-	*/
-	public function getOrdersSQL() {
-		 
-		if (Auth::check()) {
-			$id = Auth::id();
+		$data = (Input::all());
+		$count = 0;
+		/**
+		 * TO DO next: 
+		 * 1) move logic to model
+		 * 2) redo unit - done (sort of)
+		 * 3) add calculated fields to db
+		 * 4) form validation - done except for individual quantities - need conditional vaidation
+		 * 5) wrap this in a transaction
+		 */
+		
+		
+		# Step 1) Define the rules
+		$rules = array(
+			/*'date_due' => 'required|date_format:d/m/Y|after:now()+3',
+			'time_due' => 'required|date_format:g:i A|min:10:00 AM|max:4:00 PM'*/
+			'date_due' => 'required|date_format:n/j/Y|after:"+3 day"',
+			'time_due' => 'required|date_format:g:i A|after:"9:59 AM"|before:"4:01 PM"'
+		);
+
+		# Step 2)
+		$validator = Validator::make(Input::all(), $rules);
+
+		# Step 3
+		if($validator->fails()) {
+
+			return Redirect::to('/orders/create')
+				->with('flash_message', 'Order creation failed, please correct errors below')
+				->withInput()
+				->withErrors($validator);
 		} 
-		else {
-			return Redirect::to('/login');
-		}
+		
+		
+		
+		
+		# INSTANTIATE NEW Order MODEL CLASS
+		$order = new Order();
+		$id = $order->id;
+		# CREATE AN INSTANCE FOR THE CURRENT USER
+		$user = Auth::user();
 	
-		/*$orders = Order::whereHas('user', function($q) use($id)
-		{
-			$q->where('id', '=', $id);
+		# CREATE TIME DATE FROM POST ARRAY VARIABLES
+		$date_time_due = $data['date_due'].' '.$data['time_due'];
+		$date_time_due = new DateTime($date_time_due);
 	
-		})->get(); */
+		# SET ORDER VARIABLES
+		$order->due = $date_time_due;
+		$order->status = $data['status'];
+		$order->comments = $data['comments'];
+		# ASSOCIATE THE USER WITH THIS ORDER
+		$order->user()->associate(Auth::user());
 		
-		$user = DB::select('select u.id, u.firstname, u.lastname
-		from users u
-		where u.id = ?', array($id));
-		
-		
-		$orders = DB::select('select  
-		o.id, o.due, o.comments, 
-		f.name, f.description, f.price,
-		fo.quantity 
-		from users u, orders o, foods f, food_order fo
-		where u.id = o.user_id
-		and o.id = fo.order_id
-		and f.id = fo.food_id
-		and u.id = ?', array($id)); 
-		
-
-/*DB::select(DB::raw("CREATE TEMPORARY TABLE order_d
-										id INT NOT NULL
-                                       ,name VARCHAR(255) NOT NULL
-                                       ,type VARCHAR(255) NOT NULL
-                                       ,brands_list VARCHAR(255) NOT NULL
-                                       ,created_at VARCHAR(255) NOT NULL
-                                       );"
-                    )); */
-
-/*DB::select(DB::raw("
-    CREATE TEMPORARY TABLE order_d (
-    	select distinct id, due from orders o where exists (
-    		select * from users u where u.id = o.user_id and u.id = 1
-    		)
-    	);"
-    )); */
-    
-/*DB::select(DB::raw("SELECT * FROM order_d;")); */
-
-    /*
-     CREATE TEMPORARY TABLE food_d
-    (select od.id, f.name, f.price, f.sold_by, fo.quantity, f.price*fo.quantity as ext_price 
-    from order_d od, foods f, food_order fo 
-    where f.id = fo.food_id and od.id = fo.order_id);*/
-    
-
-
-#$test = DB::select(DB::raw("select * from users;"));
-#dd($test);
-#$order_d_test = DB::select(DB::raw("select * from order_d;"));
-#dd($order_d_test);
-
-		
-		
-		#print_r($orders);
-		
-		dd($orders);
-		#dd($user);
-		 #$data -> {'screenshots'}[0] -> {'original'} 
-		 #echo $orders->{'id'[0]};
-		
-		#return $orders->results_array();
-		#echo $orders->results_array();
-		/*
-		$je_user = json_encode($user);
-		$jd_user = json_decode($je_user, true);
-		
-		$je_orders = json_encode($orders);
-		#echo $je_orders['0']['id'];
-		$jd_orders = json_decode($je_orders, true);
-		$max = sizeof($jd_orders);
-		#for($i = 0; $i < $max; $i++) {
-		#	echo $jd_orders[$i]["name"];
-		#}
-		echo 'Orders for ' . $jd_user[0]["firstname"] . ' ' . $jd_user[0]["lastname"];
-		foreach($jd_orders as $o) {
-			echo $o["name"];
-			echo '<br>';
-		}
-		*/
-		#	echo $jd_orders;
-		#echo $jd_orders->id;
-		#echo $orders['0']['id'];
+		# SAVE ORDER
+		$order->save();
 	
-		/*foreach($orders as $order) {
-			echo $order->user->id.' '.$order->user->firstname.' '.$order->user->lastname.' due: '.$order->due.'<br>';
-			foreach($order->food()->select('name', 'quantity', 'price')->get() as $food){
-				print '<li>' . $food->name . ' ' . $food->quantity . ' ' . $food->price;
+		# ADD ORDER LINE ITEMS TO food_order
+		$now = date("Y-m-d H:i:s");
+		$order_total = 0.00;
+		foreach($data as $key => $val) {
+			if ( is_int($key) && $val > 0 ) {
+				$ext_price = $val * Food::find($key)->price;
+				$order->food()->attach($key, array('quantity' => $val, 'extended_price' => $ext_price, 'created_at' => $now));
+				$count++;
+				$order_total = $order_total + $ext_price;
 			}
-			echo '<br>';
-		} */
+		 }
+		
+		if ( $count > 0 ) {
+			$order->order_total = $order_total;
+			$order->save();
+			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
+		}
+		else {
+			return Redirect::action('OrderController@getEdit', array('id' => $order->id))
+			->with('flash_message', 'Please select at least one item for your order.');
+		}
 	}
+	
+	/**
+	* Show the "Edit an order form"
+	* @return View
+	* $id will be a hidden field with the order id, coming from the order/index view
+	*/
+	 public function getEdit($id) {
+
+		try {
+		    $order = Order::findOrFail($id);
+		    $foods = Food::cateringMenu();
+		    $order_detail = $order->food()->select('food_id', 'quantity')->get();
+		    $flag = 0;
+		    $dt = new DateTime($order->due);
+		}
+		catch(exception $e) {
+		    return Redirect::to('/orders')->with('flash_message', 'Order not found');
+		}
+    	  return View::make('order_edit')
+    		->with('order', $order)
+    		->with('foods', $foods)
+    		->with('order_detail', $order_detail)
+    		->with('flag', $flag)
+    		->with('dt', $dt);
+    		
+	} 
+	
+	/**
+	* Process the input from the getEdit form
+	* @return Redirect
+	*/
+	
+	public function postEdit() {
+
+		try {
+	        $order = Order::findOrFail(Input::get('id'));
+	    }
+	    catch(exception $e) {
+	        return Redirect::to('/orders')->with('flash_message', 'Order not found');
+	    }
+	    
+	    $data = (Input::all());
+	    $count = 0;
+	    
+		# CREATE TIME DATE FROM POST ARRAY VARIABLES
+		$date_time_due = $data['date_due'].' '.$data['time_due'];
+		$date_time_due = new DateTime($date_time_due);
+	
+		# UPDATE ORDER VARIABLES
+		$order->due = $date_time_due;
+		$order->status = $data['status'];
+		$order->comments = $data['comments'];
+		
+		# SAVE ORDER
+		$order->save();
+		
+		#DELETE ASSOCIATED ROWS IN food_order
+		$order->food()->detach();
+	
+		# ADD UPDATED ORDER LINE ITEMS TO food_order
+		$now = date("Y-m-d H:i:s");
+		$order_total = 0.00;
+		foreach($data as $key => $val) {
+			if ( is_int($key) && $val > 0 ) {
+				$ext_price = $val * Food::find($key)->price;
+				$order->food()->attach($key, array('quantity' => $val, 'extended_price' => $ext_price, 'created_at' => $now));
+				$count++;
+				$order_total = $order_total + $ext_price;
+			}
+		 } 
+	   if ( $count > 0 ) {
+			$order->order_total = $order_total;
+			$order->save();
+			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
+		}
+		else {
+			return Redirect::action('OrderController@getEdit', array('id' => $order->id))
+			->with('flash_message', 'Please select at least one item for your order.');
+		}
+
+	} 
+
+	/**
+	* Process order deletion
+	*
+	* @return Redirect
+	*/
+	public function postDelete() {
+
+		try {
+	        $order = Order::findOrFail(Input::get('id'));
+	    }
+	    catch(exception $e) {
+	        return Redirect::to('/orders/')->with('flash_message', 'Could not delete order - not found.');
+	    }
+
+	    Order::destroy(Input::get('id'));
+
+	    return Redirect::to('/orders/')->with('flash_message', 'Order deleted.');
+
+	}
+	
 }
 
 ?>
+
+
 
 

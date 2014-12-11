@@ -20,7 +20,7 @@
 	
 	
 	{{ Form::open(array('url' => '/orders/create')) }}
-		<table class="table">
+		<table class="table table-striped">
 		@foreach($foods as $food)
 				
 				<h3>{{ $food->name }} </h3>
@@ -63,7 +63,7 @@
 		
 
 		<br><br>
-		{{ Form::submit('Place my order!'); }}
+		{{ Form::submit('Place my order!', array('id'=>'', 'class'=>'btn btn-primary btn-lg')); }}
 
 	{{ Form::close() }}
 
