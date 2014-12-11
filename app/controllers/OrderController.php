@@ -125,15 +125,19 @@ class OrderController extends BaseController {
 	
 		# ADD ORDER LINE ITEMS TO food_order
 		$now = date("Y-m-d H:i:s");
+		$order_total = 0.00;
 		foreach($data as $key => $val) {
 			if ( is_int($key) && $val > 0 ) {
-				echo "$key => $val <br>";
+				$ext_price = $val * Food::find($key)->price;
+				$order->food()->attach($key, array('quantity' => $val, 'extended_price' => $ext_price, 'created_at' => $now));
 				$count++;
-				$order->food()->attach($key, array('quantity' => $val, 'created_at' => $now));
+				$order_total = $order_total + $ext_price;
 			}
 		 }
 		
 		if ( $count > 0 ) {
+			$order->order_total = $order_total;
+			$order->save();
 			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
 		}
 		else {
@@ -202,14 +206,18 @@ class OrderController extends BaseController {
 	
 		# ADD UPDATED ORDER LINE ITEMS TO food_order
 		$now = date("Y-m-d H:i:s");
+		$order_total = 0.00;
 		foreach($data as $key => $val) {
 			if ( is_int($key) && $val > 0 ) {
-				echo "$key => $val <br>";
-				$order->food()->attach($key, array('quantity' => $val, 'created_at' => $now));
+				$ext_price = $val * Food::find($key)->price;
+				$order->food()->attach($key, array('quantity' => $val, 'extended_price' => $ext_price, 'created_at' => $now));
 				$count++;
+				$order_total = $order_total + $ext_price;
 			}
 		 } 
 	   if ( $count > 0 ) {
+			$order->order_total = $order_total;
+			$order->save();
 			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
 		}
 		else {

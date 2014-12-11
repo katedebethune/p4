@@ -16,10 +16,9 @@ class CreateOrdersTable extends Migration {
 			$table->increments('id');
 			$table->integer('user_id')->unsigned();
 			$table->dateTime('due');
-			$table->dateTime('due_date');
-			$table->time('due_time');
 			$table->string('status');
 			$table->text('comments');
+			$table->float('order_total');
 			$table->timestamps();
 			
 			#define fk

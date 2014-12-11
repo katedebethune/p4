@@ -19,6 +19,7 @@ class CreateFoodOrderTable extends Migration {
 			$table->integer('food_id')->unsigned();
 			$table->integer('order_id')->unsigned();
 			$table->integer('quantity')->unsigned();
+			$table->float('extended_price');
 			$table->timestamps();
 			
 			#associate FKs

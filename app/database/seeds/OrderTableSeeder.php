@@ -29,8 +29,6 @@ class OrderTableSeeder extends Seeder {
 			$order = Order::create(array(
 			'user_id'=>$faker->numberBetween($min, $max),
 			'due'=>$faker->dateTimeBetween($startDate = 'now', $endDate = '+1 month'),
-			'due_date'=>'',
-			'due_time'=>'',
 			'status'=>'open',
 			'comments' => $faker->realText($maxNbChars = 60, $indexSize = 2)
 			));
@@ -43,24 +41,27 @@ class OrderTableSeeder extends Seeder {
 			for ($k = 0; $k < $food_max_id; $k++) {
     				array_push($selected, 0);
     		}
-
+			$order_total = 0.00;
 			for ($j = 0; $j < 5; $j++)
 			{
-				
 				$rand_fd_id = $faker->numberBetween($food_min_id, $food_max_id);
 				$rand_qt = $faker->numberBetween(1, 10);
-		
+				$ext_price = $rand_qt * Food::find($rand_fd_id)->price;
+				
     			if ($selected[$rand_fd_id] == 1) {
     				#$rand_fd_id = $faker->numberBetween($food_min_id, $food_max_id)
     				continue;
     			} 
     			else {
-					$order->food()->attach($rand_fd_id, array('quantity' => $rand_qt, 'created_at' => $now));
+					
+					$order->food()->attach($rand_fd_id, array('quantity' => $rand_qt, 'extended_price' => $ext_price, 'created_at' => $now));
 					$selected[$rand_fd_id] = 1;
 					$rand_fd_id = $faker->numberBetween($food_min_id, $food_max_id);
+					$order_total = $order_total + $ext_price;
 				}
-				#$order->food()->attach(3, array('quantity' => $rand, 'created_at' => $now));
 			}
+			$order->order_total = $order_total;
+			$order->save();
 		}
 	}
 }
