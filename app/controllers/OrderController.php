@@ -29,15 +29,17 @@ class OrderController extends BaseController {
 		else {
 			return Redirect::to('/login');
 		}
-	
+		
 		$orders = Order::whereHas('user', function($q) use($id)
 		{
 			$q->where('id', '=', $id);
 	
-		})->get();
+		})->orderBy('due', 'ASC')->get();
 
 		return View::make('order_index')
 			->with('orders', $orders);
+			
+		/* $posts = Post::orderBy('id', 'DESC')->get(); */
 	}
 	
 	
@@ -73,7 +75,7 @@ class OrderController extends BaseController {
 		 * 1) move logic to model
 		 * 2) redo unit - done (sort of)
 		 * 3) add calculated fields to db
-		 * 4) form validation
+		 * 4) form validation - done except for individual quantities - need conditional vaidation
 		 * 5) wrap this in a transaction
 		 */
 		

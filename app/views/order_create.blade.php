@@ -20,9 +20,8 @@
 	
 	
 	{{ Form::open(array('url' => '/orders/create')) }}
-		
+		<table class="table">
 		@foreach($foods as $food)
-				<hr>
 				
 				<h3>{{ $food->name }} </h3>
 				<small>{{ $food->description }} </small>
@@ -30,7 +29,7 @@
 				{{-- '$'.$food->price.' '.$food->sold_by_desc --}}
 			
 			 
-			  <br><br>
+			  
 			  {{ Form::label('', '$'.$food->price.' '.$food->sold_by_desc) }}	
 			  {{-- Form::select($food->id, array( 
 					'0'		=> '-',
@@ -42,7 +41,7 @@
 			  {{-- Form::checkbox($food->id, '0', false) --}}
   
 		@endforeach
-		<hr>
+		</table>
 		
 		
 		{{ Form::label('date', 'date & time needed') }}
