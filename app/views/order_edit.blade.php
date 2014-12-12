@@ -17,7 +17,7 @@
 		@foreach($foods as $food)
 				<hr>
 				
-				<h3>{{ $food->name }} </h3>
+				<h3>{{ $food->name.' '.$food->id}} </h3>
 				<small>{{ $food->description }} </small>
 				<br>
 				{{ "$".$food->price.' '.$food->sold_by_desc }}
@@ -31,7 +31,7 @@
 					@endif
 				  @endforeach
 				  @if ($flag == 0)
-					{{ Form::text($food->id, '#', array('id'=>'', 'class'=>'resizedTextbox')) }}
+					{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'resizedTextbox')) }}
 				  @endif
 				  @if ($flag = 0) @endif
 				  
@@ -42,11 +42,6 @@
 		{{ Form::text('date_due', date_format($dt, 'm/d/Y'), array('id'=>'dt_picker', 'class'=>'')) }}
 		{{ Form::text('time_due', date_format($dt, 'g:i A'), array('id'=>'dt_picker_alt', 'class'=>'')) }}
 		
-		
-		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
-		{{-- Form::text('time', '', array('id'=>'alt_example_1_alt', 'class'=>'')) --}}
-		{{-- <input id="datetimepicker" type="text" > --}}
-		{{--<p>Enter your time: <input type="text" id="defaultEntry" size="10"></p> --}}
 		<hr>
 		{{ Form::label('comments', 'Comments') }}
 		{{ Form::textarea('comments', $order->comments) }}

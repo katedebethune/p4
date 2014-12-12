@@ -79,3 +79,17 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+|--------------------------------------------------------------------------
+| Require The Validator File
+|--------------------------------------------------------------------------
+|
+| Next we will load the validator file for the application. This gives us
+| a reference for a file where custom validation rules can be defined. 
+| Useful especially for regexes which can't be piped in the regular 
+| validation usage.
+|
+*/
+
+require app_path().'/validator.php';
