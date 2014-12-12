@@ -49,12 +49,14 @@
 		@endforeach
 		<hr>
 		{{ Form::label('date', 'date & time needed') }}
-		{{ Form::text('date_due', date_format($dt, 'm/d/Y'), array('id'=>'datepicker', 'class'=>'')) }}
-		{{ Form::text('time_due', date_format($dt, 'g:i A')) }}
+		{{-- Form::text('date_due', date_format($dt, 'm/d/Y'), array('id'=>'datepicker', 'class'=>'')) --}}
+		{{ Form::text('date_due', date_format($dt, 'm/d/Y'), array('id'=>'alt_example_1', 'class'=>'')) }}
+		{{-- Form::text('time_due', date_format($dt, 'g:i A')) --}}
+		{{ Form::text('time_due', '', array('id'=>'alt_example_1_alt', 'class'=>'')) }}
 		
 		
 		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
-		{{-- Form::text('time', '', array('id'=>'datetimepicker1', 'class'=>'')) --}}
+		{{-- Form::text('time', '', array('id'=>'alt_example_1_alt', 'class'=>'')) --}}
 		{{-- <input id="datetimepicker" type="text" > --}}
 		{{--<p>Enter your time: <input type="text" id="defaultEntry" size="10"></p> --}}
 		<hr>
