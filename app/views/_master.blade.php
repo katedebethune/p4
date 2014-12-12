@@ -18,10 +18,13 @@
   	{{-- <link rel="stylesheet" href="/resources/demos/style.css"> --}}
   	<script>
   	$(function() {
-    	/* $( "#datepicker" ).datepicker(); */
-    	/* $('#basic_example_1').datetimepicker(); */
-    	$('#alt_example_1').datetimepicker({
-			altField: "#alt_example_1_alt"
+    	$('#dt_picker').datetimepicker({
+			altField: "#dt_picker_alt",
+			minDate: 2,
+			hourMin: 10,
+			hourMax: 16,
+			stepMinute: 10,
+			timeFormat: 'h:mm TT'
 		});
   	});
   	</script> 

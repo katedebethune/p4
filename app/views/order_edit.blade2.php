@@ -8,7 +8,36 @@
 
 	<h1>Edit your Catering Order</h1>
 
-	{{ Form::open(array('url' => '/orders/edit/')) }}
+	{{-- --}}
+	{{-- --}}
+		{{ Form::model($nerd, array('route' => 'nerd.edit', $nerd->id)) }}	
+
+		<!-- name -->
+		{{ Form::label('name', 'Name') }}
+		{{ Form::text('name') }}
+
+		<!-- email -->
+		{{ Form::label('email', 'Email') }}
+		{{ Form::email('email') }}		
+
+		{{ Form::submit('Update Nerd!') }}
+
+		{{ Form::close() }}
+		
+		return View::make('order_edit2')
+    		->with('order', Order::find($id))
+    		->with('foods', Food::all())
+    		->with('order_detail', $order_detail)
+    		->with('flag', $flag)
+    		->with('dt', $dt);
+	
+	
+	
+	{{-- --}}
+	{{-- --}}
+	
+	{{ Form::model($order, $foods, $order_detail, array('route' => 'order.edit2', $order->id)) }} 
+	{{-- Form::open(array('url' => '/orders/edit/')) --}}
 	
 	{{ Form::hidden('id',$order['id']); }}
 	
@@ -23,17 +52,21 @@
 				{{ "$".$food->price.' '.$food->sold_by_desc }}
   				
 				  <br><br>
-				{{ Form::label($food->name, $food->name) }}	
-				  @foreach($order_detail as $od) 
-					@if( $food->id == $od->food_id )
-						{{ Form::text($food->id, $od->quantity, array('id'=>'', 'class'=>'resizedTextbox')) }}
-						@if ($flag = 1) @endif
-					@endif
-				  @endforeach
-				  @if ($flag == 0)
-					{{ Form::text($food->id, '#', array('id'=>'', 'class'=>'resizedTextbox')) }}
-				  @endif
-				  @if ($flag = 0) @endif
+				{{ Form::label('email', 'Email') }}
+				{{ Form::email('email') }}	
+				
+				{{ Form::label('name', 'Food') }}	
+				  {{-- @foreach($order_detail as $od)  --}}
+				{{--	@if( $food->id == $od->food_id ) --}}
+						{{-- Form::text($food->id, $od->quantity, array('id'=>'', 'class'=>'resizedTextbox')) --}}
+						{{ Form::text($food->id, 'quantity', array('id'=>'', 'class'=>'resizedTextbox')) }}
+					{{--	@if ($flag = 1) @endif --}}
+					{{--@endif --}}
+				{{--  @endforeach --}}
+				{{--  @if ($flag == 0) --}}
+				{{--	{{ Form::text($food->id, '#', array('id'=>'', 'class'=>'resizedTextbox')) }} --}}
+			{{--	  @endif --}}
+			{{--	  @if ($flag = 0) @endif --}}
 				  
 			  
 		@endforeach

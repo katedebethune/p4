@@ -15,6 +15,13 @@ class Order extends Eloquent {
 		return $this->belongsToMany('Food');
 	}
 	
+	public static function singleOrderDetailsToArray($id) {
+
+		$order_detail = Order::findOrFail($id)->food()->select('food_id', 'quantity')->get();
+
+		return $order_detail->toArray();
+	}
+		
 	
 	# Model events...
 	# http://laravel.com/docs/eloquent#model-events

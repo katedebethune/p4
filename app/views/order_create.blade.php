@@ -45,16 +45,11 @@
 		
 		
 		{{ Form::label('date', 'date & time needed') }}
-		{{ Form::text('date_due', '', array('id'=>'datepicker', 'class'=>'')) }}
-		{{ Form::text('time_due') }}
+		{{ Form::text('date_due', '', array('id'=>'alt_example_1', 'class'=>'')) }}
+		{{ Form::text('time_due', '', array('id'=>'alt_example_1_alt', 'class'=>'')) }}
 		<br>
 		{{ $errors->first('date_due') }}
 		{{ $errors->first('time_due') }}
-		
-		{{-- TRYING TO WORK OUT DATETIMEPICKER PLUGIN HERE --}}
-		{{-- Form::text('time', '', array('id'=>'datetimepicker1', 'class'=>'')) --}}
-		{{-- <input id="datetimepicker" type="text" > --}}
-		{{--<p>Enter your time: <input type="text" id="defaultEntry" size="10"></p> --}}
 		<hr>
 		{{ Form::label('comments', 'Comments') }}
 		{{ Form::textarea('comments', '') }}

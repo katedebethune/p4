@@ -57,6 +57,46 @@ Route::controller('debug', 'DebugController');
  * NON -CONTROLLER TEST ROUTES
  */
 
+// route to show our edit form
+Route::get('orders/edit2/{id}', array('as' => 'order.edit2', function($id) 
+{
+			//$data['door'] = Door::find($id);
+        	//$data['colors'] = Color::all();
+        	//return View::make('admin/doors/form', $data);
+        	
+        	//$data['order'] = Order::findOrFail($id);
+        	//$data['foods'] = Food::cateringMenu();
+			
+			$order = Order::findOrFail($id);
+		    $foods = Food::cateringMenu();
+		    $order_detail = Order::singleOrderDetailsToArray($id);
+		    //$order_detail = $order->food()->lists('id');
+		    //$qt_selected = in_array($foods, $order_detail) ? true : false;
+		    $flag = 0;
+		    $dt = new DateTime($order->due);
+		    
+		    //var_dump($order_detail);
+	// return our view and Nerd information
+	//return View::make('order_edit') // pulls app/views/order_edit.blade.php
+		//->with('nerd', Nerd::find($id));
+		
+		
+		return View::make('order_edit2')
+    		->with('order', $order)
+    		->with('foods', $foods)
+    		->with('order_detail', $order_detail)
+    		->with('flag', $flag)
+    		->with('dt', $dt); 
+    		
+}));
+
+// route to process the form
+Route::post('nerd/edit', function() {
+	// process our form
+});
+
+
+
 Route::get('/practice-reading-orders', function() {
 
     #$orders = Order::with(array('user' => function($query)
