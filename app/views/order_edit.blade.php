@@ -17,7 +17,7 @@
 		@foreach($foods as $food)
 				<hr>
 				
-				<h3>{{ $food->name.' '.$food->id}} </h3>
+				<h3>{{ $food->name }} </h3>
 				<small>{{ $food->description }} </small>
 				<br>
 				{{ "$".$food->price.' '.$food->sold_by_desc }}
