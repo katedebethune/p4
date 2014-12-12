@@ -2,6 +2,7 @@
 
 class OrderController extends BaseController {
 
+
 	/**
 	*
 	*/
@@ -73,24 +74,28 @@ class OrderController extends BaseController {
 		/**
 		 * TO DO next: 
 		 * 1) move logic to model
-		 * 2) redo unit - done (sort of)
-		 * 3) add calculated fields to db
-		 * 4) form validation - done except for individual quantities - need conditional vaidation
-		 * 5) wrap this in a transaction
+		 * 2) redo unit - done 
+		 * 3) add calculated fields to db - done
+		 * 4) form validation - done, but brittle
 		 */
-		
 		
 		# Step 1) Define the rules
 		$rules = array(
-			/*'date_due' => 'required|date_format:d/m/Y|after:now()+3',
-			'time_due' => 'required|date_format:g:i A|min:10:00 AM|max:4:00 PM'*/
-			'date_due' => 'required|date_format:n/j/Y|after:"+3 day"',
-			'time_due' => 'required|date_format:g:i A|after:"9:59 AM"|before:"4:01 PM"'
+			/*'date_due' => 'required|date_format:n/j/Y|after:"+3 day"',
+			'time_due' => 'required|date_format:g:i A|after:"9:59 AM"|before:"4:01 PM"'*/
+			
+			'1' => 'integer|min:0|max:50',
+			'3' => 'integer|min:0|max:50',
+			'4' => 'integer|min:0|max:50',
+			'6' => 'integer|min:0|max:50',
+			'10' => 'person_qt',
+			'11' => 'person_qt',
+			'12' => 'person_qt'
 		);
 
 		# Step 2)
 		$validator = Validator::make(Input::all(), $rules);
-
+		
 		# Step 3
 		if($validator->fails()) {
 
@@ -98,10 +103,7 @@ class OrderController extends BaseController {
 				->with('flash_message', 'Order creation failed, please correct errors below')
 				->withInput()
 				->withErrors($validator);
-		} 
-		
-		
-		
+		}
 		
 		# INSTANTIATE NEW Order MODEL CLASS
 		$order = new Order();
@@ -168,8 +170,7 @@ class OrderController extends BaseController {
     		->with('foods', $foods)
     		->with('order_detail', $order_detail)
     		->with('flag', $flag)
-    		->with('dt', $dt);
-    		
+    		->with('dt', $dt);	
 	} 
 	
 	/**
@@ -179,6 +180,32 @@ class OrderController extends BaseController {
 	
 	public function postEdit() {
 
+		# Step 1) Define the rules
+		$rules = array(
+			'1' => 'integer|min:0|max:50',
+			'3' => 'integer|min:0|max:50',
+			'4' => 'integer|min:0|max:50',
+			'6' => 'integer|min:0|max:50',
+			'10' => 'person_qt',
+			'11' => 'person_qt',
+			'12' => 'person_qt'
+		);
+
+		# Step 2)
+		$validator = Validator::make(Input::all(), $rules);
+		
+
+		# Step 3
+		if($validator->fails()) {
+
+			return Redirect::to('/orders/edit/'.Input::get('id'))
+				->with('flash_message', 'Order Editing failed; please fix the errors listed below.')
+				->withInput()
+				->withErrors($validator);
+		}
+		
+		
+		
 		try {
 	        $order = Order::findOrFail(Input::get('id'));
 	    }
@@ -218,7 +245,7 @@ class OrderController extends BaseController {
 	   if ( $count > 0 ) {
 			$order->order_total = $order_total;
 			$order->save();
-			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been added.');
+			return Redirect::action('OrderController@getOrders')->with('flash_message','Your order has been updated.');
 		}
 		else {
 			return Redirect::action('OrderController@getEdit', array('id' => $order->id))
@@ -226,6 +253,8 @@ class OrderController extends BaseController {
 		}
 
 	} 
+	
+	
 
 	/**
 	* Process order deletion

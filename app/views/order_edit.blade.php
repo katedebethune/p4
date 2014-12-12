@@ -59,5 +59,3 @@
 	{{ Form::close() }}
 
 @stop
-
-

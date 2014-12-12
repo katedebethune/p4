@@ -194,7 +194,6 @@ class OrderController extends BaseController {
 		# Step 2)
 		$validator = Validator::make(Input::all(), $rules);
 		
-
 		# Step 3
 		if($validator->fails()) {
 
@@ -203,11 +202,10 @@ class OrderController extends BaseController {
 				->withInput()
 				->withErrors($validator);
 		}
-		
-		
-		
 		try {
 	        $order = Order::findOrFail(Input::get('id'));
+	        //$book = Book::with('tags')->findOrFail(Input::get('id'));
+	        //$order = Order::with('foods')->findOrFail(Input::get('id'));
 	    }
 	    catch(exception $e) {
 	        return Redirect::to('/orders')->with('flash_message', 'Order not found');
@@ -250,10 +248,9 @@ class OrderController extends BaseController {
 		else {
 			return Redirect::action('OrderController@getEdit', array('id' => $order->id))
 			->with('flash_message', 'Please select at least one item for your order.');
-		}
-
+		} 
 	} 
-
+	
 	/**
 	* Process order deletion
 	*
