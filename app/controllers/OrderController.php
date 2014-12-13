@@ -88,9 +88,9 @@ class OrderController extends BaseController {
 			'3' => 'integer|min:0|max:50',
 			'4' => 'integer|min:0|max:50',
 			'6' => 'integer|min:0|max:50',
-			'10' => 'person_qt',
-			'11' => 'person_qt',
-			'12' => 'person_qt'
+			//'10' => 'person_qt',
+			//'11' => 'person_qt',
+			//'12' => 'integer|min:0|max:100'
 		);
 
 		# Step 2)
@@ -187,8 +187,8 @@ class OrderController extends BaseController {
 			'4' => 'integer|min:0|max:50',
 			'6' => 'integer|min:0|max:50',
 			'10' => 'person_qt',
-			'11' => 'person_qt',
-			'12' => 'person_qt'
+			//'11' => 'person_qt',
+			//'12' => 'integer|min:0|max:100'
 		);
 
 		# Step 2)

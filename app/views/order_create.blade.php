@@ -20,39 +20,36 @@
 	
 	
 	{{ Form::open(array('url' => '/orders/create')) }}
-		<table class="table table-striped">
+		
 		@foreach($foods as $food)
-				
+		
+			
 				<h3>{{ $food->name }} </h3>
-				<small>{{ $food->description }} </small>
 			
-				{{-- '$'.$food->price.' '.$food->sold_by_desc --}}
+				<!--small-->{{ $food->description }} <!--/small-->
 			
-			 
-			  
-			  {{ Form::label('', '$'.$food->price.' '.$food->sold_by_desc) }}	
-			  {{-- Form::select($food->id, array( 
-					'0'		=> '-',
-					'1'       => '1',
-					'2'     => '2',
-					'3'     => '3'
-						), '0') --}} 
-			  {{ Form::text($food->id, '#', array('id'=>'', 'class'=>'resizedTextbox')) }}
-			  {{-- Form::checkbox($food->id, '0', false) --}}
+		  	<div class='form-group'> 
+		  		{{ Form::label('', '$'.$food->price.' '.$food->sold_by_desc) }}	
+		  		{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'resizedTextbox')) }}
+		  	</div>
+		  	
+		  
   
 		@endforeach
-		</table>
+		
 		
 		
 		{{ Form::label('date', 'date & time needed') }}
-		{{ Form::text('date_due', '', array('id'=>'alt_example_1', 'class'=>'')) }}
-		{{ Form::text('time_due', '', array('id'=>'alt_example_1_alt', 'class'=>'')) }}
+		{{ Form::text('date_due', '', array('id'=>'dt_picker', 'class'=>'')) }}
+		{{ Form::text('time_due', '', array('id'=>'dt_picker_alt', 'class'=>'')) }}
 		<br>
 		{{ $errors->first('date_due') }}
 		{{ $errors->first('time_due') }}
 		<hr>
 		{{ Form::label('comments', 'Comments') }}
-		{{ Form::textarea('comments', '') }}
+		<!--textarea class="form-control" rows="3"-->
+			{{ Form::textarea('comments', '', array('class'=>'form-control', 'rows'=>'3')) }}
+		<!--/textarea-->
 		{{ Form::hidden('status', 'open') }}
 		
 		

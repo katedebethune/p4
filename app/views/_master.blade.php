@@ -30,32 +30,7 @@
   	</script> 
   	
   	
-  	{{-- USING THIS AREA TO TRY TO WORK OUT DATE TIME PICKER PLUG IN --}}
   	
-  	{{--
-  	
-  	<link rel="stylesheet" type="text/css" href="datetimepicker/jquery.datetimepicker.css"/ >
-  	<script src="datetimepicker/jquery.js"></script>
-	<script src="datetimepicker/jquery.datetimepicker.js"></script>
-	
-	--}}
-	
-    
-    {{-- HTML::style('datetimepicker/jquery.datetimepicker.css') --}}
-    {{-- HTML::script('datetimepicker/jquery.js') --}}
-    {{-- HTML::script('datetimepicker/jquery.datetimepicker.js') --}}
-  	
-  	{{--
-  	<script>
-	$('#datetimepicker1').datetimepicker({
-		datepicker:false,
-		format:'H:i',
-		step:5
-	});
-	</script>
-	--}}
-	
-	{{-- END OF AREA FOR DATETIME PICKER EXPERIMENT --}}
   	
   
 
@@ -73,7 +48,6 @@
 	{{ HTML::style('styles/styles.css') }}
 
 	@yield('head')
-
 
 </head>
 <body>
