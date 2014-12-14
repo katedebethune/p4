@@ -69,6 +69,7 @@ class OrderController extends BaseController {
 	*/
 	public function postCreate() {
 	
+		// get the POST data
 		$data = (Input::all());
 		$count = 0;
 		/**
@@ -79,34 +80,18 @@ class OrderController extends BaseController {
 		 * 4) form validation - done, but brittle
 		 */
 		
-		# Step 1) Define the rules
-		$rules = array(
-			/*'date_due' => 'required|date_format:n/j/Y|after:"+3 day"',
-			'time_due' => 'required|date_format:g:i A|after:"9:59 AM"|before:"4:01 PM"'*/
-			
-			'1' => 'integer|min:0|max:50',
-			'3' => 'integer|min:0|max:50',
-			'4' => 'integer|min:0|max:50',
-			'6' => 'integer|min:0|max:50',
-			//'10' => 'person_qt',
-			//'11' => 'person_qt',
-			//'12' => 'integer|min:0|max:100'
-		);
-
-		# Step 2)
-		$validator = Validator::make(Input::all(), $rules);
-		
-		# Step 3
-		if($validator->fails()) {
-
-			return Redirect::to('/orders/create')
+		// create a new model instance for validation
+		$order = new Order();
+		// attempt validation
+		if (!$order->validate($data))
+		{
+    		return Redirect::to('/orders/create/')
 				->with('flash_message', 'Order creation failed, please correct errors below')
 				->withInput()
-				->withErrors($validator);
+				->withErrors($order->errors());
 		}
 		
 		# INSTANTIATE NEW Order MODEL CLASS
-		$order = new Order();
 		$id = $order->id;
 		# CREATE AN INSTANCE FOR THE CURRENT USER
 		$user = Auth::user();
@@ -179,39 +164,27 @@ class OrderController extends BaseController {
 	*/
 	
 	public function postEdit() {
-
-		# Step 1) Define the rules
-		$rules = array(
-			'1' => 'integer|min:0|max:50',
-			'3' => 'integer|min:0|max:50',
-			'4' => 'integer|min:0|max:50',
-			'6' => 'integer|min:0|max:50',
-			'10' => 'person_qt',
-			//'11' => 'person_qt',
-			//'12' => 'integer|min:0|max:100'
-		);
-
-		# Step 2)
-		$validator = Validator::make(Input::all(), $rules);
 		
-		# Step 3
-		if($validator->fails()) {
-
-			return Redirect::to('/orders/edit/'.Input::get('id'))
+		// get the POST data
+		$data = Input::all();
+		// create a new model instance for validation
+		$val_test = new Order();
+		// attempt validation
+		if (!$val_test->validate($data))
+		{
+    		return Redirect::to('/orders/edit/'.Input::get('id'))
 				->with('flash_message', 'Order Editing failed; please fix the errors listed below.')
 				->withInput()
-				->withErrors($validator);
+				->withErrors($val_test->errors());
 		}
+		
 		try {
 	        $order = Order::findOrFail(Input::get('id'));
-	        //$book = Book::with('tags')->findOrFail(Input::get('id'));
-	        //$order = Order::with('foods')->findOrFail(Input::get('id'));
 	    }
 	    catch(exception $e) {
 	        return Redirect::to('/orders')->with('flash_message', 'Order not found');
 	    }
 	    
-	    $data = (Input::all());
 	    $count = 0;
 	    
 		# CREATE TIME DATE FROM POST ARRAY VARIABLES

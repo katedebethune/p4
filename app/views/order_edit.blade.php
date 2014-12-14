@@ -7,6 +7,9 @@
 @section('content')
 
 	<h1>Edit your Catering Order</h1>
+	@if($errors->all())
+		{{ 'Please correct the input errors listed below' }}
+	@endif
 
 	{{ Form::open(array('url' => '/orders/edit/')) }}
 	
@@ -27,11 +30,13 @@
 				  @foreach($order_detail as $od) 
 					@if( $food->id == $od->food_id )
 						{{ Form::text($food->id, $od->quantity, array('id'=>'', 'class'=>'resizedTextbox')) }}
+						{{ '<br>'.$errors->first($food->id) }}
 						@if ($flag = 1) @endif
 					@endif
 				  @endforeach
 				  @if ($flag == 0)
 					{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'resizedTextbox')) }}
+					{{ '<br>'.$errors->first($food->id) }}
 				  @endif
 				  @if ($flag = 0) @endif
 				  

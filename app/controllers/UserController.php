@@ -34,6 +34,7 @@ class UserController extends BaseController {
 	*/
 	public function postSignup() {
 
+		/*
 		# Step 1) Define the rules
 		$rules = array(
 			'firstname' => 'required|alpha|min:1',
@@ -52,6 +53,19 @@ class UserController extends BaseController {
 				->with('flash_message', 'Sign up failed; please fix the errors listed below.')
 				->withInput()
 				->withErrors($validator);
+		}
+		*/
+		// get the POST data
+		$data = (Input::all());
+		// create a new model instance for validation
+		$user = new User();
+		// attempt validation
+		if (!$user->validate($data))
+		{
+    		return Redirect::to('/signup')
+				->with('flash_message', 'Sign up failed; please fix the errors listed below.')
+				->withInput()
+				->withErrors($user->errors());
 		}
 
 		$user = new User;

@@ -31,6 +31,7 @@
 		  	<div class='form-group'> 
 		  		{{ Form::label('', '$'.$food->price.' '.$food->sold_by_desc) }}	
 		  		{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'resizedTextbox')) }}
+		  		{{ '<br>'.$errors->first($food->id) }}
 		  	</div>
 		  	
 		  

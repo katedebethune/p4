@@ -14,12 +14,54 @@ class Order extends Eloquent {
 		return $this->belongsToMany('Food');
 	}
 	
-	/* public static function singleOrderDetailsToArray($id) {
+	/*
+	|--------------------------------------------------------------------------
+	| Validation rules within the model
+	|--------------------------------------------------------------------------
+	|
+	| The following functions abstract the validation chores away from the
+	| controller into their own classes. Modeled on the techniques in this 
+	| article: http://daylerees.com/trick-validation-within-models
+	|
+	*/
+	private $errors;
+	
+	private $rules = array(
+			'1' => 'integer|min:0|max:50',
+			'3' => 'integer|min:0|max:50',
+			'4' => 'integer|min:0|max:50',
+			'6' => 'integer|min:0|max:50',
+			'10' => 'person_qt',
+			'11' => 'person_qt',
+			'12' => 'person_qt',
+			'date_due' => 'required|date_format:n/j/Y|after:"+1 day"',
+			'time_due' => 'required|date_format:g:i A|after:"9:59 AM"|before:"4:01 PM"'
+		);
+		
+	public function validate($data)
+    {
+        // make a new validator object
+        $v = Validator::make($data, $this->rules);
+        // return the result
+        //return $v->passes();
+        
+        // check for failure
+        if ($v->fails())
+        {
+            // set errors and return false
+            //$this->errors = $v->errors;
+            $this->errors = $v->errors();
+            return false;
+        }
 
-		$order_detail = Order::findOrFail($id)->food()->select('food_id', 'quantity')->get();
-
-		return $order_detail->toArray();
-	} */
+        // validation pass
+        return true;
+    }
+    
+    public function errors()
+    {
+        return $this->errors;
+    }
 	
 	 /**
     * This array will compare an array of given foods with existing foods
