@@ -5,7 +5,16 @@
 @stop
 
 @section('content')
-
+@yield('nav')
+  		{{ HTML::nav_open() }}
+  		@if(Auth::check())
+  			{{ HTML::nav_other_auth() }}
+  		@else
+  			{{ HTML::nav_other_non_auth() }}
+  		@endif
+  		{{ HTML::nav_close() }}
+	
+	<br>
 	<h1>Edit your Catering Order</h1>
 	@if($errors->all())
 		{{ 'Please correct the input errors listed below' }}

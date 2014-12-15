@@ -123,7 +123,7 @@ HTML::macro('nav_open', function()
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">';
-});
+}); 
 
 HTML::macro('nav_close', function()
 {
@@ -139,6 +139,7 @@ HTML::macro('nav_close', function()
 
 HTML::macro('nav_index_auth', function()
 {
+    return
     '
             <li><a href="#home" class="smoothScroll">Home</a></li>
 			<li> <a href="#about" class="smoothScroll"> About</a></li>
