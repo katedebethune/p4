@@ -129,6 +129,7 @@ HTML::macro('nav_close', function()
 {
 	return
 	'
+   		 </ul>
    		</div><!--/.nav-collapse -->
       </div>
     </div>
@@ -199,7 +200,7 @@ HTML::macro('footer', function()
 	'
 		<div id="footerwrap">
 				<div class="container">
-						<h4>&copy; Copyright '. date('Y') .', Judith\'s Kitchen&nbsp&nbsp&nbsp&nbsp
+						<h4>&copy; Copyright '. date('Y') .', Judith\'s Kitchen&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="http://blacktie.co">Credits</a></h4>
 				</div>
 		</div>
