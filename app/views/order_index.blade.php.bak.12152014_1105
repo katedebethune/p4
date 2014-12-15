@@ -5,14 +5,7 @@
 @stop
 
 @section('content')
-@yield('nav')
-  		@if(Auth::check())
-  			{{ HTML::nav_other_auth() }}
-  		@else
-  			{{ HTML::nav_other_non_auth() }}
-  		@endif
 
-	<br>
 	<h1>Orders for {{ Auth::user()->firstname; }} {{ Auth::user()->lastname;}}</h1>
 	
 	@foreach($orders as $order)

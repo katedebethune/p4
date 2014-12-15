@@ -16,7 +16,7 @@ Route::get('/', function()
 	
   $cafe_menu = Food::cafeMenu();
   $catering_menu = Food::cateringMenu();
-  return View::make('_index')
+  return View::make('index')
   		->with('cafe_menu', $cafe_menu)
   		->with('catering_menu', $catering_menu);
 });

@@ -93,3 +93,179 @@ require app_path().'/filters.php';
 */
 
 require app_path().'/validator.php';
+
+/*
+|--------------------------------------------------------------------------
+| HTML macros - for context dependent navigation
+|--------------------------------------------------------------------------
+|
+| Next we will load the validator file for the application. This gives us
+| a reference for a file where custom validation rules can be defined. 
+| Useful especially for regexes which can't be piped in the regular 
+| validation usage.
+|
+*/
+HTML::macro('nav_open', function()
+{
+	return
+	'
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="glyphicon glyphicon-heart" style="font-size:30px; color:#3498db;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="glyphicon glyphicon-heart" style="font-size:18px; color:#3498db;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">'
+});
+
+HTML::macro('nav_close', function()
+{
+	return
+	'
+   		</div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+    ';
+});
+
+
+HTML::macro('nav_index_auth', function()
+{
+    //return '<nav><ul><li><a href=\'/\'>&lt-Back</a></li></ul></nav>';
+    
+    return
+    '
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="glyphicon glyphicon-heart" style="font-size:30px; color:#3498db;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="glyphicon glyphicon-heart" style="font-size:18px; color:#3498db;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home" class="smoothScroll">Home</a></li>
+			<li> <a href="#about" class="smoothScroll"> About</a></li>
+			<li> <a href="#menu" class="smoothScroll">Cafe Menu</a></li>
+			<li> <a href="#catering" class="smoothScroll">Catering Menu</a></li>
+			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+			<li><a href=\'/orders\'>My Orders</a></li>
+			<li><a href=\'/logout\'>Log out '.Auth::user()->email.'</a></li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+    ';
+});
+
+HTML::macro('nav_index_non_auth', function()
+{
+    //return '<nav><ul><li><a href=\'/\'>&lt-Back</a></li></ul></nav>';
+    
+    return
+    '
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="glyphicon glyphicon-heart" style="font-size:30px; color:#3498db;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="glyphicon glyphicon-heart" style="font-size:18px; color:#3498db;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home" class="smoothScroll">Home</a></li>
+			<li> <a href="#about" class="smoothScroll"> About</a></li>
+			<li> <a href="#menu" class="smoothScroll">Cafe Menu</a></li>
+			<li> <a href="#catering" class="smoothScroll">Catering Menu</a></li>
+			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+			<li><a href=\'/signup\'>Sign up</a></li>
+			<li><a href=\'/login\'>Log in</a></li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+    ';
+});
+
+HTML::macro('nav_other_auth', function()
+{
+    //return '<nav><ul><li><a href=\'/\'>&lt-Back</a></li></ul></nav>';
+    
+    return
+    '
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="glyphicon glyphicon-heart" style="font-size:30px; color:#3498db;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="glyphicon glyphicon-heart" style="font-size:18px; color:#3498db;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/#home" class="smoothScroll">Home</a></li>
+			<li> <a href="/#about" class="smoothScroll"> About</a></li>
+			<li> <a href="/#menu" class="smoothScroll">Cafe Menu</a></li>
+			<li> <a href="/#catering" class="smoothScroll">Catering Menu</a></li>
+			<li> <a href="/#contact" class="smoothScroll"> Contact</a></li>
+			<li><a href=\'/orders\'>My Orders</a></li>
+			<li><a href=\'/logout\'>Log out '.Auth::user()->email.'</a></li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+    ';
+});
+
+HTML::macro('nav_other_non_auth', function()
+{
+    //return '<nav><ul><li><a href=\'/\'>&lt-Back</a></li></ul></nav>';
+    
+    return
+    '
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="glyphicon glyphicon-heart" style="font-size:30px; color:#3498db;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="glyphicon glyphicon-heart" style="font-size:18px; color:#3498db;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/#home" class="smoothScroll">Home</a></li>
+			<li> <a href="/#about" class="smoothScroll"> About</a></li>
+			<li> <a href="/#menu" class="smoothScroll">Cafe Menu</a></li>
+			<li> <a href="/#catering" class="smoothScroll">Catering Menu</a></li>
+			<li> <a href="/#contact" class="smoothScroll"> Contact</a></li>
+			<li><a href=\'/signup\'>Sign up</a></li>
+			<li><a href=\'/login\'>Log in</a></li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+    ';
+});
+
+
