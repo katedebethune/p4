@@ -50,7 +50,8 @@
 	@yield('head')
 
 </head>
-<body>
+<!-- <body> -->
+<!-- NOTE: BODY OPEN TAG IS FOUND IN THE app/start/global.php FILE -->
 
 	@if(Session::get('flash_message'))
 		<div class='flash-message'>{{ Session::get('flash_message') }}</div>
