@@ -33,20 +33,23 @@
 	    </div><!-- /headerwrap -->
 
 		<!-- ==== ABOUT ==== -->
-		<div class="container" id="about" name="about">
-			<div class="row white">
-			<br>
-				<h1 class="centered">A LITTLE BIT ABOUT US</h1>
-				<hr>
+		<!-- div class="container" id="about" name="about"-->
+		<div class="container" data-name="about">
+			<div id="about">
+				<div class="row white">
+				<br>
+					<h1 class="centered">A LITTLE BIT ABOUT US</h1>
+					<hr>
 				
-				<div class="col-lg-6">
-					<p>Lobortis luctus aliquam egestas a phasellus bibendum tempus mattis quisque volutpat congue, dolor phasellus eleifend lacus ut conubia ultrices ut litora purus lacus, non malesuada ultricies malesuada justo risus condimentum iaculis sociosqu molestie. Sodales nunc ut risus tellus ut accumsan in laoreet tincidunt enim, quisque consectetur tempus per fermentum bibendum porta commodo neque ante, blandit ultrices phasellus duis egestas sed inceptos ultrices elementum. Tempus nullam eget velit eros arcu gravida conubia proin eu, dui phasellus orci aliquet imperdiet sociosqu feugiat in at nam, et enim dictum lectus ut suscipit orci habitasse. Odio facilisis cubilia suspendisse curae ac ligula nostra, volutpat ipsum sapien eros augue dui sociosqu habitasse, eu suspendisse sem aliquet scelerisque ad.</p>
-				</div><!-- col-lg-6 -->
+					<div class="col-lg-6">
+						<p>Lobortis luctus aliquam egestas a phasellus bibendum tempus mattis quisque volutpat congue, dolor phasellus eleifend lacus ut conubia ultrices ut litora purus lacus, non malesuada ultricies malesuada justo risus condimentum iaculis sociosqu molestie. Sodales nunc ut risus tellus ut accumsan in laoreet tincidunt enim, quisque consectetur tempus per fermentum bibendum porta commodo neque ante, blandit ultrices phasellus duis egestas sed inceptos ultrices elementum. Tempus nullam eget velit eros arcu gravida conubia proin eu, dui phasellus orci aliquet imperdiet sociosqu feugiat in at nam, et enim dictum lectus ut suscipit orci habitasse. Odio facilisis cubilia suspendisse curae ac ligula nostra, volutpat ipsum sapien eros augue dui sociosqu habitasse, eu suspendisse sem aliquet scelerisque ad.</p>
+					</div><!-- col-lg-6 -->
 				
-				<div class="col-lg-6">
-					<p>Nostra dui nam nunc quisque cras aliquam magna lacus fames dolor, quisque nulla eu sit fermentum mollis consectetur maecenas. Cursus interdum pellentesque turpis vehicula maecenas aliquam commodo justo, convallis conubia nullam felis habitant tincidunt suscipit, aenean fermentum elit quis consequat neque augue. </p>
-				</div><!-- col-lg-6 -->
-			</div><!-- row -->
+					<div class="col-lg-6">
+						<p>Nostra dui nam nunc quisque cras aliquam magna lacus fames dolor, quisque nulla eu sit fermentum mollis consectetur maecenas. Cursus interdum pellentesque turpis vehicula maecenas aliquam commodo justo, convallis conubia nullam felis habitant tincidunt suscipit, aenean fermentum elit quis consequat neque augue. </p>
+					</div><!-- col-lg-6 -->
+				</div><!-- row -->
+			</div><!-- id -->
 		</div><!-- container -->
 		
 		<!-- ==== SECTION DIVIDER1 -->
