@@ -22,8 +22,8 @@
 {{-- START OF SHIELD THEME --}}
 		<!-- ==== HEADERWRAP ==== -->
 	    <!-- div id="headerwrap" id="home" name="home"-->
-	    <div id="headerwrap">
-	    	<div id="home" name="home">
+	    <div id="headerwrap" data-name="home">
+	    	<div id="home">
 				<header class="clearfix">
 						<h1><span class="glyphicon glyphicon-heart"></span></h1>
 						<p>Judith's Kitchen</p>
