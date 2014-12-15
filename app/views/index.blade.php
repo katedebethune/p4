@@ -10,11 +10,13 @@
 
 @section('content')
 @yield('nav')
+  		{{ HTML::nav_open() }}
   		@if(Auth::check())
   			{{ HTML::nav_index_auth() }}
   		@else
   			{{ HTML::nav_index_non_auth() }}
   		@endif
+  		{{ HTML::nav_close() }}
 
 <br>
 <h1>Judith's Kitchen</h1>
