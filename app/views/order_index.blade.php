@@ -13,12 +13,14 @@
   			{{ HTML::nav_other_non_auth() }}
   		@endif
   		{{ HTML::nav_close() }}
-	<br>
+	<br><br>
+	<div class="non-index-container">
 	<h1>Orders for {{ Auth::user()->firstname; }} {{ Auth::user()->lastname;}}</h1>
 	
 	@foreach($orders as $order)
-	{{'Order #'.$order['id'].': Due on '.$order['due'].'<br>' }}
-	{{-- 'Order #'.$order['id'].': Due on '.date ( “l, F j, Y g:i A” , $order[due] ).'<br>' --}}
+	<h4>{{'Order #'.$order['id'] }}</h4>
+	<strong>{{ 'Due on: '.$order['due'].'<br><br>' }}</strong>
+	
 			<table class="table table-striped">
 			
 			
@@ -60,9 +62,10 @@
 				</td>
 			</tr>
 			</table>
-			<a class="btn btn-default btn-xs" href="/orders/edit/{{$order['id']}}">Edit or Delete Order {{ $order['id'] }}</a>
+			<a class="btn btn-primary btn-sm" href="/orders/edit/{{$order['id']}}">Edit or Delete Order {{ $order['id'] }}</a>
 			<br><br>
 	@endforeach
+	</div>
 
 
 @stop

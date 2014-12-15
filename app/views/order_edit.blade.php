@@ -14,8 +14,12 @@
   		@endif
   		{{ HTML::nav_close() }}
 	
+	<br><br>
+	<div class="non-index-container">
+	<h1>Edit Catering Order #{{ $order['id'] }} </h1>
+	<h3>{{ date_format($dt, 'l, F j, Y g:i A') }} </h3>
 	<br>
-	<h1>Edit your Catering Order</h1>
+	
 	@if($errors->all())
 		{{ 'Please correct the input errors listed below' }}
 	@endif
@@ -23,42 +27,39 @@
 	{{ Form::open(array('url' => '/orders/edit/')) }}
 	
 	{{ Form::hidden('id',$order['id']); }}
-	
-	{{ 'Order #'.$order['id'].': Due on '.$order['due'].'<br>' }}
 		
-		@foreach($foods as $food)
-				<hr>
-				
-				<h3>{{ $food->name.' '.$food->id }} </h3>
-				<small>{{ $food->description }} </small>
+		@foreach($foods as $food)	
+				<strong>{{ $food->name }} </strong>
 				<br>
-				{{ "$".$food->price.' '.$food->sold_by_desc }}
+				{{ $food->description }} 
+				<br>
+				<strong>{{ "$".$food->price }} </strong> {{ ' '.$food->sold_by_desc }}
   				
-				  <br><br>
-				{{ Form::label($food->name, $food->name) }}	
+				  <br>
+				{{ Form::label($food->name, $food->name, array('class'=>'small')) }}	
 				  @foreach($order_detail as $od) 
 					@if( $food->id == $od->food_id )
-						{{ Form::text($food->id, $od->quantity, array('id'=>'', 'class'=>'resizedTextbox')) }}
+						{{ Form::text($food->id, $od->quantity, array('id'=>'', 'class'=>'form-control form-control-inline')) }}
 						{{ '<br>'.$errors->first($food->id) }}
 						@if ($flag = 1) @endif
 					@endif
 				  @endforeach
 				  @if ($flag == 0)
-					{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'resizedTextbox')) }}
+					{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'form-control form-control-inline')) }}
 					{{ '<br>'.$errors->first($food->id) }}
 				  @endif
 				  @if ($flag = 0) @endif
+				  <br>
 				  
-			  
 		@endforeach
-		<hr>
-		{{ Form::label('date', 'date & time needed') }}
+		<br>
+		{{ Form::label('date', 'Date & time needed') }}
 		{{ Form::text('date_due', date_format($dt, 'm/d/Y'), array('id'=>'dt_picker', 'class'=>'')) }}
 		{{ Form::text('time_due', date_format($dt, 'g:i A'), array('id'=>'dt_picker_alt', 'class'=>'')) }}
-		
-		<hr>
+		<br><br>
 		{{ Form::label('comments', 'Comments') }}
-		{{ Form::textarea('comments', $order->comments) }}
+		{{-- Form::textarea('comments', $order->comments) --}}
+		{{ Form::textarea('comments', $order->comments, array('class'=>'form-control', 'rows'=>'3')) }}
 		{{ Form::hidden('status', 'open') }}
 		<br><br>
 		{{ Form::submit('Update my order!', array('id'=>'', 'class'=>'btn btn-primary btn-sm')); }}
@@ -71,5 +72,7 @@
 		{{ Form::hidden('id',$order['id']); }}
 		{{ Form::submit('Delete my order', array('id'=>'', 'class'=>'btn btn-primary btn-sm')) }}
 	{{ Form::close() }}
+	</div>
 
 @stop
+

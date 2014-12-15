@@ -5,7 +5,16 @@
 @stop
 
 @section('content')
-
+@yield('nav')
+  		{{ HTML::nav_open() }}
+  		@if(Auth::check())
+  			{{ HTML::nav_other_auth() }}
+  		@else
+  			{{ HTML::nav_other_non_auth() }}
+  		@endif
+  		{{ HTML::nav_close() }}
+	<br>
+	<div class="non-index-container">
 	<h1>Create a New Catering Order</h1>
 	
 	@if($errors->all())
@@ -30,7 +39,7 @@
 			
 		  	<div class='form-group'> 
 		  		{{ Form::label('', '$'.$food->price.' '.$food->sold_by_desc) }}	
-		  		{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'resizedTextbox')) }}
+		  		{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'form-control form-control-inline')) }}
 		  		{{ '<br>'.$errors->first($food->id) }}
 		  	</div>
 		  	
@@ -46,7 +55,7 @@
 		<br>
 		{{ $errors->first('date_due') }}
 		{{ $errors->first('time_due') }}
-		<hr>
+		<br>
 		{{ Form::label('comments', 'Comments') }}
 		<!--textarea class="form-control" rows="3"-->
 			{{ Form::textarea('comments', '', array('class'=>'form-control', 'rows'=>'3')) }}
@@ -59,5 +68,6 @@
 		{{ Form::submit('Place my order!', array('id'=>'', 'class'=>'btn btn-primary btn-lg')); }}
 
 	{{ Form::close() }}
+	</div>
 
 @stop
