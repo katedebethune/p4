@@ -21,12 +21,15 @@
 <br>
 {{-- START OF SHIELD THEME --}}
 		<!-- ==== HEADERWRAP ==== -->
-	    <div id="headerwrap" id="home" name="home">
-			<header class="clearfix">
-	  		 		<h1><span class="glyphicon glyphicon-heart"></span></h1>
-	  		 		<p>Judith's Kitchen</p>
-	  		 		<p>Bistro-Style Cooking from the Heart</p>
-	  		</header>	    
+	    <!-- div id="headerwrap" id="home" name="home"-->
+	    <div id="headerwrap" name="home">
+	    	<div id="home">
+				<header class="clearfix">
+						<h1><span class="glyphicon glyphicon-heart"></span></h1>
+						<p>Judith's Kitchen</p>
+						<p>Bistro-Style Cooking from the Heart</p>
+				</header>
+			</div><!-- /home -->	    
 	    </div><!-- /headerwrap -->
 
 		<!-- ==== ABOUT ==== -->
