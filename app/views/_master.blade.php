@@ -71,7 +71,6 @@
 
 	{{ HTML::style('styles/styles.css') }}
 
-	{{-- @yield('head') --}}
 
 </head>
 <!-- <body> -->

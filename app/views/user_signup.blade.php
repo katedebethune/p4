@@ -30,29 +30,37 @@
 
 {{ Form::open(array('url' => '/signup')) }}
 
-     
+     	<fieldset>
+		<div class="form-group">
 		{{ Form::label('firstname') }}
-		{{ Form::text('firstname') }}
+		{{ Form::text('firstname', '', array('class'=>'form-control')) }}
+		</div>
 	
-    
+    	<div class="form-group">
 		{{ Form::label('lastname') }}
-		{{ Form::text('lastname') }}
+		{{ Form::text('lastname', '', array('class'=>'form-control')) }}
+		</div>
 	
-	
+		<div class="form-group">
 		{{ Form::label('email') }}
-		{{ Form::text('email') }}
+		{{ Form::text('email', '', array('class'=>'form-control')) }}
+		</div>
 	
-	
+		<div class="form-group">
 		{{ Form::label('password') }}
-		{{ Form::password('password') }}
+		{{ Form::password('password', array('class'=>'form-control')) }}
 		<small>Min 6 characters</small>
+		</div>
+		
     
 
     {{ Form::submit('Submit') }}
+    </fieldset>
 
 {{ Form::close() }}
 
 </div>
 
 @stop
+
 

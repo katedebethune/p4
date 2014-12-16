@@ -18,19 +18,26 @@
 
 <h1>Log in</h1>
 <br>
-
 {{ Form::open(array('url' => '/login')) }}
-
+	<fieldset>
+	<div class="form-group">
     {{ Form::label('email') }}
-    {{ Form::text('email','kdebethune@gmail.com') }}
-
+    {{ Form::text('email','kdebethune@gmail.com', array('class'=>'form-control')) }}
+    </div>
+	<div class="form-group">
     {{ Form::label('password') }}
-    {{ Form::password('password') }}
-
+    {{ Form::password('password', array('class'=>'form-control')) }}
+	</div>
     {{ Form::submit('Submit') }}
+    </fieldset>
 
 {{ Form::close() }}
 
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 @stop
