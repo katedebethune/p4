@@ -72,7 +72,6 @@
 	{{ HTML::style('styles/styles.css') }}
 
 </head>
-<!-- <body> -->
 <!-- NOTE: BODY OPEN TAG IS FOUND IN THE app/start/global.php FILE -->
 
 	@if(Session::get('flash_message'))
