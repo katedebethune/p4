@@ -71,7 +71,6 @@
 
 	{{ HTML::style('styles/styles.css') }}
 
-
 </head>
 <!-- <body> -->
 <!-- NOTE: BODY OPEN TAG IS FOUND IN THE app/start/global.php FILE -->
@@ -82,18 +81,15 @@
 
 	{{-- NOTE: nav code is called by child pages from app/start/global.php --}}
 	
-	@yield('content')
+	<div class="page-wrap">
+		@yield('content')
+	</div>
 	
-	@yield('footer')
+		@yield('footer')
 		{{ HTML::footer() }}
 
-	
-	
-	@yield('/body')
-	
-	
+</body>
 
-<!-- </body> -->
   	
   	
 </html>

@@ -200,12 +200,14 @@ HTML::macro('footer', function()
 {
 	return
 	'
-		<div id="footerwrap">
-				<div class="container">
-						<h4>&copy; Copyright '. date('Y') .', Judith\'s Kitchen&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="http://blacktie.co">Credits</a></h4>
-				</div>
-		</div>
+		<footer class="site-footer">
+			<div id="footerwrap">
+					<div class="container">
+							<h4>&copy; Copyright '. date('Y') .', Judith\'s Kitchen&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://blacktie.co">Credits</a></h4>
+					</div>
+			</div>
+		</footer>
 		
 	';
 });
