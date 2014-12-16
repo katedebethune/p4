@@ -161,6 +161,7 @@ return array(
 		'Controller'        => 'Illuminate\Routing\Controller',
 		'Cookie'            => 'Illuminate\Support\Facades\Cookie',
 		'Crypt'             => 'Illuminate\Support\Facades\Crypt',
+		'Debugbar'	        => 'Barryvdh\Debugbar\Facade',
 		'DB'                => 'Illuminate\Support\Facades\DB',
 		'Eloquent'          => 'Illuminate\Database\Eloquent\Model',
 		'Event'             => 'Illuminate\Support\Facades\Event',

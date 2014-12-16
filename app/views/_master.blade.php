@@ -36,7 +36,7 @@
 			altField: "#dt_picker_alt",
 			minDate: 3,
 			hourMin: 10,
-			hourMax: 16,
+			hourMax: 15,
 			stepMinute: 10,
 			timeFormat: 'h:mm TT'
 		});

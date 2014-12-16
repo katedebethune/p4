@@ -99,10 +99,10 @@ require app_path().'/validator.php';
 | HTML macros - for context dependent navigation
 |--------------------------------------------------------------------------
 |
-| Next we will load the validator file for the application. This gives us
-| a reference for a file where custom validation rules can be defined. 
-| Useful especially for regexes which can't be piped in the regular 
-| validation usage.
+| The Shield theme used for this app was intended to be a one-page theme.
+| This code adapts the theme for use on this small, multi-page site. 
+| HTML macros are called by child pages because the menu context & behaviors
+| differ dependingon whether the user is on the home page or an interior page.
 |
 */
 
@@ -211,5 +211,21 @@ HTML::macro('footer', function()
 		
 	';
 });
+
+/*
+|--------------------------------------------------------------------------
+| BarryVDH - debugbar: Environment dependent switch
+|--------------------------------------------------------------------------
+|
+| 
+|
+*/
+
+if(Config::get('app.debug_bar') == true) {
+	Debugbar::enable();
+}
+else {
+	Debugbar::disable();
+}
 
 

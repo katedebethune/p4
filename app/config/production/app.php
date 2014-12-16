@@ -4,7 +4,7 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Application Debug Mode - local
+	| Application Debug Mode - production
 	|--------------------------------------------------------------------------
 	|
 	| When your application is in debug mode, detailed error messages with
@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
-	'debug_bar' => true,
+	'debug' => false,
+	'debug_bar' => false,
 
 );
