@@ -162,7 +162,7 @@
 					<br>
 					<div class="col-lg-4">
 						<h3>Contact Information</h3>
-						<p><span class="icon icon-home"></span> 1371 Washington Street, West Newton, MA 02465<br/>
+						<p><span class="icon icon-home"></span> xxxx Washington Street, West Newton, MA 02465<br/>
 							<span class="icon icon-phone"></span> 617-xxx-xxxx <br/>
 							<!-- <span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
 							<span class="icon icon-envelop"></span> <a href="#"> info@jennys-kitchen.com</a> <br/>
