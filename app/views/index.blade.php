@@ -105,6 +105,16 @@
 					<h1 class="centered">CATERING MENU</h1>
 					<hr>
 					<br>
+					@if(!Auth::check())
+					<div class="centered">
+						<a class="btn btn-primary btn-lg" href="orders/create">Login or Sign up to place a catering order</a>
+					</div>
+					@else
+					<div class="centered">
+						<a class="btn btn-primary btn-lg" href="orders/create">Place a catering order</a>
+					</div>
+					@endif
+					<br>
 					<div class="col-lg-offset-2 col-lg-8">
 						@foreach($catering_menu as $food)
 								<strong> {{ $food->name }} </strong>
@@ -116,15 +126,17 @@
 							@endforeach
 					</div><!-- col-lg -->
 				</div><!-- row -->
+				{{-- 
 				@if(!Auth::check())
-					<div class="col-md-4">
+					<div class="centered">
 						<a class="btn btn-primary btn-lg" href="orders/create">Login or Sign up to place a catering order</a>
 					</div>
 				@else
-					<div class="col-md-4">
+					<div class="centered">
 						<a class="btn btn-primary btn-lg" href="orders/create">Place a catering order</a>
 					</div>
 				@endif
+				--}}
 			</div><!-- id -->
 		</div><!-- container -->
 		<!-- END CATERING MENU -->

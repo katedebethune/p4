@@ -1,7 +1,7 @@
 @extends('_master')
 
 @section('title')
-	Your Orders for 
+	Orders for {{ Auth::user()->firstname; }} {{ Auth::user()->lastname;}}
 @stop
 
 @section('content')
