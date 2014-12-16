@@ -30,13 +30,11 @@ The cafe will offer high-quality, fresh prepared foods, sandwiches, soups, salad
 Counter service will be offered. Patrons can dine in or take foods to go. 
 The cafe will also offer a catering menu, with online ordering. 
 
-Validation: appropriate validation code has been incorporated into the Order controller.
-
 # Demo information
 <br />
 Online demo has been uploaded to <br /><br />
 
-Several test accounts may be accessed using the following emails and passwords:
+Several test accounts may be accessed using the following emails and passwords:<br />
 1. schoen.yadira@yahoo.com      earum<br />
 2. lemke.lambert@yahoo.com      quia<br />
 3. jhudson@pfeffer.com          fuga<br />
