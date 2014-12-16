@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>@yield('title','Judith\'s Kitchen')</title>
+	<title>@yield('title','Jenny\'s Kitchen')</title>
 	<meta charset='utf-8'>
 
 	<!-- BOOTSTRAP CORE INCLUDED WITH THE SHIELD THEME-->

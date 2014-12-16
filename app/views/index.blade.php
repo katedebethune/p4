@@ -1,7 +1,7 @@
 @extends('_master')
 
 @section('title')
-	Welcome to Judith's Kitchen - Gourmet Prepared Foods in West Newton, MA 02465
+	Welcome to Jenny\'s Kitchen - Gourmet Prepared Foods in Newton, MA
 @stop
 
 @section('head')
@@ -26,7 +26,7 @@
 	    	<div id="home">
 				<header class="clearfix">
 						<h1><span class="glyphicon glyphicon-heart"></span></h1>
-						<p>Judith's Kitchen</p>
+						<p>Jenny's Kitchen</p>
 						<p>Bistro-Style Cooking from the Heart</p>
 				</header>
 			</div><!-- /home -->	    
@@ -146,7 +146,7 @@
 			<div class="container">
 				<h1>COME SEE US IN WEST NEWTON!</h1>
 				<hr>
-				<p>1371 Washington Street, West Newton, MA 02465</p>
+				<p>xxxx Washington Street, West Newton, MA 02465</p>
 				<p>617-xxx-xxxx</p>
 				<p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
 			</div><!-- container -->
@@ -165,9 +165,9 @@
 						<p><span class="icon icon-home"></span> 1371 Washington Street, West Newton, MA 02465<br/>
 							<span class="icon icon-phone"></span> 617-xxx-xxxx <br/>
 							<!-- <span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
-							<span class="icon icon-envelop"></span> <a href="#"> info@judiths-kitchen.com</a> <br/>
-							<span class="icon icon-twitter"></span> <a href="#"> @judiths-kitchen </a> <br/>
-							<span class="icon icon-facebook"></span> <a href="#"> Judith's Kitchen </a> <br/>
+							<span class="icon icon-envelop"></span> <a href="#"> info@jennys-kitchen.com</a> <br/>
+							<span class="icon icon-twitter"></span> <a href="#"> @jennys-kitchen </a> <br/>
+							<span class="icon icon-facebook"></span> <a href="#"> Jenny's Kitchen </a> <br/>
 						</p>
 					</div><!-- col -->
 				</div><!-- row -->
