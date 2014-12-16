@@ -41,6 +41,29 @@
     
     <!--script src="assets/js/jquery.min.js"></script> -->
     {{ HTML::script('assets/js/jquery.min.js') }}
+	
+	
+	{{-- END SHIELD THEME ASSETS --}}
+
+	{{ HTML::style('styles/styles.css') }}
+
+	{{-- @yield('head') --}}
+
+</head>
+<!-- <body> -->
+<!-- NOTE: BODY OPEN TAG IS FOUND IN THE app/start/global.php FILE -->
+
+	@if(Session::get('flash_message'))
+		<div class='flash-message'>{{ Session::get('flash_message') }}</div>
+	@endif
+
+	{{-- NOTE: nav code is called by child pages from app/start/global.php --}}
+	
+	@yield('content')
+	
+	@yield('footer')
+		{{ HTML::footer() }}
+
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 	{{-- LINES BELOW MOVED FROM BENEATH BODY TAG DUE TO VALIDATION ERRORS; FOR DATEPICKER WIDGET --}}
 	{{-- THIS AREA USED FOR DATE PICKER WIDGET --}}
@@ -67,32 +90,11 @@
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
 	
-	{{-- END SHIELD THEME ASSETS --}}
-
-	{{ HTML::style('styles/styles.css') }}
-
-	{{-- @yield('head') --}}
-
-</head>
-<!-- <body> -->
-<!-- NOTE: BODY OPEN TAG IS FOUND IN THE app/start/global.php FILE -->
-
-	@if(Session::get('flash_message'))
-		<div class='flash-message'>{{ Session::get('flash_message') }}</div>
-	@endif
-
-	{{-- NOTE: nav code is called by child pages from app/start/global.php --}}
-	
-	@yield('content')
-	
-	@yield('footer')
-		{{ HTML::footer() }}
-
 	@yield('/body')
 	
 	
 
-</body>
+<!-- </body> -->
   	
   	
 </html>
