@@ -141,7 +141,7 @@
 		</section><!-- section -->
 		
 		<div class="container" data-name="contact">
-			<div id="contact>
+			<div id="contact">
 				<div class="row">
 				<br>
 					<h1 class="centered">THANKS FOR VISITING</h1>
