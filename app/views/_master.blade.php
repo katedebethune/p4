@@ -19,7 +19,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 	<!-- COMMENTING OUT, USING CALLS FROM THEME SHIELD BELOW -->
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!--link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
 	
 	{{-- SHIELD THEME ASSETS ADDED HERE --}}
 	

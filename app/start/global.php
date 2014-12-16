@@ -148,7 +148,8 @@ HTML::macro('nav_index_auth', function()
 			<li> <a href="#catering" class="smoothScroll">Catering Menu</a></li>
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
 			<li><a href=\'/orders\'>My Orders</a></li>
-			<li><a href=\'/logout\'>Log out '.Auth::user()->email.'</a></li>
+			<!-- <li><a href=\'/logout\'>Log out '.Auth::user()->email.'</a></li> -->
+			<li><a href=\'/logout\'>Log out </a></li>
     ';
 });
 
@@ -176,7 +177,8 @@ HTML::macro('nav_other_auth', function()
 			<li> <a href="/#catering" class="smoothScroll">Catering Menu</a></li>
 			<li> <a href="/#contact" class="smoothScroll"> Contact</a></li>
 			<li><a href=\'/orders\'>My Orders</a></li>
-			<li><a href=\'/logout\'>Log out '.Auth::user()->email.'</a></li>
+			<!-- <li><a href=\'/logout\'>Log out '.Auth::user()->email.'</a></li> -->
+			<li><a href=\'/logout\'>Log out </a></li>
     ';
 });
 
