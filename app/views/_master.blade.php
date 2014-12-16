@@ -73,16 +73,17 @@
 
 </head>
 <!-- NOTE: BODY OPEN TAG IS FOUND IN THE app/start/global.php FILE -->
-
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+	<div class="page-wrap">
+		@yield('content')
+	</div>
 	@if(Session::get('flash_message'))
 		<div class='flash-message'>{{ Session::get('flash_message') }}</div>
 	@endif
 
 	{{-- NOTE: nav code is called by child pages from app/start/global.php --}}
 	
-	<div class="page-wrap">
-		@yield('content')
-	</div>
+	
 	
 		@yield('footer')
 		{{ HTML::footer() }}

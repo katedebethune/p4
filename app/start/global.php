@@ -110,7 +110,7 @@ HTML::macro('nav_open', function()
 {
 	return
 	'
-    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+    <!-- body data-spy="scroll" data-offset="0" data-target="#navbar-main"-->
     <div id="navbar-main">
       <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
