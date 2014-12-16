@@ -1,5 +1,5 @@
 csci e15 project 4 <br />
-Judiths Kitchen<br />
+Jenny's Kitchen<br />
 Kate de Bethune <br />
 December 18, 2014<br />
 
@@ -24,7 +24,7 @@ Required features: <br />
 * Demonstrates "CRUD" operations: create, read, update, and delete<br />
 
 App description: <br />
-Judiths Kitchen - a website and online catering app for a new cafe<br /><br />
+Jenny's Kitchen - a website and online catering app for a new cafe<br /><br />
 Summary: this site will provide a web presence to support the marketing of a new cafe.
 The cafe will offer high-quality, fresh prepared foods, sandwiches, soups, salads, and baked goods.
 Counter service will be offered. Patrons can dine in or take foods to go. 
