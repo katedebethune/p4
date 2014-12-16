@@ -143,6 +143,9 @@ class OrderController extends BaseController {
 		try {
 		    $order = Order::findOrFail($id);
 		    $foods = Food::cateringMenu();
+		    /* $foods = Food::cateringMenu()
+		    	->with(array('order' => function($query) {$query->where('id', '=', $id);
+				}))->get(); */
 		    $order_detail = $order->food()->select('food_id', 'quantity')->get();
 		    $flag = 0;
 		    $dt = new DateTime($order->due);
@@ -150,12 +153,14 @@ class OrderController extends BaseController {
 		catch(exception $e) {
 		    return Redirect::to('/orders')->with('flash_message', 'Order not found');
 		}
-    	  return View::make('order_edit')
+    	  /* print_r($order_detail); */
+    	  /* dd($order_detail); */
+    	   return View::make('order_edit')
     		->with('order', $order)
     		->with('foods', $foods)
     		->with('order_detail', $order_detail)
     		->with('flag', $flag)
-    		->with('dt', $dt);	
+    		->with('dt', $dt); 
 	} 
 	
 	/**

@@ -50,6 +50,16 @@
 					{{ '<br>'.$errors->first($food->id) }}
 				@endif
 				@if ($flag = 0) @endif
+				{{-- @if($order_detail->contains($food->id)) --}}
+			    {{-- @if($order_detail->food->contains($food->id))
+					{{ 'A match was found' }}
+					{{ Form::text($food->id, $order_detail->food(id)->quantity, array('id'=>'', 'class'=>'form-control form-control-inline')) }}
+					{{ '<br>'.$errors->first($food->id) }}
+				@else
+					{{ 'A match was not found' }}
+					{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'form-control form-control-inline')) }}
+					{{ '<br>'.$errors->first($food->id) }}
+				@endif --}}
 				<br>  
 		@endforeach
 		<br>
