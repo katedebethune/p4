@@ -19,13 +19,10 @@
 	
 	@if($errors->all())
 		{{ 'Please correct the input errors listed below' }}
+		<br>
 	@endif
 	
-	{{--
-	 @foreach($errors->all() as $error)
-            <li>{{ $error }}</li>
-    @endforeach
-    --}}
+	
 	
 	
 	{{ Form::open(array('url' => '/orders/create')) }}

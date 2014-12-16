@@ -87,8 +87,10 @@
 	
 		@yield('footer')
 		{{ HTML::footer() }}
+	
+	@yield('/body')
 
-</body>
+<!--/body-->
 
   	
   	
