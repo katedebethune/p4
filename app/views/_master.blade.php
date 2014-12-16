@@ -42,8 +42,9 @@
     <!--script src="assets/js/jquery.min.js"></script> -->
     {{ HTML::script('assets/js/jquery.min.js') }}
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-	{{-- MOVED FROM BENEATH BODY TAG DUE TO VALIDATION ERROR; FOR DATEPICKER WIDGET --}}
+	{{-- 2 LINES BELOW MOVED FROM BENEATH BODY TAG DUE TO VALIDATION ERROR; FOR DATEPICKER WIDGET --}}
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" type="text/css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	
 	{{-- END SHIELD THEME ASSETS --}}
 
@@ -74,7 +75,7 @@
 	{{-- THIS AREA USED FOR DATE PICKER WIDGET --}}
 	<!-- link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css"-->
 	<!-- link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" type="text/css"-->
-  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<!-- script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
   	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   	<script src="//cdn.jsdelivr.net/jquery.ui.timepicker.addon/1.4.5/jquery-ui-timepicker-addon.js"></script>
   	<script>
