@@ -38,18 +38,25 @@ class Order extends Eloquent {
 			'time_due' => 'required|date_format:g:i A|after:"9:59 AM"|before:"4:01 PM"'
 		);
 		
+	public $messages = array(
+		'1' => 'Please choose between 0 and 50.',
+		'3' => 'Please choose between 0 and 50.',
+		'4' => 'Please choose between 0 and 50.',
+		'6' => 'Please choose between 0 and 50.',
+		'10' => 'Minimum order is for 10 people, please choose between 10 and 100.',
+		'11' => 'Minimum order is for 10 people, please choose between 10 and 100.',
+		'12' => 'Minimum order is for 10 people, please choose between 10 and 100.'
+	);
+		
 	public function validate($data)
     {
         // make a new validator object
-        $v = Validator::make($data, $this->rules);
-        // return the result
-        //return $v->passes();
+        $v = Validator::make($data, $this->rules, $this->messages);
         
         // check for failure
         if ($v->fails())
         {
             // set errors and return false
-            //$this->errors = $v->errors;
             $this->errors = $v->errors();
             return false;
         }

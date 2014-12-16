@@ -1,25 +1,66 @@
-## Laravel PHP Framework
+csci e15 project 3 <br />
+Judiths Kitchen<br />
+Kate de Bethune <br />
+December 18, 2014<br />
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+# live URL for project
+http://p4.kdeb-csci-e15.me
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+# specification for this project (please read for detailed overview)
+https://docs.google.com/document/d/1cg7_WVLqr4yx3eJaCrVih59Rw6fP7EVCBGoHhzA1gqU/edit?usp=sharing
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+# Description of project
+Project demonstrates an understanding of the following: <br />
+* How to build a fully-functioning, data-driven application in PHP and Laravel <br />
+* The principles of working with an MVC framework <br />
+* Basic user authentication <br />
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+Required features: <br />
+* Use of PHP and the Laravel framework <br />
+* Use of at least two database tables (excluding the users table) <br />
+* Use of at least one pivot table <br />
+* Demonstrates "CRUD" operations: create, read, update, and delete<br />
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+App description: <br />
+Judiths Kitchen - a website and online catering app for a new cafe<br /><br />
+Summary: this site will provide a web presence to support the marketing of a new cafe.
+The cafe will offer high-quality, fresh prepared foods, sandwiches, soups, salads, and baked goods.<br />
+Counter service will be offered. Patrons can dine in or take foods to go. <br />
+The cafe will also offer a catering menu, with online ordering. 
 
-### Contributing To Laravel
+Validation: appropriate validation code has been incorporated into the Order controller.
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+# Demo information
+<br />
+Online demo has been uploaded to <br /><br />
 
-### License
+Several test accounts may be accessed using the following emails and passwords:
+1. schoen.yadira@yahoo.com      earum
+2. lemke.lambert@yahoo.com      quia
+3. jhudson@pfeffer.com          fuga
+4. brooks.jakubowski@yahoo.com  est
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+# Details for instructor / TA <br />
+
+
+#Outside packages and credits
+
+1. Wordlist for xkcd password generator is courtesy of <br />
+https://www.englishclub.com/vocabulary/common-words-5000.htm <br />
+It was converted from html to txt using sed commands. <br />
+2. html reset code is courtesy of <br />
+   http://meyerweb.com/eric/tools/css/reset/ <br />
+   v2.0 | 20110126 <br />
+   License: none (public domain) <br />
+3. CSS framework courtesy of bootstrap: <br />
+	http://getbootstrap.com <br />
+4. Fake users package courtesy of fzaninotto/faker <br />
+https://packagist.org/packages/fzaninotto/faker <br />
+5. Lorem Ipsum package courtesy of badcow/LoremIpsum <br />
+https://packagist.org/packages/badcow/lorem-ipsum <br />
+6. Color Extractor package courtesy of league/color-extractor
+https://packagist.org/packages/league/color-extractor
+7. The inspiration for XKCD-style passwords courtesy of xkcd.com <br />
+  
+

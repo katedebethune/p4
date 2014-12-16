@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\MessageBag;
+
 class UserController extends BaseController {
 
 	/**
@@ -34,27 +36,6 @@ class UserController extends BaseController {
 	*/
 	public function postSignup() {
 
-		/*
-		# Step 1) Define the rules
-		$rules = array(
-			'firstname' => 'required|alpha|min:1',
-			'lastname' => 'required|alpha|min:2',
-			'email' => 'required|email|unique:users,email',
-			'password' => 'required|min:6'
-		);
-
-		# Step 2)
-		$validator = Validator::make(Input::all(), $rules);
-
-		# Step 3
-		if($validator->fails()) {
-
-			return Redirect::to('/signup')
-				->with('flash_message', 'Sign up failed; please fix the errors listed below.')
-				->withInput()
-				->withErrors($validator);
-		}
-		*/
 		// get the POST data
 		$data = (Input::all());
 		// create a new model instance for validation
@@ -110,6 +91,8 @@ class UserController extends BaseController {
 		$credentials = Input::only('email', 'password');
 		$email = Input::get('email');
 		
+		$errors = new MessageBag(['password' => ['Email and/or password invalid.']]);
+		
 
 		# Note we don't have to hash the password before attempting to auth - Auth::attempt will take care of that for us
 		if (Auth::attempt($credentials, $remember = false)) {
@@ -118,7 +101,8 @@ class UserController extends BaseController {
 		else {
 			return Redirect::to('/login')
 				->with('flash_message', 'Log in failed; please try again.')
-				->withInput();
+				->withInput()
+				->withErrors($errors);
 		}
 
 	}

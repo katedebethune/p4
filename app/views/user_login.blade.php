@@ -16,13 +16,17 @@
 <br><br>
 <div class="non-index-container">
 
+@foreach($errors as $message)
+	<div class='error'>{{ $message }}</div>
+@endforeach
+
 <h1>Log in</h1>
 <br>
 {{ Form::open(array('url' => '/login')) }}
 	<fieldset>
 	<div class="form-group">
     {{ Form::label('email') }}
-    {{ Form::text('email','kdebethune@gmail.com', array('class'=>'form-control')) }}
+    {{ Form::text('email','', array('class'=>'form-control')) }}
     </div>
 	<div class="form-group">
     {{ Form::label('password') }}

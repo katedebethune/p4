@@ -146,9 +146,6 @@ class OrderController extends BaseController {
 		    $order_detail = $order->food()->select('food_id', 'quantity')->get();
 		    $flag = 0;
 		    $dt = new DateTime($order->due);
-		    //$dt = $order->due('l, F j, Y g:i A');
-		    //$dt = array(new DateTime($order->due) => date('l, F j, Y g:i A'));
-		    //$data = array('currentDateTime' => date('Y-m-d H:i:s'));
 		}
 		catch(exception $e) {
 		    return Redirect::to('/orders')->with('flash_message', 'Order not found');

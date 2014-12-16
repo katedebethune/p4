@@ -5,6 +5,7 @@
 @stop
 
 @section('content')
+
 @yield('nav')
   		{{ HTML::nav_open() }}
   		@if(Auth::check())
@@ -12,10 +13,10 @@
   		@else
   			{{ HTML::nav_other_non_auth() }}
   		@endif
-  		{{ HTML::nav_close() }}
-	
-	<br><br>
-	<div class="non-index-container">
+  		{{ HTML::nav_close() }}	
+<br>
+<br>
+<div class="non-index-container">
 	<h1>Edit Catering Order #{{ $order['id'] }} </h1>
 	<h3>{{ date_format($dt, 'l, F j, Y g:i A') }} </h3>
 	<br>
@@ -34,28 +35,28 @@
 				{{ $food->description }} 
 				<br>
 				<strong>{{ "$".$food->price }} </strong> {{ ' '.$food->sold_by_desc }}
-  				
-				  <br>
-				{{ Form::label($food->name, $food->name, array('class'=>'small')) }}	
-				  @foreach($order_detail as $od) 
+				<br>
+				{{ Form::label($food->name, $food->name, array('class'=>'small')) }}
+				{{-- COMPARE EACH $order_detail KEY WITH THE KEYS IN $foods; IF MATCH, POPULATE TEXT BOX --}}	
+				@foreach($order_detail as $od) 
 					@if( $food->id == $od->food_id )
 						{{ Form::text($food->id, $od->quantity, array('id'=>'', 'class'=>'form-control form-control-inline')) }}
 						{{ '<br>'.$errors->first($food->id) }}
 						@if ($flag = 1) @endif
 					@endif
-				  @endforeach
-				  @if ($flag == 0)
+				@endforeach
+				@if ($flag == 0)
 					{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'form-control form-control-inline')) }}
 					{{ '<br>'.$errors->first($food->id) }}
-				  @endif
-				  @if ($flag = 0) @endif
-				  <br>
-				  
+				@endif
+				@if ($flag = 0) @endif
+				<br>  
 		@endforeach
 		<br>
 		{{ Form::label('date', 'Date & time needed') }}
 		{{ Form::text('date_due', date_format($dt, 'm/d/Y'), array('id'=>'dt_picker', 'class'=>'')) }}
 		{{ Form::text('time_due', date_format($dt, 'g:i A'), array('id'=>'dt_picker_alt', 'class'=>'')) }}
+		{{ '<br>'.$errors->first($order->date_due) }}
 		<br><br>
 		{{ Form::label('comments', 'Comments') }}
 		{{-- Form::textarea('comments', $order->comments) --}}
