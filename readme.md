@@ -32,9 +32,10 @@ The cafe will also offer a catering menu, with online ordering.
 
 # Demo information
 <br />
-Online demo has been uploaded to <br /><br />
+Online demo has been uploaded to: http://screencast.com/t/gCmcfq3rbBwe <br /><br />
 
-Several test accounts may be accessed using the following emails and passwords:<br />
+Several test accounts may be accessed at http://p4.kdeb-csci-e15.me/login <br />
+using the following emails and passwords:<br />
 1. schoen.yadira@yahoo.com      earum<br />
 2. lemke.lambert@yahoo.com      quia<br />
 3. jhudson@pfeffer.com          fuga<br />
