@@ -1,7 +1,7 @@
 @extends('_master')
 
 @section('title')
-	Welcome to Jenny\'s Kitchen - Gourmet Prepared Foods in Newton, MA
+	Welcome to Jenny&#39;s Kitchen - Gourmet Prepared Foods in Newton, MA
 @stop
 
 @section('head')

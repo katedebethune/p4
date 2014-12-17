@@ -68,7 +68,7 @@ class UserController extends BaseController {
 		# Log in
 		Auth::login($user);
 
-		return Redirect::to('/')->with('flash_message', 'Welcome to Judith\'s Kitchen!');
+		return Redirect::to('/')->with('flash_message', 'Welcome to Jenny\'s Kitchen!');
 
 	}
 
