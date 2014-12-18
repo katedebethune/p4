@@ -32,7 +32,7 @@ The cafe will also offer a catering menu, with online ordering.
 
 # Demo information
 <br />
-Online demo has been uploaded to: http://screencast.com/t/gCmcfq3rbBwe <br /><br />
+Site was demonstrated live during section on December 17, 2014.<br />
 
 Several test accounts may be accessed at http://p4.kdeb-csci-e15.me/login <br />
 using the following emails and passwords:<br />
@@ -42,6 +42,14 @@ using the following emails and passwords:<br />
 4. brooks.jakubowski@yahoo.com  est<br />
 
 # Details for instructor / TA <br />
+Site passed W3C validation testing, with warnings about the use of 
+repeated H1 tags on the index page. I chose to disregard these warnings
+about semantic markup since this really is a one-page site template. The
+repeated use of H1 tags is intentional.
+
+Despite some effort to implement custom error messages according to the Laravel
+documentation, I was not able to show custom error messages in my views. The
+default messages are being shown and some of these are not user friendly.
 
 
 #Outside packages and credits
@@ -54,6 +62,7 @@ using the following emails and passwords:<br />
 4. Fake users for databases courtesy of fzaninotto/faker <br />
 	https://packagist.org/packages/fzaninotto/faker <br />
 5. Free food imagery courtesy of 
+	http://freefoodphotos.com
 
   
 

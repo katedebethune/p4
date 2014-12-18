@@ -66,11 +66,13 @@
 		{{ Form::label('date', 'Date & time needed') }}
 		{{ Form::text('date_due', date_format($dt, 'm/d/Y'), array('id'=>'dt_picker', 'class'=>'')) }}
 		{{ Form::text('time_due', date_format($dt, 'g:i A'), array('id'=>'dt_picker_alt', 'class'=>'')) }}
-		{{ '<br>'.$errors->first($order->date_due) }}
+		<br>
+		{{ $errors->first('date_due') }}
+		{{ $errors->first('time_due') }}
 		<br><br>
 		{{ Form::label('comments', 'Comments') }}
 		{{-- Form::textarea('comments', $order->comments) --}}
-		{{ Form::textarea('comments', $order->comments, array('class'=>'form-control', 'rows'=>'3')) }}
+		{{{ Form::textarea('comments', $order->comments, array('class'=>'form-control', 'rows'=>'3')) }}}
 		{{ Form::hidden('status', 'open') }}
 		<br><br>
 		{{ Form::submit('Update my order!', array('id'=>'', 'class'=>'btn btn-primary btn-sm')); }}

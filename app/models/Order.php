@@ -58,6 +58,7 @@ class Order extends Eloquent {
         {
             // set errors and return false
             $this->errors = $v->errors();
+            $this->messages = $v->messages();
             return false;
         }
 

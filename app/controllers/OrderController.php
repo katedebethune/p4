@@ -39,8 +39,6 @@ class OrderController extends BaseController {
 
 		return View::make('order_index')
 			->with('orders', $orders);
-			
-		/* $posts = Post::orderBy('id', 'DESC')->get(); */
 	}
 	
 	
@@ -60,7 +58,6 @@ class OrderController extends BaseController {
 		$foods = Food::cateringMenu();
 
     	return View::make('order_create')->with('foods', $foods);
-
 	}
 	
 	/**
@@ -143,9 +140,6 @@ class OrderController extends BaseController {
 		try {
 		    $order = Order::findOrFail($id);
 		    $foods = Food::cateringMenu();
-		    /* $foods = Food::cateringMenu()
-		    	->with(array('order' => function($query) {$query->where('id', '=', $id);
-				}))->get(); */
 		    $order_detail = $order->food()->select('food_id', 'quantity')->get();
 		    $flag = 0;
 		    $dt = new DateTime($order->due);
@@ -153,8 +147,6 @@ class OrderController extends BaseController {
 		catch(exception $e) {
 		    return Redirect::to('/orders')->with('flash_message', 'Order not found');
 		}
-    	  /* print_r($order_detail); */
-    	  /* dd($order_detail); */
     	   return View::make('order_edit')
     		->with('order', $order)
     		->with('foods', $foods)

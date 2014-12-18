@@ -39,12 +39,7 @@
 		  		{{ Form::text($food->id, '0', array('id'=>'', 'class'=>'form-control form-control-inline')) }}
 		  		{{ '<br>'.$errors->first($food->id) }}
 		  	</div>
-		  	
-		  
-  
 		@endforeach
-		
-		
 		
 		{{ Form::label('date', 'date & time needed') }}
 		{{ Form::text('date_due', '', array('id'=>'dt_picker', 'class'=>'')) }}
@@ -54,9 +49,7 @@
 		{{ $errors->first('time_due') }}
 		<br>
 		{{ Form::label('comments', 'Comments') }}
-		<!--textarea class="form-control" rows="3"-->
-			{{ Form::textarea('comments', '', array('class'=>'form-control', 'rows'=>'3')) }}
-		<!--/textarea-->
+		{{{ Form::textarea('comments', '', array('class'=>'form-control', 'rows'=>'3')) }}}
 		{{ Form::hidden('status', 'open') }}
 		
 		
