@@ -49,7 +49,7 @@
 		{{ $errors->first('time_due') }}
 		<br>
 		{{ Form::label('comments', 'Comments') }}
-		{{{ Form::textarea('comments', '', array('class'=>'form-control', 'rows'=>'3')) }}}
+		{{ Form::textarea('comments', '', array('class'=>'form-control', 'rows'=>'3')) }}
 		{{ Form::hidden('status', 'open') }}
 		
 		

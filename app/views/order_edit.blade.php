@@ -72,7 +72,7 @@
 		<br><br>
 		{{ Form::label('comments', 'Comments') }}
 		{{-- Form::textarea('comments', $order->comments) --}}
-		{{{ Form::textarea('comments', $order->comments, array('class'=>'form-control', 'rows'=>'3')) }}}
+		{{ Form::textarea('comments', $order->comments, array('class'=>'form-control', 'rows'=>'3')) }}
 		{{ Form::hidden('status', 'open') }}
 		<br><br>
 		{{ Form::submit('Update my order!', array('id'=>'', 'class'=>'btn btn-primary btn-sm')); }}
