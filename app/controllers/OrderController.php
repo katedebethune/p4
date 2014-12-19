@@ -24,6 +24,9 @@ class OrderController extends BaseController {
 	*/
 	public function getOrders() {
 		
+		$date = strtotime("+3 day", time());
+		//echo date('Y-m-d H:i:s', $date);
+
 		if (Auth::check()) {
 			$id = Auth::id();
 		} 
@@ -31,14 +34,25 @@ class OrderController extends BaseController {
 			return Redirect::to('/login');
 		}
 		
+		/*$orders = Order::whereHas('user', function($q) use($id)
+		{
+			$q->where('id', '=', $id);
+	
+		})->orderBy('due', 'ASC')->get();*/
+		
 		$orders = Order::whereHas('user', function($q) use($id)
 		{
 			$q->where('id', '=', $id);
 	
-		})->orderBy('due', 'ASC')->get();
-
+		});
+		
+		$orders = $orders->where('due', '>', date('Y-m-d H:i:s', $date))
+		->orderBy('due', 'ASC')
+		->get();
+		
 		return View::make('order_index')
-			->with('orders', $orders);
+			->with('orders', $orders); 
+			
 	}
 	
 	
