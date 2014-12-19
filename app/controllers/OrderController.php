@@ -24,7 +24,7 @@ class OrderController extends BaseController {
 	*/
 	public function getOrders() {
 		
-		$date = strtotime("+3 day", time());
+		$date = strtotime("+2 day", time());
 		//echo date('Y-m-d H:i:s', $date);
 
 		if (Auth::check()) {
