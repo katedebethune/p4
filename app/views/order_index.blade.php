@@ -16,6 +16,9 @@
 	<br><br>
 	<div class="non-index-container">
 	<h1>Orders for {{ Auth::user()->firstname; }} {{ Auth::user()->lastname;}}</h1>
+	<!-- <div class="centered"> -->
+			<a class="btn btn-primary btn-default btn-success" href="orders/create">Place a new order</a>
+	<!-- </div> -->
 	
 	@foreach($orders as $order)
 	<h4>{{'Order #'.$order['id'] }}</h4>
