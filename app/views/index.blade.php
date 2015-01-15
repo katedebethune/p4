@@ -50,7 +50,7 @@
 					
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
-						<p>Judith Kalish, a local chef and West Newton resident, will be opening Judith’s Kitchen, a cafe located in the storefront that was formerly Keltic Krust in West Newton Center. Judith's Kitchen will offer fresh, simply-prepared entrees, sides, soups, salads, and sandwiches both to go and for dining in. Kalish, a graduate of New England Culinary Institute, has been working in the Boston restaurant scene since the early 1990s. She was as a cook at Hamersley’s Bistro for seven years, and then later served as the founding chef of Orleans in Davis Square, Somerville.
+						<p>Judith Kalish, a local chef and West Newton resident, will be opening Judith’s Kitchen, a cafe located in the storefront that was formerly Keltic Krust in West Newton Center. Judith's Kitchen will offer fresh, simply-prepared entrees, sides, soups, salads, and sandwiches both to go and for dining in. Kalish, a graduate of Swarthmore College and The New England Culinary Institute, has been working in the Boston restaurant scene since the early 1990s. She was as a cook at Hamersley’s Bistro for seven years, and then later served as the founding chef of Orleans in Davis Square, Somerville.
 						She has served as the manager of prepared foods for the Whole Foods Market in Alewife, and most recently as the manager of prepared foods for Foodie’s Urban Market in the South End. </p>
 					</div><!-- col-lg-6 -->
 				
