@@ -138,6 +138,18 @@ HTML::macro('nav_close', function()
 });
 
 
+/*
+|--------------------------------------------------------------------------
+| Nav modifications for temoprary site 1/15/2015
+|--------------------------------------------------------------------------
+|
+| The nav has been simplified to allow the site to serve as a placeholder site.
+| Only nav_index_non_auth and nav_other_non_auth should be called. Menu, Catering
+| Log In, and Sign up have all been commented out for now.
+| In addition, the user controller does not automatically log in a new sign up 
+| since we are just gathering email addresses at this point.
+|
+*/
 HTML::macro('nav_index_auth', function()
 {
     return
@@ -203,7 +215,7 @@ HTML::macro('footer', function()
 		<footer class="site-footer">
 			<div id="footerwrap">
 					<div class="container">
-							<h4>&copy; Copyright '. date('Y') .', Jenny\'s Kitchen&nbsp;&nbsp;&nbsp;&nbsp;
+							<h4>&copy; Copyright '. date('Y') .', Judith\'s Kitchen&nbsp;&nbsp;&nbsp;&nbsp;
 							<a href="http://blacktie.co">Credits</a>&nbsp;&nbsp;&nbsp;&nbsp;
 							<a href="http://freefoodphotos.com">Photography</a></h4>
 							
