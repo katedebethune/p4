@@ -1,7 +1,7 @@
 @extends('_master')
 
 @section('title')
-	Welcome to Jenny&#39;s Kitchen - Gourmet Prepared Foods in Newton, MA
+	Welcome to Judith&#39;s Kitchen - Gourmet Prepared Foods in Newton, MA
 @stop
 
 @section('head')
@@ -26,8 +26,8 @@
 	    	<div id="home">
 				<header class="clearfix">
 						<h1><span class="glyphicon glyphicon-heart"></span></h1>
-						<p>Jenny's Kitchen</p>
-						<p>Bistro-Style Cooking from the Heart</p>
+						<p>Judith's Kitchen</p>
+						<p>Coming Soon to West Newton</p>
 				</header>
 			</div><!-- /home -->	    
 	    </div><!-- /headerwrap -->
@@ -38,20 +38,27 @@
 			<div id="about">
 				<div class="row white">
 				<br>
-					<h1 class="centered">A LITTLE BIT ABOUT US</h1>
+					<h1 class="centered">CONSTRUCTION IS UNDER WAY!</h1>
 					<hr>
 				
 					<div class="col-lg-6">
-						<p>Lobortis luctus aliquam egestas a phasellus bibendum tempus mattis quisque volutpat congue, dolor phasellus eleifend lacus ut conubia ultrices ut litora purus lacus, non malesuada ultricies malesuada justo risus condimentum iaculis sociosqu molestie. Sodales nunc ut risus tellus ut accumsan in laoreet tincidunt enim, quisque consectetur tempus per fermentum bibendum porta commodo neque ante, blandit ultrices phasellus duis egestas sed inceptos ultrices elementum. Tempus nullam eget velit eros arcu gravida conubia proin eu, dui phasellus orci aliquet imperdiet sociosqu feugiat in at nam, et enim dictum lectus ut suscipit orci habitasse. Odio facilisis cubilia suspendisse curae ac ligula nostra, volutpat ipsum sapien eros augue dui sociosqu habitasse, eu suspendisse sem aliquet scelerisque ad.</p>
+						<p class="lead">Construction is well under way and Judith’s Kitchen will be coming soon to the West Newton!
+						We are very excited to be a part of this wonderful neighborhood. We will be serving homemade prepared food for dining in and take out, including soups, rotisserie chickens, sandwiches, salads, grilled and roasted meats and fish, vegetarian entrees, side dishes, pastas, grains and beans, and an assortment of delicious comfort foods.
+						We'll also offer coffee, tea, juices, and breakfast pastries for the morning commute!
+						We look forward with great joy to becoming part of the West Newton community.</p>
+					</div><!-- col-lg-6 -->
+					
+					<div class="col-lg-6">
+						<h2>Chef Judith Kalish</h2>
+						<p>Judith Kalish, a local chef and West Newton resident, will be opening a Judith’s Kitchen, a cafe located in the storefront that was formerly Keltic Krust in West Newton Center. Judith's Kitchen will offer fresh, simply-prepared entrees, sides, soups, salads, and sandwiches both to go and for dining in. Kalish, a graduate of New England Culinary Institute, has been working in the Boston restaurant scene since the early 1990s. She was as a cook at Hamersley’s Bistro for seven years, and then later served as the founding chef of Orleans in Davis Square, Somerville.
+						She has served as the manager of prepared foods for the Whole Foods Market in Alewife, and most recently as the manager of prepared foods for Foodie’s Urban Market in the South End. </p>
 					</div><!-- col-lg-6 -->
 				
-					<div class="col-lg-6">
-						<p>Nostra dui nam nunc quisque cras aliquam magna lacus fames dolor, quisque nulla eu sit fermentum mollis consectetur maecenas. Cursus interdum pellentesque turpis vehicula maecenas aliquam commodo justo, convallis conubia nullam felis habitant tincidunt suscipit, aenean fermentum elit quis consequat neque augue. </p>
-					</div><!-- col-lg-6 -->
 				</div><!-- row -->
 			</div><!-- id -->
 		</div><!-- container -->
 		
+		{{--
 		<!-- ==== SECTION DIVIDER1 -->
 		<section class="section-divider textdivider divider1">
 			<div class="container">
@@ -126,7 +133,7 @@
 							@endforeach
 					</div><!-- col-lg -->
 				</div><!-- row -->
-				{{-- 
+				
 				@if(!Auth::check())
 					<div class="centered">
 						<a class="btn btn-primary btn-lg" href="orders/create">Login or Sign up to place a catering order</a>
@@ -136,19 +143,19 @@
 						<a class="btn btn-primary btn-lg" href="orders/create">Place a catering order</a>
 					</div>
 				@endif
-				--}}
+				
 			</div><!-- id -->
 		</div><!-- container -->
 		<!-- END CATERING MENU -->
-
+		--}}
 		<!-- ==== SECTION DIVIDER6 ==== -->
 		<section class="section-divider textdivider divider6">
 			<div class="container">
-				<h1>COME SEE US IN WEST NEWTON!</h1>
+				<h1>THANKS FOR VISITING</h1>
 				<hr>
-				<p>xxxx Washington Street, West Newton, MA 02465</p>
-				<p>617-xxx-xxxx</p>
-				<p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
+				<p>We can't wait to open our doors!</p>
+				<!-- <p>617-xxx-xxxx</p> -->
+				<!-- <p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p> -->
 			</div><!-- container -->
 		</section><!-- section -->
 		
@@ -156,18 +163,24 @@
 			<div id="contact">
 				<div class="row">
 				<br>
-					<h1 class="centered">THANKS FOR VISITING</h1>
+					<h1 class="centered">JOIN OUR MAILING LIST</h1>
 					<hr>
+					<h2 class="centered">
+						<a href="/signup">Sign up here</a> and we'll invite you to our grand opening!
+					</h2>
+					<p class="centered">
+						We won't sell, trade, or otherwise abuse your email in any way. We'll just use it to notify you of our opening activities and then we'll give you the opportunity to opt-in again for recurring specials and news.
+					</p>
+					
 					<br>
 					<br>
 					<div class="col-lg-4">
-						<h3>Contact Information</h3>
-						<p><span class="icon icon-home"></span> xxxx Washington Street, West Newton, MA 02465<br/>
-							<span class="icon icon-phone"></span> 617-xxx-xxxx <br/>
-							<!-- <span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
-							<span class="icon icon-envelop"></span> <a href="#"> info@jennys-kitchen.com</a> <br/>
-							<span class="icon icon-twitter"></span> <a href="#"> @jennys-kitchen </a> <br/>
-							<span class="icon icon-facebook"></span> <a href="#"> Jenny's Kitchen </a> <br/>
+						<h3>Coming this spring to:</h3>
+						<p><span class="icon icon-home"></span> 1371 Washington Street, West Newton, MA 02465<br/>
+							<!-- <span class="icon icon-phone"></span> 617-xxx-xxxx <br/> -->
+							<!-- <span class="icon icon-envelop"></span> <a href="#"> info@jennys-kitchen.com</a> <br/> -->
+							<!-- <span class="icon icon-twitter"></span> <a href="#"> @jennys-kitchen </a> <br/> -->
+							<!-- <span class="icon icon-facebook"></span> <a href="#"> Jenny's Kitchen </a> <br/> -->
 						</p>
 					</div><!-- col -->
 				</div><!-- row -->

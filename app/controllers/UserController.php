@@ -66,9 +66,10 @@ class UserController extends BaseController {
 		}
 
 		# Log in
-		Auth::login($user);
+		# Site revision 1/15/2014 - commenting out while sign up is just gathering emails
+		//Auth::login($user);
 
-		return Redirect::to('/')->with('flash_message', 'Welcome to Jenny\'s Kitchen!');
+		return Redirect::to('/')->with('flash_message', 'Welcome to Judith\'s Kitchen! Thanks for signing up for our mailing list!');
 
 	}
 

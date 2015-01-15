@@ -16,9 +16,8 @@
 	<br><br>
 	<div class="non-index-container">
 	<h1>Orders for {{ Auth::user()->firstname; }} {{ Auth::user()->lastname;}}</h1>
-	<!-- <div class="centered"> -->
-			<a class="btn btn-primary btn-default btn-success" href="orders/create">Place a new order</a>
-	<!-- </div> -->
+	
+	<a class="btn btn-primary btn-default btn-success" href="orders/create">Place a new order</a>
 	
 	@foreach($orders as $order)
 	<h4>{{'Order #'.$order['id'] }}</h4>
@@ -26,8 +25,6 @@
 	
 			<table class="table table-striped">
 			
-			
-				
 			<tr>
    				<th>Food</th>
    				<th>Quantity</th>
@@ -68,7 +65,7 @@
 			<a class="btn btn-primary btn-sm" href="/orders/edit/{{$order['id']}}">Edit or Delete Order {{ $order['id'] }}</a>
 			<br><br>
 	@endforeach
-	</div>
+	</div><!-- end of non-index container -->
 
 
 @stop
