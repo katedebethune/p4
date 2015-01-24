@@ -268,7 +268,8 @@ a:after {
 
 #headerwrap {
 	/* background: url(../img/bg/fillet_of_salmon.jpg) no-repeat center top; */
-	background: url(../img/bg/harvested_raspberries.jpg) no-repeat center top;
+	/* background: url(../img/bg/harvested_raspberries.jpg) no-repeat center top; */
+	background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
@@ -396,12 +397,12 @@ a:after {
 
 .textdivider h1 {
 	padding-top: 70px;
-	color: black;
+	color: white;
 	font-size: 40px;
 }
 
 .textdivider p {
-	color: black;
+	color: white;
 	font-size: 25px;
 }
 
@@ -426,7 +427,8 @@ a:after {
 }
 
 .divider6 {
-	background-image: url('../img/bg/fillet_of_salmon.jpg')
+	/* background-image: url('../img/bg/fillet_of_salmon.jpg') */
+	background-image: url('../img/bg/IMG_3991.JPG')
 }
 
 
