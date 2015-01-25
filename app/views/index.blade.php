@@ -154,7 +154,7 @@
 				<h1>THANKS FOR VISITING</h1>
 				<hr>
 				<p>We can't wait to open our doors!</p>
-				<!-- <p>617-xxx-xxxx</p> -->
+				<!-- <p>617-xxx-xxxx</p>  -->
 				<!-- <p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p> -->
 			</div><!-- container -->
 		</section><!-- section -->
