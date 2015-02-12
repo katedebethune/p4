@@ -42,15 +42,15 @@
 					<hr>
 				
 					<div class="col-lg-6">
-						<p class="lead">Construction is well under way and Judith’s Kitchen will be coming soon to the West Newton!
+						<p class="lead">Construction is well under way and Judith’s Kitchen will be coming soon to West Newton!
 						We are very excited to be a part of this wonderful neighborhood. We will be serving homemade prepared food for dining in and take out, including soups, rotisserie chickens, sandwiches, salads, grilled and roasted meats and fish, vegetarian entrees, side dishes, pastas, grains and beans, and an assortment of delicious comfort foods.
 						We'll also offer coffee, tea, juices, and breakfast pastries for the morning commute!
 						We look forward with great joy to becoming part of the West Newton community.</p>
 					</div><!-- col-lg-6 -->
-					
+					<br />	
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
-						<p>Judith Kalish, a local chef and West Newton resident, will be opening Judith’s Kitchen, a cafe located in the storefront that was formerly Keltic Krust in West Newton Center. Judith's Kitchen will offer fresh, simply-prepared entrees, sides, soups, salads, and sandwiches both to go and for dining in. Kalish, a graduate of Swarthmore College and The New England Culinary Institute, has been working in the Boston restaurant scene since the early 1990s. She was as a cook at Hamersley’s Bistro for seven years, and then later served as the founding chef of Orleans in Davis Square, Somerville.
+						<p>Judith Kalish, a local chef and West Newton resident, will be opening Judith’s Kitchen, a cafe located in the storefront that was formerly Keltic Krust in West Newton Center. Judith's Kitchen will offer fresh, simply-prepared entrees, sides, soups, salads, and sandwiches both to go and for dining in. Kalish, a graduate of Swarthmore College and The New England Culinary Institute, has been working in the Boston restaurant scene since the early 1990s. She was as a cook at Hamersley’s Bistro for eight years, and then later served as the founding chef of Orleans in Davis Square, Somerville.
 						She has served as the manager of prepared foods for the River Street and Prospect Street Whole Foods Markets in Cambridge, and most recently as the manager of prepared foods for Foodie’s Urban Market in the South End. </p>
 					</div><!-- col-lg-6 -->
 				

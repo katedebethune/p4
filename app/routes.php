@@ -36,12 +36,12 @@ Route::get('/logout', 'UserController@getLogout' );
 * Orders
 * (Explicit Routing)
 */
-Route::get('/orders','OrderController@getOrders' );
-Route::get('/orders/create', 'OrderController@getCreate');
-Route::post('/orders/create', 'OrderController@postCreate');
-Route::get('/orders/edit/{id}', 'OrderController@getEdit');
-Route::post('/orders/edit', 'OrderController@postEdit');
-Route::post('/orders/delete', 'OrderController@postDelete');
+//Route::get('/orders','OrderController@getOrders' );
+//Route::get('/orders/create', 'OrderController@getCreate');
+//Route::post('/orders/create', 'OrderController@postCreate');
+//Route::get('/orders/edit/{id}', 'OrderController@getEdit');
+//Route::post('/orders/edit', 'OrderController@postEdit');
+//Route::post('/orders/delete', 'OrderController@postDelete');
 
 
 

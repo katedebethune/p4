@@ -156,12 +156,12 @@ HTML::macro('nav_index_auth', function()
     '
             <li><a href="#home" class="smoothScroll">Home</a></li>
 			<li> <a href="#about" class="smoothScroll"> About</a></li>
-			<li> <a href="#menu" class="smoothScroll">Cafe Menu</a></li>
-			<li> <a href="#catering" class="smoothScroll">Catering Menu</a></li>
+			<!-- <li> <a href="#menu" class="smoothScroll">Cafe Menu</a></li> -->
+			<!-- <li> <a href="#catering" class="smoothScroll">Catering Menu</a></li> -->
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
-			<li><a href=\'/orders\'>My Orders</a></li>
+			<!-- <li><a href=\'/orders\'>My Orders</a></li> -->
 			<!-- <li><a href=\'/logout\'>Log out '.Auth::user()->email.'</a></li> -->
-			<li><a href=\'/logout\'>Log out </a></li>
+			<!-- <li><a href=\'/logout\'>Log out </a></li> -->
     ';
 });
 
@@ -185,12 +185,12 @@ HTML::macro('nav_other_auth', function()
     '
             <li><a href="/#home" class="smoothScroll">Home</a></li>
 			<li> <a href="/#about" class="smoothScroll"> About</a></li>
-			<li> <a href="/#menu" class="smoothScroll">Cafe Menu</a></li>
-			<li> <a href="/#catering" class="smoothScroll">Catering Menu</a></li>
+			<!-- <li> <a href="/#menu" class="smoothScroll">Cafe Menu</a></li> -->
+			<!-- <li> <a href="/#catering" class="smoothScroll">Catering Menu</a></li> -->
 			<li> <a href="/#contact" class="smoothScroll"> Contact</a></li>
-			<li><a href=\'/orders\'>My Orders</a></li>
+			<!-- <li><a href=\'/orders\'>My Orders</a></li> -->
 			<!-- <li><a href=\'/logout\'>Log out '.Auth::user()->email.'</a></li> -->
-			<li><a href=\'/logout\'>Log out </a></li>
+			<!-- <li><a href=\'/logout\'>Log out </a></li> -->
     ';
 });
 
@@ -217,7 +217,6 @@ HTML::macro('footer', function()
 					<div class="container">
 							<h4>&copy; Copyright '. date('Y') .', Judith\'s Kitchen&nbsp;&nbsp;&nbsp;&nbsp;
 							<a href="http://blacktie.co">Credits</a>&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="http://freefoodphotos.com">Photography</a></h4>
 							
 					</div>
 			</div>
