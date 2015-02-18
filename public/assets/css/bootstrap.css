@@ -2378,6 +2378,7 @@ input[type="button"].btn-block {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+  color: #f5b900;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
