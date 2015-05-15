@@ -80,14 +80,16 @@
 					<h2 class="centered">JUDITH'S KITCHEN MENU</h2>
 					<hr>
 					<br>
+					
+					<div class="col-lg-offset-2 col-lg-8">
+					
 					<p>Judith’s Kitchen is pleased to offer an extensive and diverse menu of 
 					prepared foods for your enjoyment! On most days we’ll be cooking up the 
 					standard items on our menu. In addition, we’ll always have a wide variety 
 					of daily specials made from the freshest, locally-sourced, seasonal ingredients. 
 					Fresh bread and baked goods from Iggy’s and Pain d’Avignon will be available 
 					daily, as well as some tempting gluten-free options.
-					</p>
-					<div class="col-lg-offset-2 col-lg-8">	
+					</p>	
 							
 						<strong>Comfort Foods</strong>
 						<br>
@@ -229,6 +231,7 @@
 				<p>We can't wait to open our doors!</p>
 				<!-- <p>617-xxx-xxxx</p>  -->
 				<!-- <p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p> -->
+				<p><a class="icon icon-twitter" style="color:#ffffff;" href="https://twitter.com/judiths_kitchen"> @judiths_kitchen </a> 
 			</div><!-- container -->
 		</section><!-- section -->
 		
@@ -250,9 +253,10 @@
 					<div class="col-lg-4">
 						<h3>Coming this spring to:</h3>
 						<p><span class="icon icon-home"></span> 1371 Washington Street, West Newton, MA 02465<br/>
-							<!-- <span class="icon icon-phone"></span> 617-xxx-xxxx <br/> -->
+							<span class="icon icon-phone"></span> phone: 617-916-9282 <br/>
+							<span class="icon icon-phone"></span> fax: 617-916-9285 <br/>
 							<!-- <span class="icon icon-envelop"></span> <a href="#"> info@jennys-kitchen.com</a> <br/> -->
-							<!-- <span class="icon icon-twitter"></span> <a href="#"> @jennys-kitchen </a> <br/> -->
+							<span class="icon icon-twitter"></span> <a href="https://twitter.com/judiths_kitchen"> @judiths_kitchen </a> <br/>
 							<!-- <span class="icon icon-facebook"></span> <a href="#"> Jenny's Kitchen </a> <br/> -->
 						</p>
 					</div><!-- col -->
