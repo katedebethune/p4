@@ -270,13 +270,15 @@ a:after {
 #headerwrap {
 	/* background: url(../img/bg/fillet_of_salmon.jpg) no-repeat center top; */
 	/* background: url(../img/bg/harvested_raspberries.jpg) no-repeat center top; */
-	background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
+	/* background: url(../img/bg/IMG_3011.JPG) no-repeat center top; */
+	/* background: url(../img/bg/JKK-web-banner3.jpg) no-repeat center top; */
+	background: url(../img/bg/JKK-banner-1500-x-720.jpg) no-repeat center top;
 	margin-top: -50px;
-	padding-top:120px;
+	/* padding-top:120px; */
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 550px;
 	width: 100%;
 	
     -webkit-background-size: 100%;

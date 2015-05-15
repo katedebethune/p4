@@ -25,9 +25,10 @@
 	    <div id="headerwrap" data-name="home">
 	    	<div id="home">
 				<header class="clearfix">
-						<h1><span class="glyphicon glyphicon-heart"></span></h1>
-						<p>Judith's Kitchen</p>
-						<p>Coming Soon to West Newton</p>
+						<!-- <h1><span class="glyphicon glyphicon-heart"></span></h1> -->
+						<!-- <p>Judith's Kitchen</p> -->
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+						<!-- <p>Coming Soon to West Newton</p> -->
 				</header>
 			</div><!-- /home -->	    
 	    </div><!-- /headerwrap -->
@@ -57,7 +58,79 @@
 			</div><!-- id -->
 		</div><!-- container -->
 		
-		{{--
+		
+		{{-- NEW HANDCODED MENU SECTION 5/13/2015 --}}
+	
+		<!-- ==== SECTION DIVIDER1 -->
+		<section class="section-divider textdivider divider1">
+			<div class="container">
+				<h1>GOURMET FOODS FROM OUR CAFE</h1>
+				<hr>
+				<p>Entrees, sides, soups, salads, sandwiches, and sweets for dining in or to go.</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		
+		<!-- ==== MENU ==== -->
+		<div class="container" data-name="menu">
+			<div id="menu">
+				<br>
+				<br>
+				<div class="row">
+					<h2 class="centered">JUDITH'S KITCHEN MENU</h2>
+					<hr>
+					<br>
+					<p>Judith’s Kitchen is pleased to offer an extensive and diverse menu of 
+					prepared foods for your enjoyment! On most days we’ll be cooking up the 
+					standard items on our menu. In addition, we’ll always have a wide variety 
+					of daily specials made from the freshest, locally-sourced, seasonal ingredients. 
+					Fresh bread and baked goods from Iggy’s and Pain d’Avignon will be available 
+					daily, as well as some tempting gluten-free options.
+					</p>
+					<div class="col-lg-offset-2 col-lg-8">	
+							
+						<strong>Comfort Foods</strong>
+						<br>
+						<p>Chicken Salad &#9900; Tuna Salad &#9900; Potato Salad &#9900; Cole Slaw</p>
+						
+						<strong>Sandwiches</strong>
+						<br>
+						<p>Turkey & Cheese &#9900; Ham & Cheese &#9900; Roast Beef & Boursin &#9900; Vegetarian</p>
+						
+						<strong>Panini</strong>
+						<br>
+						<p>Cubano &#9900; Smoked Ham &#9900; BBQ Chicken &#9900; Caprese &#9900; Eggplant & Tomato &#9900; Grilled Cheese &#9900; Chicken BLT &#9900; Sausage, Marinara Sauce, Peppers & Onions</p>
+						
+						<strong>Salads</strong>
+						<br>
+						<p>Sauteed Greens &#9900; Kale Salad &#9900; Mushroom Salad &#9900; Grain Salads &#9900; Pasta Salads &#9900; Bean Salads &#9900; Fresh Mozzarella & Tomato &#9900; Greek Feta, Tomato, & Cucumber</p>
+						
+						<strong>Pastas</strong>
+						<br>
+						<p>Lasagna &#9900; Tortellini Salad &#9900; Assorted Pasta Salads &#9900; Ravioli &#9900; Gnocchi</p>
+						
+						<strong>Entrees</strong>
+						<br>
+						<p>Grilled Flank Steak&#42; &#9900; Grilled & Sauteed Salmon&#42; &#9900; Sauteed Shrimp &#9900; Roasted Turkey Breast &#9900; Grilled Chicken Breast &#9900; Roasted Pork Loin&#42; &#9900; Baked White Fish </p>
+						
+						<strong>Breakfast Sandwiches</strong>
+						<br>
+						<p>Egg, Spinach, & Cheese &#9900; Bacon, Egg, & Cheddar</p>
+						
+						<strong>Pastries</strong>
+						<br>
+						<p>Croissants &#9900; Muffins &#9900; Scones &#9900; Bagels &#9900; Sticky Buns</p>
+					
+						<small>&#42; These items may be served raw or undercooked. Consuming raw or 
+						undercooked fish or meat may increase your risk of foodborne illness.</small>
+					</div><!-- col-lg -->
+				</div><!-- row -->
+			</div><!-- id -->
+		</div><!-- container -->
+		{{-- END NEW HANDCODED MENU --}}
+		
+		{{-- ORIGINAL MENU GENERATION - Currently non-operational - reactivate to use database-driven menu (5/14/2015) --}}
+		{{-- 
 		<!-- ==== SECTION DIVIDER1 -->
 		<section class="section-divider textdivider divider1">
 			<div class="container">
@@ -91,8 +164,9 @@
 				</div><!-- row -->
 			</div><!-- id -->
 		</div><!-- container -->
+		--}}
   		
-
+		{{--
 		<!-- ==== SECTION DIVIDER2 -->
 		<section class="section-divider textdivider divider2">
 			<div class="container">
