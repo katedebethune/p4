@@ -50,7 +50,15 @@
 					</div><!-- col-lg-6 -->
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
-						<p>Judith Kalish, a local chef and West Newton resident, loves nothing more than preparing beautiful meals from fresh ingredients for friends and family. A graduate of The New England Culinary Institute, she has been working in the Boston restaurant scene since the early 1990s. Judith worked a cook at Hamersley’s Bistro for eight years and later served as the founding chef of Orleans in Somerville. She has also served as manager of prepared foods for Whole Foods Market, and most recently as manager of prepared foods at Foodie’s Urban Market in the South End.</p>
+						<p>Judith Kalish, a local chef and West Newton resident, 
+						loves nothing more than preparing beautiful meals from fresh ingredients 
+						for friends and family. A graduate of The New England Culinary Institute, 
+						she has been working in the Boston restaurant scene since the early 1990s. 
+						Judith worked as a cook at Hamersley’s Bistro for eight years and 
+						later served as the founding chef of Orleans in Somerville. 
+						She has also served as manager of prepared foods for Whole Foods Market, 
+						and most recently as manager of prepared foods at 
+						Foodie’s Urban Market in the South End.</p>
 					</div><!-- col-lg-6 -->
 				
 				</div><!-- row -->
@@ -63,7 +71,7 @@
 		<!-- ==== SECTION DIVIDER1 -->
 		<section class="section-divider textdivider divider1">
 			<div class="container">
-				<h1>GOURMET FOODS FROM OUR CAFE</h1>
+				<h1>GOURMET FOOD & WINE FROM OUR CAFE</h1>
 				<hr>
 				<p>Entrees, sides, soups, salads, sandwiches, and sweets for dining in or to go.</p>
 			</div><!-- container -->
@@ -82,14 +90,60 @@
 					
 					<div class="col-lg-offset-2 col-lg-8">
 					
-					<p>Judith’s Kitchen is pleased to offer an extensive and diverse menu of 
-					prepared foods for your enjoyment! On most days we’ll be cooking up the 
-					standard items on our menu. In addition, we’ll always have a wide variety 
-					of daily specials made from the freshest, locally-sourced, seasonal ingredients. 
-					Fresh bread and baked goods from Iggy’s and Pain d’Avignon will be available 
-					daily, as well as some tempting gluten-free options.
-					</p>	
+					<p>Judith's Kitchen is pleased to offer a regular daily menu 
+					as well as a wide variety of seasonal specials made from the freshest, 
+					locally-sourced ingredients.
+					
+					Our menu  includes prepared foods, soups, salads, sandwiches and breakfast 
+					pastries as well as coffee & tea, wine & beer and other refreshing beverages.  
+					
+					 
+					
+					We are also delighted to offer artisanal breads, cookies, pastries and desserts
+					from Iggy's, Pain d'Avignon, Bisousweet and other local bakeries. 
+					</p>
+					
+					<p><strong>
+					The following menu is a sampling types of dishes we will be offering . . .
+					</strong></p>
+					
+					<!-- regular daily items and a seasonal specials. The itesm you can count on
+					plus lots of seasonal dishes.  -->	
 							
+						<strong>Kale Salad</strong>
+						<p>Kale, Shaved Parmesan Cheese, Garlic, Fresh Lemon Juice and Olive Oil </p>
+						
+						<strong>Greek Feta Salad</strong>
+						<p>Diced Feta Cheese, Tomatoes, Cucumbers, Red Onions, Fresh Basil & Oregano, 
+						Olive Oil, Vinegar </p>
+						
+						<strong>Turkey Sandwich</strong>
+						<p>Boar's Head Oven Roasted Turkey, Basil Pesto, Hummus & Lettuce on Sourdough Bread </p>
+						
+						<strong>Curried Lentil Soup</strong>
+						<p>Vegetarian Soup of Curried Lentils, Tomatoes and Spinach </p>
+						
+						<strong>Braised Leeks</strong>
+						<p>Whole Leeks braised in White Wine and Lemon with Fennel Seeds, Thyme & Chili Flakes </p>
+						
+						<strong>Spicy Jambalaya</strong>
+						<p>Spicy Chicken and Rice Dish with Sausage, Peppers, Onions and Tomatoes 
+						cooked in Herbed Chicken Stock</p>
+						
+						<strong>Rotisserie Chicken</strong>
+						<p>Whole Chicken marinated and roasted with Herbs and Spices </p>
+						
+						<strong>Grilled Salmon &#42;</strong>
+						<p>Salmon Filet seasoned with Salt & Pepper and grilled to medium rare  </p>
+						
+						<strong>Chicken Salad</strong>
+						<p>Roasted Chicken Breast cooked in the oven until tender, mixed with Celery, Onions, Parsley, 
+						Olive Oil and Mayo  </p>
+						
+						<strong>Sauteed Greens</strong>
+						<p>Sauteed Greens of the day with Garlic and Olive Oil  </p>
+						
+						<!-- 
 						<strong>Comfort Foods</strong>
 						<br>
 						<p>Chicken Salad &#9900; Tuna Salad &#9900; Potato Salad &#9900; Cole Slaw</p>
@@ -121,6 +175,7 @@
 						<strong>Pastries</strong>
 						<br>
 						<p>Croissants &#9900; Muffins &#9900; Scones &#9900; Bagels &#9900; Sticky Buns</p>
+						-->
 					
 						<small>&#42; These items may be served raw or undercooked. Consuming raw or 
 						undercooked fish or meat may increase your risk of foodborne illness.</small>
@@ -252,8 +307,8 @@
 					<div class="col-lg-4">
 						<h3>Coming this spring to:</h3>
 						<p><span class="icon icon-home"></span> 1371 Washington Street, West Newton, MA 02465<br/>
-							<span class="icon icon-phone"></span> phone: 617-916-9282 <br/>
-							<span class="icon icon-phone"></span> fax: 617-916-9285 <br/>
+							<!-- <span class="icon icon-phone"></span> phone: 617-916-9282 <br/> -->
+							<!-- <span class="icon icon-phone"></span> fax: 617-916-9285 <br/> -->
 							<!-- <span class="icon icon-envelop"></span> <a href="#"> info@jennys-kitchen.com</a> <br/> -->
 							<span class="icon icon-twitter"></span> <a href="https://twitter.com/judiths_kitchen"> @judiths_kitchen </a> <br/>
 							<!-- <span class="icon icon-facebook"></span> <a href="#"> Jenny's Kitchen </a> <br/> -->

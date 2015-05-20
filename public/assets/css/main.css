@@ -416,7 +416,8 @@ a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: url('../img/bg/egg_yolks.jpg')
+	/* background-image: url('../img/bg/egg_yolks.jpg') */
+	background-image: url('../img/bg/IMG_6273.jpg')
 }
 
 .divider2 {
