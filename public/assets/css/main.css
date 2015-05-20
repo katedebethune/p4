@@ -84,7 +84,11 @@ body {
 }
 
 body {
-    font-family: "Lato";
+    /* FOCO FONT ADDED AS TEST 5/20/2015 */
+    /* font-family: 'Foco Bold' */
+	/* font-family: 'Foco Light' */
+	font-family: 'Foco Regular';
+    /* font-family: "Lato"; */
     /* font-family: "Raleway"; */
     font-weight: 400;
     font-size: 16px;
@@ -156,7 +160,11 @@ a img {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
+    /* FOCO FONT ADDED AS TEST 5/20/2015 */
+    /* font-family: 'Foco Bold' */
+	/* font-family: 'Foco Light' */
+	font-family: 'Foco Regular';
+    /* font-family: "Raleway"; */
     font-weight: 400;
     color: #333;
 }
