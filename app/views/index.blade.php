@@ -104,7 +104,7 @@
 					</p>
 					
 					<p><strong>
-					The following menu is a sampling types of dishes we will be offering . . .
+					The following menu is a sampling of dishes we will be offering . . .
 					</strong></p>
 					
 					<!-- regular daily items and a seasonal specials. The itesm you can count on
@@ -114,8 +114,8 @@
 						<p>Kale, Shaved Parmesan Cheese, Garlic, Fresh Lemon Juice and Olive Oil </p>
 						
 						<strong>Greek Feta Salad</strong>
-						<p>Diced Feta Cheese, Tomatoes, Cucumbers, Red Onions, Fresh Basil & Oregano, 
-						Olive Oil, Vinegar </p>
+						<p>Chunks of Feta Cheese, Tomatoes, Cucumbers, Red Onions, Fresh Basil & Oregano, 
+						Olive Oil</p>
 						
 						<strong>Turkey Sandwich</strong>
 						<p>Boar's Head Oven Roasted Turkey, Basil Pesto, Hummus & Lettuce on Sourdough Bread </p>
@@ -137,8 +137,8 @@
 						<p>Salmon Filet seasoned with Salt & Pepper and grilled to medium rare  </p>
 						
 						<strong>Chicken Salad</strong>
-						<p>Roasted Chicken Breast cooked in the oven until tender, mixed with Celery, Onions, Parsley, 
-						Olive Oil and Mayo  </p>
+						<p>Roasted Chicken Breast cooked in the oven until tender, tossed with Celery, Onions, Parsley, 
+						Olive Oil and Mayonnaise</p>
 						
 						<strong>Sauteed Greens</strong>
 						<p>Sauteed Greens of the day with Garlic and Olive Oil  </p>
