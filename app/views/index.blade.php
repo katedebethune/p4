@@ -84,7 +84,7 @@
 				<br>
 				<br>
 				<div class="row">
-					<h2 class="centered">JUDITH'S KITCHEN MENU</h2>
+					<h1 class="centered">JUDITH'S KITCHEN MENU</h1>
 					<hr>
 					<br>
 					

@@ -87,8 +87,8 @@ body {
     /* FOCO FONT ADDED AS TEST 5/20/2015 */
     /* font-family: 'Foco Bold' */
 	/* font-family: 'Foco Light' */
-	font-family: 'Foco Regular';
-    /* font-family: "Lato"; */
+	/* font-family: 'Foco Regular'; */
+    font-family: "Lato";
     /* font-family: "Raleway"; */
     font-weight: 400;
     font-size: 16px;
@@ -163,8 +163,8 @@ h1, h2, h3, h4, h5, h6 {
     /* FOCO FONT ADDED AS TEST 5/20/2015 */
     /* font-family: 'Foco Bold' */
 	/* font-family: 'Foco Light' */
-	font-family: 'Foco Regular';
-    /* font-family: "Raleway"; */
+	/*font-family: 'Foco Regular'; */
+    font-family: "Raleway";
     font-weight: 400;
     color: #333;
 }
@@ -426,9 +426,9 @@ a:after {
 .divider1 {
 	/* background-image: url('../img/bg/egg_yolks.jpg') */
 	/* Dark platter */
-	/* background-image: url('../img/bg/IMG_6273.jpg') */
+	background-image: url('../img/bg/IMG_6273.jpg')
 	/* Braised endive */
-	background-image: url('../img/bg/IMG_3863_1.jpg')
+	/* background-image: url('../img/bg/IMG_3863_1.jpg') */
 }
 
 .divider2 {
