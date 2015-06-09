@@ -84,11 +84,7 @@ body {
 }
 
 body {
-    /* FOCO FONT ADDED AS TEST 5/20/2015 */
-    /* font-family: 'Foco Bold' */
-	/* font-family: 'Foco Light' */
-	font-family: 'Foco Regular';
-    /* font-family: "Lato"; */
+    font-family: "Lato";
     /* font-family: "Raleway"; */
     font-weight: 400;
     font-size: 16px;
@@ -160,11 +156,7 @@ a img {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    /* FOCO FONT ADDED AS TEST 5/20/2015 */
-    /* font-family: 'Foco Bold' */
-	/* font-family: 'Foco Light' */
-	font-family: 'Foco Regular';
-    /* font-family: "Raleway"; */
+    font-family: "Raleway"; 
     font-weight: 400;
     color: #333;
 }
@@ -280,13 +272,15 @@ a:after {
 	/* background: url(../img/bg/harvested_raspberries.jpg) no-repeat center top; */
 	/* background: url(../img/bg/IMG_3011.JPG) no-repeat center top; */
 	/* background: url(../img/bg/JKK-web-banner3.jpg) no-repeat center top; */
-	background: url(../img/bg/JKK-banner-1500-x-720.jpg) no-repeat center top;
+	/* background: url(../img/bg/JKK-banner-1500-x-720.jpg) no-repeat center top; */
+	background: url(../img/bg/jkk_banner_30_lower.jpg) no-repeat center top;
 	margin-top: -50px;
 	/* padding-top:120px; */
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 550px;
+	/* min-height: 550px; */
+	min-height: 520px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -426,9 +420,9 @@ a:after {
 .divider1 {
 	/* background-image: url('../img/bg/egg_yolks.jpg') */
 	/* Dark platter */
-	/* background-image: url('../img/bg/IMG_6273.jpg') */
+	background-image: url('../img/bg/IMG_6273.jpg')
 	/* Braised endive */
-	background-image: url('../img/bg/IMG_3863_1.jpg')
+	/* background-image: url('../img/bg/IMG_3863_1.jpg') */
 }
 
 .divider2 {
@@ -650,4 +644,15 @@ a:after {
 		font-size: 30px;
 		line-height: 38px;
 	}
+}
+
+/* ==========================================================================
+   KDEB CUSTOMIZATIONS - 6/8/2015
+   ========================================================================== */
+
+.row-even {
+background-color:#76A0D3;
+}
+.row-odd {
+background-color:#BDE3FB;
 }

@@ -52,23 +52,10 @@
 	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
 	{{-- END SHIELD JS ASSETS --}}
 
-	{{-- LOCAL STYLES --}}
+	{{-- LOCAL STYLES & SCRIPTS --}}
 	{{ HTML::style('styles/styles.css') }}
-	
-	{{-- EMBED CODE FOR FOCO FONT TEST - ADDED 5/20/2015 --}}
-	<script type="text/javascript">
-		(function() {
-			var path = '//easy.myfonts.net/v2/js?sid=221712(font-family=Foco+Bold)&sid=221718(font-family=Foco+Light)&sid=221747(font-family=Foco+Regular)&key=kZpFFm1YXB',
-				protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-				trial = document.createElement('script');
-			trial.type = 'text/javascript';
-			trial.async = true;
-			trial.src = protocol + path;
-			var head = document.getElementsByTagName("head")[0];
-			head.appendChild(trial);
-		})();
-	</script>
-	{{-- END: EMBED CODE FOR FOCO FONT TEST --}}
+	<script type="text/javascript" src="assets/js/jk-script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
