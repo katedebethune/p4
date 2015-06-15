@@ -39,15 +39,15 @@
 			<div id="about">
 				<div class="row white">
 				<br>
-					<h1 class="centered">CONSTRUCTION IS UNDER WAY!</h1>
+					<h1 class="centered">OPENING SOON!</h1>
 					<hr>
 				
 					<div class="col-lg-6">
-						<p class="lead">Construction is well under way and Judith’s Kitchen will be coming soon to West Newton!
-						We are very excited to be a part of this wonderful neighborhood. We will be serving homemade prepared food for dining in and take out, including soups, rotisserie chickens, sandwiches, salads, grilled and roasted meats and fish, vegetarian entrees, side dishes, pastas, grains and beans, and an assortment of delicious comfort foods.
-						We'll also offer coffee, tea, juices, and breakfast pastries for the morning commute!
-						We look forward with great joy to becoming part of the West Newton community.</p>
+						<p class="lead">Construction is finished! We're just putting a few finishing touches on the space, 
+						getting our inventory set up, and finalizing our menus. We would like to thank everyone in the West Newton community for your support during the last year.
+						We can't wait to open our doors - <strong>look for us just after July 4th Weekend!!</strong></p>
 					</div><!-- col-lg-6 -->
+					<br />
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
 						<p>Judith Kalish, a local chef and West Newton resident, 
@@ -144,51 +144,17 @@
 						
 							<strong>Sauteed Greens</strong>
 							<p>Sauteed Greens of the day with Garlic and Olive Oil  </p>
-						
-							<!-- 
-							<strong>Comfort Foods</strong>
-							<br>
-							<p>Chicken Salad &#9900; Tuna Salad &#9900; Potato Salad &#9900; Cole Slaw</p>
-						
-							<strong>Sandwiches</strong>
-							<br>
-							<p>Turkey & Cheese &#9900; Ham & Cheese &#9900; Roast Beef & Boursin &#9900; Vegetarian</p>
-						
-							<strong>Panini</strong>
-							<br>
-							<p>Cubano &#9900; Smoked Ham &#9900; BBQ Chicken &#9900; Caprese &#9900; Eggplant & Tomato &#9900; Grilled Cheese &#9900; Chicken BLT &#9900; Sausage, Marinara Sauce, Peppers & Onions</p>
-						
-							<strong>Salads</strong>
-							<br>
-							<p>Sauteed Greens &#9900; Kale Salad &#9900; Mushroom Salad &#9900; Grain Salads &#9900; Pasta Salads &#9900; Bean Salads &#9900; Fresh Mozzarella & Tomato &#9900; Greek Feta, Tomato, & Cucumber</p>
-						
-							<strong>Pastas</strong>
-							<br>
-							<p>Lasagna &#9900; Tortellini Salad &#9900; Assorted Pasta Salads &#9900; Ravioli &#9900; Gnocchi</p>
-						
-							<strong>Entrees</strong>
-							<br>
-							<p>Grilled Flank Steak&#42; &#9900; Grilled & Sauteed Salmon&#42; &#9900; Sauteed Shrimp &#9900; Roasted Turkey Breast &#9900; Grilled Chicken Breast &#9900; Roasted Pork Loin&#42; &#9900; Baked White Fish </p>
-						
-							<strong>Breakfast Sandwiches</strong>
-							<br>
-							<p>Egg, Spinach, & Cheese &#9900; Bacon, Egg, & Cheddar</p>
-						
-							<strong>Pastries</strong>
-							<br>
-							<p>Croissants &#9900; Muffins &#9900; Scones &#9900; Bagels &#9900; Sticky Buns</p>
-							-->
+					
 						</div> <!-- END NEW menu-items DIV -->
 					
 						<small>&#42; These items may be served raw or undercooked. Consuming raw or 
 						undercooked fish or meat may increase your risk of foodborne illness.</small>
-						
-						
+						<br />
+						<br />
+						<p>Download a {{ link_to('/assets/pdf/JK-MENU.pdf', 'printable copy') }} of this menu</p>
+						<img src="{{asset('assets/img/jk-menu-snap.jpg')}}" >
 					</div><!-- col-lg -->
 				</div><!-- row -->
-				<br />
-				<p>Download a {{ link_to('/assets/pdf/JK-MENU.pdf', 'printable copy') }} of this menu</p>
-						<img src="{{asset('assets/img/jk-menu-snap.jpg')}}" >
 			</div><!-- id -->
 		</div><!-- container -->
 		{{-- END NEW HANDCODED MENU --}}
@@ -230,7 +196,8 @@
 		</div><!-- container -->
 		--}}
   		
-		
+		{{-- CATERING SECTION - COMMENTING OUT UNTIL J GIVES ME THE CONTENT --}}
+		{{--
 		<!-- ==== SECTION DIVIDER2 -->
 		<section class="section-divider textdivider divider2">
 			<div class="container">
@@ -246,7 +213,6 @@
 			<br>
 			<p> catering content goes here </p>
 				<!--div class="row white centered"-->
-				{{-- 
 				<div class="row">
 					<h1 class="centered">CATERING MENU</h1>
 					<hr>
@@ -283,10 +249,11 @@
 					</div>
 				@endif
 				
-				--}}
+				
 			</div><!-- id -->
 		</div><!-- container -->
 		<!-- END CATERING MENU -->
+		--}}
 		
 		
 		<!-- ==== SECTION DIVIDER6 ==== -->
