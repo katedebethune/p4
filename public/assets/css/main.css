@@ -639,8 +639,8 @@ a:after {
 
 /* 6/16/2016 ADDING iphone 5 MEDIA QUERY */
 /* iphone 5 portrait */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) 
-{ 
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+
 	/* STYLES GO HERE */
 	.header{background-attachment: scroll;}
 }
