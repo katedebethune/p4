@@ -659,7 +659,6 @@ a:after {
 }
 
 /***********/
-
 @media (max-device-width: 1024px) {
   /*IPad portrait AND netbooks, AND anything with smaller screen*/
   /*make the design flexible if possible */
@@ -677,8 +676,6 @@ a:after {
  /*IPhone portrait and smaller. You can probably stop on 320px*/
  background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
 }
-
-
 /*****************/
 
 
