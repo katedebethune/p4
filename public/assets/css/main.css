@@ -642,8 +642,10 @@ a:after {
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
 
 	/* STYLES GO HERE */
-	.header{background-attachment: scroll;}
-	background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
+	.header{
+		background-attachment: scroll;
+		background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
+	}
 }
 
 @media screen and (max-width:769px) {
@@ -677,6 +679,8 @@ a:after {
 }
 
 /*****************/
+
+
 
 /* ==========================================================================
    KDEB CUSTOMIZATIONS - 6/8/2015
