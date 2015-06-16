@@ -656,6 +656,28 @@ a:after {
 	}
 }
 
+/***********/
+
+@media (max-device-width: 1024px) {
+  /*IPad portrait AND netbooks, AND anything with smaller screen*/
+  /*make the design flexible if possible */
+  /*Structure your code thinking about all devices that go below*/
+}
+@media (max-device-width: 640px) {
+ /*Iphone portrait and smaller*/
+ background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
+}
+@media (max-device-width: 540px) {
+ /*Smaller and smaller...*/
+ background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
+}
+@media (max-device-width: 320px) {
+ /*IPhone portrait and smaller. You can probably stop on 320px*/
+ background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
+}
+
+/*****************/
+
 /* ==========================================================================
    KDEB CUSTOMIZATIONS - 6/8/2015
    ========================================================================== */
