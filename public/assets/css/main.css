@@ -643,6 +643,7 @@ a:after {
 
 	/* STYLES GO HERE */
 	.header{background-attachment: scroll;}
+	background: url(../img/bg/IMG_3011.JPG) no-repeat center top;
 }
 
 @media screen and (max-width:769px) {
