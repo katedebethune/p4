@@ -152,7 +152,7 @@
 						<br />
 						<br />
 						<p>Download a {{ link_to('/assets/pdf/JK-MENU.pdf', 'printable copy') }} of this menu</p>
-						<img src="{{asset('assets/img/jk-menu-snap.jpg')}}" >
+						<!-- <img src="{{asset('assets/img/jk-menu-snap.jpg')}}" > -->
 					</div><!-- col-lg -->
 				</div><!-- row -->
 			</div><!-- id -->
@@ -255,6 +255,147 @@
 		<!-- END CATERING MENU -->
 		--}}
 		
+		<!-- ==== SECTION DIVIDER3 === -->
+		<section class="section-divider textdivider divider3">
+			<div class="container">
+				<h1>CATERING</h1>
+				<hr>
+				<p>Fresh, delicious prepared foods for your next business lunch and festive event!</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		<!-- ==== CATERING ==== -->
+		<!-- <div class="container" id="portfolio" name="portfolio"> -->
+		<div class="container"  data-name="catering">
+			<div id="catering">
+		<br>
+			<div class="row">
+				<br>
+				<h1 class="centered">JUDITH'S KITCHEN CATERING</h1>
+				<hr>
+				<br>
+				<br>
+			</div><!-- /row -->
+			<div class="container">
+			<div class="row">	
+			
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/bg/IMG_6506.JPG" alt="">
+							<figcaption>
+								<h5>PLATTERS</h5>
+								<a data-toggle="modal" href="#myModal1" class="btn btn-primary btn-sm">details</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				
+						 <!-- MODAL FOR CHEESE PLATTER -->
+						      
+						  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">CHEESE PLATTER</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/bg/IMG_6506.JPG" alt=""></p>
+						          <p>Cheese, cracker, and fruit platter. Small serves 12 to 15 ($45), Medium serves 16 to 20 ($60), and Large serves 20 to 25 ($75).</p>
+						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/bg/IMG_5005.jpg" alt="">
+							<figcaption>
+								<h5>SANDWICHES</h5>
+								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-sm">details</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+						<!-- MODAL FOR SANDWICH PLATTER  -->
+						      
+						  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">SANDWICH PLATTERS</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/bg/IMG_5005.jpg" alt=""></p>
+						          <p>Sandwiches are wrapped in Flour Tortillas and served in halves. 
+						          Halves are substantial and usually enough to serve one person. Small serves 12 ($55), 
+						          medium serves 16 ($75), and large serves 24 ($105).
+ 								  </p>
+						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/bg/IMG_2375.JPG" alt="">
+							<figcaption>
+								<h5>SALADS</h5>
+								<a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-sm">details</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+			
+					<!-- MODAL FOR SALADS  -->
+						      
+						  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">SALADS</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/bg/IMG_2375.JPG" alt=""></p>
+						          <p>Choose from Orzo, Kale, or Caesar Salad. Small serves 12 ($price), medium serves 16 ($price),
+						          and large serves 24 ($price).
+ 								  </p>
+						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+
+			
+			
+			</div><!-- /row -->
+			<p>We offer a catering for any type of event from business luncheons to cocktail parties. Call us today at <strong>617-916-9282</strong> to
+			discuss your catering needs.</p>
+		</div><!-- /row -->
+	</div><!-- /container -->
 		
 		<!-- ==== SECTION DIVIDER6 ==== -->
 		<section class="section-divider textdivider divider6">

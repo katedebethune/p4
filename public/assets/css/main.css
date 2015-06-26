@@ -104,7 +104,8 @@ margin-left: -15px;
 }
 
 .modal-header {
-	background: #3498db;
+	/* background: #3498db;*/
+	background: #3F84C7;
 }
 
 .modal-header h4 {
@@ -427,7 +428,9 @@ a:after {
 }
 
 .divider3 {
-	background-image: url('../img/bg/cheesecake.jpg');
+	/* background-image: url('../img/bg/cheesecake.jpg'); */
+	background-image: url('../img/bg/catering-collage.jpg');
+	background-image: url('../img/bg/IMG_3011.JPG');
 	margin-top: 0px;
 }
 
@@ -513,7 +516,8 @@ a:after {
 	left: 0;
 	padding: 20px;
 	color: #fff;
-	background: #3498db;
+	/* background: #3498db; */
+	background: #3F84C7;
 }
 
 .grid figcaption h5 {
