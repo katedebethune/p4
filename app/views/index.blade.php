@@ -319,7 +319,7 @@
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/bg/IMG_5005.jpg" alt="">
+							<img class="img-responsive" src="assets/img/bg/IMG_5005.JPG" alt="">
 							<figcaption>
 								<h5>SANDWICHES</h5>
 								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-sm">details</a>
@@ -338,7 +338,7 @@
 						          <h4 class="modal-title">SANDWICH PLATTERS</h4>
 						        </div>
 						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/bg/IMG_5005.jpg" alt=""></p>
+						          <p><img class="img-responsive" src="assets/img/bg/IMG_5005.JPG" alt=""></p>
 						          <p>Sandwiches are wrapped in Flour Tortillas and served in halves. 
 						          Halves are substantial and usually enough to serve one person. Small serves 12 ($55), 
 						          medium serves 16 ($75), and large serves 24 ($105).
