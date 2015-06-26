@@ -427,7 +427,8 @@ a:after {
 }
 
 .divider3 {
-	background-image: url('../img/bg/cheesecake.jpg');
+	/* background-image: url('../img/bg/cheesecake.jpg'); */
+	background-image: url('../img/bg/IMG_3011.JPG');
 	margin-top: 0px;
 }
 
