@@ -45,7 +45,7 @@
 					<div class="col-lg-6">
 						<p class="lead">Construction is finished! We're just putting a few finishing touches on the space, 
 						getting our inventory set up, and finalizing our menus. We would like to thank everyone in the West Newton community for your support during the last year.
-						We can't wait to open our doors - <strong>look for us just after July 4th Weekend!!</strong></p>
+						We can't wait to open our doors!</p>
 					</div><!-- col-lg-6 -->
 					<br />
 					<div class="col-lg-6">
@@ -342,8 +342,8 @@
 						        <div class="modal-body">
 						          <p><img class="img-responsive" src="assets/img/bg/IMG_5005.JPG" alt=""></p>
 						          <p>Sandwiches are wrapped in Flour Tortillas and served in halves. 
-						          Halves are substantial and usually enough to serve one person. Small serves 12 ($55), 
-						          medium serves 16 ($75), and large serves 24 ($105).
+						          Halves are substantial and usually enough to serve one person. Small (12 halves) $55, 
+						          Medium (16 halves) $75, and Large (24 halves) $105.
  								  </p>
 						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
 						        </div>
@@ -379,8 +379,8 @@
 						        </div>
 						        <div class="modal-body">
 						          <p><img class="img-responsive" src="assets/img/bg/IMG_2375.JPG" alt=""></p>
-						          <p>Choose from Orzo, Kale, or Caesar Salad. Small serves 12 ($price), medium serves 16 ($price),
-						          and large serves 24 ($price).
+						          <p>Choose from our most popular salads - Pasta, Kale, Caesar or Mixed Greens. Other options also available. 
+						           Small serves 12, medium serves 16, and large serves 24. Prices vary depending on salad.
  								  </p>
 						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
 						        </div>
@@ -421,7 +421,7 @@
 						<a href="/signup">Sign up here</a> and we'll invite you to our grand opening!
 					</h2>
 					<p class="centered">
-						We won't sell, trade, or otherwise abuse your email in any way. We'll just use it to notify you of our opening activities and then we'll give you the opportunity to opt-in again for recurring specials and news.
+						We won't sell or trade your email address. We'll just use it to notify you of our opening activities and then we'll give you the opportunity to opt-in again for recurring specials and news.
 					</p>
 					
 					<br>
