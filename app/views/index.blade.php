@@ -115,18 +115,18 @@
 							<p>Kale, Shaved Parmesan Cheese, Garlic, Fresh Lemon Juice and Olive Oil </p>
 					
 							<strong>Greek Feta Salad</strong>
-							<p>Chunks of Feta Cheese, Tomatoes, Cucumbers, Red Onions, Fresh Basil & Oregano, 
+							<p>Chunks of Feta Cheese, Tomatoes, Cucumbers, Red Onions, Fresh Basil and Oregano, 
 							Olive Oil</p>
 							
 						
 							<strong>Turkey Sandwich</strong>
-							<p>Boar's Head Oven Roasted Turkey, Basil Pesto, Hummus & Lettuce on Sourdough Bread </p>
+							<p>Boar's Head Oven Roasted Turkey, Basil Pesto, Hummus and Lettuce on Sourdough Bread </p>
 						
 							<strong>Curried Lentil Soup</strong>
 							<p>Vegetarian Soup of Curried Lentils, Tomatoes and Spinach </p>
 						
 							<strong>Braised Leeks</strong>
-							<p>Whole Leeks braised in White Wine and Lemon with Fennel Seeds, Thyme & Chili Flakes </p>
+							<p>Whole Leeks braised in White Wine and Lemon with Fennel Seeds, Thyme and Chili Flakes </p>
 						
 							<strong>Spicy Jambalaya</strong>
 							<p>Spicy Chicken and Rice Dish with Sausage, Peppers, Onions and Tomatoes 
@@ -136,7 +136,7 @@
 							<p>Whole Chicken marinated and roasted with Herbs and Spices </p>
 						
 							<strong>Grilled Salmon &#42;</strong>
-							<p>Salmon Filet seasoned with Salt & Pepper and grilled to medium rare  </p>
+							<p>Salmon Filet seasoned with Salt and Pepper and grilled to medium rare  </p>
 						
 							<strong>Chicken Salad</strong>
 							<p>Roasted Chicken Breast cooked in the oven until tender, tossed with Celery, Onions, Parsley, 
@@ -152,7 +152,9 @@
 						<br />
 						<br />
 						<p>Download a {{ link_to('/assets/pdf/JK-MENU.pdf', 'printable copy') }} of this menu</p>
-						<!-- <img src="{{asset('assets/img/jk-menu-snap.jpg')}}" > -->
+						<img src="{{asset('assets/img/jk-menu-snap.jpg')}}" >
+						<br />
+						<br />
 					</div><!-- col-lg -->
 				</div><!-- row -->
 			</div><!-- id -->
