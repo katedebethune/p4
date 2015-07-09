@@ -394,8 +394,10 @@
 			
 			
 			</div><!-- /row -->
-			<p>We offer a catering for any type of event from business luncheons to cocktail parties. Call us today at <strong>617-916-9282</strong> to
-			discuss your catering needs.</p>
+			<p>We offer a catering for any type of event from business luncheons to cocktail parties. We look forward to 
+			meeting your catering needs!</p>
+			
+			<!-- <p>Call us today at <strong>617-916-9282</strong> to discuss your catering needs.</p> -->
 		</div><!-- /row -->
 	</div><!-- /container -->
 		
