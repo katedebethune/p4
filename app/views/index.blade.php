@@ -407,8 +407,8 @@
 				<h1>THANKS FOR VISITING</h1>
 				<hr>
 				<p>We can't wait to open our doors!</p>
-				<!-- <p>617-xxx-xxxx</p>  -->
-				<!-- <p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p> -->
+				<p>617-916-9282</p>
+				<p><a class="icon icon-twitter" href="https://twitter.com/judiths_kitchen"></a> | <a class="icon icon-facebook" href="https://www.facebook.com/pages/Judiths-Kitchen/1618203295121492/"></a></p>
 				<p><a class="icon icon-twitter" style="color:#ffffff;" href="https://twitter.com/judiths_kitchen"> @judiths_kitchen </a> 
 			</div><!-- container -->
 		</section><!-- section -->
@@ -429,13 +429,13 @@
 					<br>
 					<br>
 					<div class="col-lg-4">
-						<h3>Coming this spring to:</h3>
+						<h3>Coming this summer to:</h3>
 						<p><span class="icon icon-home"></span> 1371 Washington Street, West Newton, MA 02465<br/>
-							<!-- <span class="icon icon-phone"></span> phone: 617-916-9282 <br/> -->
-							<!-- <span class="icon icon-phone"></span> fax: 617-916-9285 <br/> -->
+							<span class="icon icon-phone"></span> phone: 617-916-9282 <br/> 
+							<span class="icon icon-phone"></span> fax: 617-916-9285 <br/>
 							<!-- <span class="icon icon-envelop"></span> <a href="#"> info@jennys-kitchen.com</a> <br/> -->
 							<span class="icon icon-twitter"></span> <a href="https://twitter.com/judiths_kitchen"> @judiths_kitchen </a> <br/>
-							<!-- <span class="icon icon-facebook"></span> <a href="#"> Jenny's Kitchen </a> <br/> -->
+							<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/pages/Judiths-Kitchen/1618203295121492/">Judith's Kitchen</a> <br/>
 						</p>
 					</div><!-- col -->
 				</div><!-- row -->
