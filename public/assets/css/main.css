@@ -659,3 +659,24 @@ background-color:#76A0D3;
 .row-odd {
 background-color:#BDE3FB;
 }
+
+#gototop {
+	width: 125px;
+	height: 75px;
+	border: 1px solid black;
+	padding: 25px;
+	position: fixed;
+	top: 80%;
+	right: 0;
+	background-color:rgba(192,192,192,0.3)
+}
+
+/*
+#gototop:after {
+	content: url(http://kdeb-csci-e15.me) " Go to Top ";
+} */
+
+#gototop a:after {
+	content: attr(href);
+}
+	

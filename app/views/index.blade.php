@@ -39,13 +39,13 @@
 			<div id="about">
 				<div class="row white">
 				<br>
-					<h1 class="centered">OPENING SOON!</h1>
+					<h1 class="centered">WELCOME TO JUDITH'S KITCHEN</h1>
 					<hr>
 				
 					<div class="col-lg-6">
-						<p class="lead">Construction is finished! We're just putting a few finishing touches on the space, 
-						getting our inventory set up, and finalizing our menus. We would like to thank everyone in the West Newton community for your support during the last year.
-						We can't wait to open our doors!</p>
+						<p class="lead">Judith's Kitchen is a market and cafe dedicated to providing fresh, delicious prepared foods
+						from the finest locally-sourced ingredients. We offer prepared foods, artisanal baked goods, fine wine and beer,
+						and a whole range of delectable, wholesome dishes for you and your family. </p>
 					</div><!-- col-lg-6 -->
 					<br />
 					<div class="col-lg-6">
@@ -104,7 +104,7 @@
 					</p>
 					
 					<p><strong>
-					The following menu is a sampling of dishes we will be offering . . .
+					The following menu is a sampling of the dozens of dishes on offer . . .
 					</strong></p>
 					
 					<!-- regular daily items and a seasonal specials. The itesm you can count on
@@ -394,10 +394,7 @@
 			
 			
 			</div><!-- /row -->
-			<p>We offer a catering for any type of event from business luncheons to cocktail parties. We look forward to 
-			meeting your catering needs!</p>
-			
-			<!-- <p>Call us today at <strong>617-916-9282</strong> to discuss your catering needs.</p> -->
+			<p>We offer a catering for any type of event from business luncheons to cocktail parties. Call us today at <strong>617-916-9282</strong> to discuss your catering needs.</p>
 		</div><!-- /row -->
 	</div><!-- /container -->
 		
@@ -406,10 +403,9 @@
 			<div class="container">
 				<h1>THANKS FOR VISITING</h1>
 				<hr>
-				<p>We can't wait to open our doors!</p>
-				<p>617-916-9282</p>
+				<p>Call us at: 617-916-9282</p>
 				<p><a class="icon icon-twitter" href="https://twitter.com/judiths_kitchen"></a> | <a class="icon icon-facebook" href="https://www.facebook.com/pages/Judiths-Kitchen/1618203295121492/"></a></p>
-				<p><a class="icon icon-twitter" style="color:#ffffff;" href="https://twitter.com/judiths_kitchen"> @judiths_kitchen </a> 
+				<!-- <p><a class="icon icon-twitter" style="color:#ffffff;" href="https://twitter.com/judiths_kitchen"> @judiths_kitchen </a> -->
 			</div><!-- container -->
 		</section><!-- section -->
 		
@@ -420,27 +416,37 @@
 					<h1 class="centered">JOIN OUR MAILING LIST</h1>
 					<hr>
 					<h2 class="centered">
-						<a href="/signup">Sign up here</a> and we'll invite you to our grand opening!
+						<a href="/signup">Sign up here</a> and we'll keep you posted about news and specials!
 					</h2>
 					<p class="centered">
-						We won't sell or trade your email address. We'll just use it to notify you of our opening activities and then we'll give you the opportunity to opt-in again for recurring specials and news.
+						We won't sell or trade your email address. We'll just use it to notify you of recurring specials and news.
 					</p>
 					
 					<br>
 					<br>
 					<div class="col-lg-4">
-						<h3>Coming this summer to:</h3>
-						<p><span class="icon icon-home"></span> 1371 Washington Street, West Newton, MA 02465<br/>
+						<h3>Contact Us:</h3>
+						<p><span class="icon icon-home"></span> 1371 Washington St, West Newton, MA 02465<br/>
 							<span class="icon icon-phone"></span> phone: 617-916-9282 <br/> 
 							<span class="icon icon-phone"></span> fax: 617-916-9285 <br/>
 							<!-- <span class="icon icon-envelop"></span> <a href="#"> info@jennys-kitchen.com</a> <br/> -->
 							<span class="icon icon-twitter"></span> <a href="https://twitter.com/judiths_kitchen"> @judiths_kitchen </a> <br/>
 							<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/pages/Judiths-Kitchen/1618203295121492/">Judith's Kitchen</a> <br/>
 						</p>
+						<h3>Hours:</h3>
+						<p>Monday through Friday: 7AM - 9PM, &nbsp; &nbsp; Saturday: 8AM - 9PM, &nbsp; &nbsp;  Sunday: 8AM - 8PM </p>
 					</div><!-- col -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2948.7112137110316!2d-71.2292368!3d42.348679999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89e382fa19c2c639%3A0x54265bfdad654554!2s1371+Washington+St%2C+West+Newton%2C+MA+02465!3m2!1d42.348679999999995!2d-71.2292368!5e0!3m2!1sen!2sus!4v1439925266133" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div><!-- row -->
 			</div><!-- id -->
 		</div><!-- container -->
+		
+		<!-- Fixed "go to top" widget -->
+		<!-- 
+		<div id="gototop">
+			<p><a href="#" class="smoothScroll">Top </a></p>
+		</div> <!-- gototop div -->
+		-->
 
 {{-- END OF SHIELD THEME --}}
 
