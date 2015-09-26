@@ -39,16 +39,16 @@
 			<div id="about">
 				<div class="row white">
 				<br>
-					<!-- <h1 class="centered">WELCOME TO JUDITH'S KITCHEN</h1> -->
-					<!--
+					<h1 class="centered">WELCOME TO JUDITH'S KITCHEN</h1>
+					
 					<hr>
 					
 					<div class="col-lg-6">
 						<p class="lead">Judith's Kitchen is a market and cafe in West Newton, MA dedicated to providing fresh, delicious prepared foods
 						from the finest locally-sourced ingredients. We offer prepared foods, artisanal baked goods, fine wine and beer,
 						and a whole range of delectable, wholesome dishes for you and your family. </p>
-					</div> --><!-- col-lg-6 -->
-					<!--
+					</div> <!-- col-lg-6 -->
+					
 					<br />
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
@@ -61,15 +61,7 @@
 						She has also served as manager of prepared foods for Whole Foods Market, 
 						and most recently as manager of prepared foods at 
 						Foodie’s Urban Market in the South End.</p>
-					</div> --><!-- col-lg-6 -->
-					
-					<h1 class="centered">WINE TASTING TONIGHT FROM 5:00 TO 7:00!</h1>
-					<hr>
-					<div class="col-lg-6 centered">
-						<img src="assets/img/bg/IMAG0402.jpg" alt="Judith's Kitchen Wine Tasting September 25th, 5 - 7 PM" height="711" width="400">
-						<p>Stop by on your way home from work and enjoy selections from our wine collection!</p>
-					</div>
-				
+					</div> <!-- col-lg-6 -->
 				</div><!-- row -->
 			</div><!-- id -->
 		</div><!-- container -->
