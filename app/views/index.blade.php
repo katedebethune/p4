@@ -39,7 +39,7 @@
 			<div id="about">
 				<div class="row white">
 				<br>
-					<!--
+					
 					<h1 class="centered">WELCOME TO JUDITH'S KITCHEN</h1>
 					
 					<hr>
@@ -50,7 +50,7 @@
 						and a whole range of delectable, wholesome dishes for you and your family. </p>
 					</div> <!-- col-lg-6 --> 
 
-					<!--
+					
 					<br />
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
@@ -64,13 +64,14 @@
 						and most recently as manager of prepared foods at 
 						Foodie’s Urban Market in the South End.</p>
 					</div>  <!-- col-lg-6 -->
-					
+					<!--
 					<h1 class="centered">WINE TASTING FRIDAY FROM 5:00 TO 7:00!</h1>
 				<hr>
 				<div class="col-lg-6 centered">
 						<img src="assets/img/bg/IMAG0402.jpg" alt="Judith's Kitchen Wine Tasting September 25th, 5 - 7 PM" height="711" width="400">
 						<p>Stop by on your way home from work and enjoy selections from our wine collection!</p>
-					</div>
+				</div>
+				-->
 				</div><!-- row -->
 			</div><!-- id -->
 		</div><!-- container -->
