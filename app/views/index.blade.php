@@ -68,7 +68,7 @@
 					<h1 class="centered">WINE TASTING FRIDAY FROM 5:00 TO 7:00!</h1>
 				<hr>
 				<div class="col-lg-6 centered">
-						<p>Join us as we taste wines from Argentina's <a href="http://www.decero.com/about/decero/" target="_blank">Decero Vineyards</a>. </p>
+						<p>Join us as we taste Argentinian wines from <a href="http://www.decero.com/about/decero/" target="_blank">Decero Vineyards</a>, including the Malbec, Cabernet, Petit Verdot, and Amano. </p>
 						<img src="assets/img/bg/Decero-Malbec.jpg" alt="Judith's Kitchen Wine Tasting September 25th, 5 - 7 PM" height="711" width="400">		
 				</div>
 				
