@@ -11,21 +11,20 @@
 |
 */
 
-Route::get('/', function()
-{
-	
-  $cafe_menu = Food::cafeMenu();
-  $catering_menu = Food::cateringMenu();
-  return View::make('index')
-  		->with('cafe_menu', $cafe_menu)
-  		->with('catering_menu', $catering_menu);
-});
+/**
+* Index
+* (Explicit routing)
+*/
+
+Route::get('/', 'HomeController@getIndex' );
+
 
 
 /**
 * User
 * (Explicit Routing)
 */
+
 Route::get('/signup','UserController@getSignup' );
 Route::get('/login', 'UserController@getLogin' );
 Route::post('/signup', 'UserController@postSignup' );

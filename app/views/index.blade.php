@@ -39,7 +39,7 @@
 			<div id="about">
 				<div class="row white">
 				<br>
-					
+					<!--
 					<h1 class="centered">WELCOME TO JUDITH'S KITCHEN</h1>
 					
 					<hr>
@@ -50,7 +50,7 @@
 						and a whole range of delectable, wholesome dishes for you and your family. </p>
 					</div> <!-- col-lg-6 --> 
 
-					
+					<!--
 					<br />
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
@@ -64,14 +64,14 @@
 						and most recently as manager of prepared foods at 
 						Foodie’s Urban Market in the South End.</p>
 					</div>  <!-- col-lg-6 -->
-					<!--
+					
 					<h1 class="centered">WINE TASTING FRIDAY FROM 5:00 TO 7:00!</h1>
 				<hr>
 				<div class="col-lg-6 centered">
-						<img src="assets/img/bg/IMAG0402.jpg" alt="Judith's Kitchen Wine Tasting September 25th, 5 - 7 PM" height="711" width="400">
-						<p>Stop by on your way home from work and enjoy selections from our wine collection!</p>
+						<p>Join us as we taste wines from Argentina's <a href="http://www.decero.com/about/decero/" target="_blank">Decero Vineyards</a>. </p>
+						<img src="assets/img/bg/Decero-Malbec.jpg" alt="Judith's Kitchen Wine Tasting September 25th, 5 - 7 PM" height="711" width="400">		
 				</div>
-				-->
+				
 				</div><!-- row -->
 			</div><!-- id -->
 		</div><!-- container -->
@@ -445,6 +445,7 @@
 							<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/pages/Judiths-Kitchen/1618203295121492/">Judith's Kitchen</a> <br/>
 						</p>
 						<h3>Hours:</h3>
+						<p><strong>We will be closed on Monday, October 12th for Columbus Day. We'll be open again on Tuesday at 7AM.</strong></p>
 						<p>Monday through Friday: 7AM - 9PM, &nbsp; &nbsp; Saturday: 8AM - 9PM, &nbsp; &nbsp;  Sunday: 8AM - 8PM </p>
 					</div><!-- col -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2948.7112137110316!2d-71.2292368!3d42.348679999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89e382fa19c2c639%3A0x54265bfdad654554!2s1371+Washington+St%2C+West+Newton%2C+MA+02465!3m2!1d42.348679999999995!2d-71.2292368!5e0!3m2!1sen!2sus!4v1439925266133" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

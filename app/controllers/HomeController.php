@@ -15,10 +15,15 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function getIndex()
 	{
-		return View::make('hello');
-		
+		$cafe_menu = Food::cafeMenu();
+  		$catering_menu = Food::cateringMenu();
+  		
+  		return View::make('index')
+			->with('cafe_menu', $cafe_menu)
+			->with('catering_menu', $catering_menu);
 	}
-
 }
+
+
