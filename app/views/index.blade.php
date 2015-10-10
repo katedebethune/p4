@@ -65,7 +65,7 @@
 						Foodie’s Urban Market in the South End.</p>
 					</div>  <!-- col-lg-6 -->
 					
-					<h1 class="centered">WINE TASTING SATURDAY FROM 12:30 TO 2:30!</h1>
+					<h1 class="centered">WINE TASTING SATURDAY FROM 12:00 TO 2:30!</h1>
 				<hr>
 				<div class="col-lg-6 centered">
 						<p>Join us as we taste Argentinian wines from <a href="http://www.decero.com/about/decero/" target="_blank">Decero Vineyards</a>, including the Malbec, Cabernet, Petit Verdot, and Amano. </p>
