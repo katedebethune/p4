@@ -39,7 +39,7 @@
 			<div id="about">
 				<div class="row white">
 				<br>
-					<!--
+					
 					<h1 class="centered">WELCOME TO JUDITH'S KITCHEN</h1>
 					
 					<hr>
@@ -50,7 +50,7 @@
 						and a whole range of delectable, wholesome dishes for you and your family. </p>
 					</div> <!-- col-lg-6 --> 
 
-					<!--
+				
 					<br />
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
@@ -64,13 +64,15 @@
 						and most recently as manager of prepared foods at 
 						Foodie’s Urban Market in the South End.</p>
 					</div>  <!-- col-lg-6 -->
-					
+				
+				<!--	
 					<h1 class="centered">WINE TASTING SATURDAY FROM 12:00 TO 2:30!</h1>
 				<hr>
 				<div class="col-lg-6 centered">
 						<p>Join us as we taste Argentinian wines from <a href="http://www.decero.com/about/decero/" target="_blank">Decero Vineyards</a>, including the Malbec, Cabernet, Petit Verdot, and Amano. </p>
 						<img src="assets/img/bg/Decero-Malbec.jpg" alt="Judith's Kitchen Wine Tasting September 25th, 5 - 7 PM" height="711" width="400">		
 				</div>
+				-->
 				
 				</div><!-- row -->
 			</div><!-- id -->
