@@ -39,7 +39,7 @@
 			<div id="about">
 				<div class="row white">
 				<br>
-					<!--
+					
 					<h1 class="centered">WELCOME TO JUDITH'S KITCHEN</h1>
 					
 					<hr>
@@ -50,7 +50,7 @@
 						and a whole range of delectable, wholesome dishes for you and your family. </p>
 					</div> <!-- col-lg-6 --> 
 
-					<!--
+					
 					<br />
 					<div class="col-lg-6">
 						<h2>Chef Judith Kalish</h2>
@@ -66,13 +66,14 @@
 					</div>  <!-- col-lg-6 -->
 					
 				
-				
+				<!--
 					<h1 class="centered">WINE TASTING TONIGHT FROM 5:00 TO 8:00</h1>
 				<hr>
 				<div class="col-lg-6 centered">
 						<img src="assets/img/bg/IMAG0402.jpg" alt="Judith's Kitchen Wine Tasting October 16th, 5 - 8 PM" height="711" width="400">
 						<p>Stop by on your way home from work and enjoy selections from our wine collection!</p>		
 				</div>
+				-->
 				
 				
 				</div><!-- row -->
