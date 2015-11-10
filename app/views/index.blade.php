@@ -176,6 +176,113 @@
 		</div><!-- container -->
 		{{-- END NEW HANDCODED MENU --}}
 		
+		{{-- THANKSGIVING MENU 11/10/2015 --}}
+	
+		<!-- ==== SECTION DIVIDER1 -->
+		<section class="section-divider textdivider divider5">
+			<div class="container">
+				<h1>THANKSGIVING</h1>
+				<hr>
+				<p>Let Judith's Kitchen cook your Thanksgiving dinner for you!!</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		
+		<!-- ==== MENU ==== -->
+		<div class="container" data-name="thanksgiving-menu">
+			<div id="thanksgiving-menu">
+				<br>
+				<br>
+				<div class="row">
+					<h1 class="centered">THANKSGIVING MENU</h1>
+					<hr>
+					<br>
+					
+					<div class="col-lg-offset-2 col-lg-8">
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam soluta repellat, 
+					excepturi architecto provident, quidem unde vel, possimus, quisquam 
+					quae tempora quas. Perspiciatis ullam quis, in consequatur 
+					minima nulla temporibus quia praesentium, rem, sint corrupti 
+					earum aliquid assumenda dolorem fugit provident commodi numquam, 
+					asperiores expedita quidem veritatis officiis. Enim nesciunt libero 
+					illo odio aspernatur, quisquam doloribus minima accusamus doloremque quia. 
+					</p>
+					
+					<!-- regular daily items and a seasonal specials. The itesm you can count on
+					plus lots of seasonal dishes.  -->	
+					<!-- NEW DIV TO FACILITATING STRIPING 6/8/2015 -->
+						<div id="menu-items">	
+							<h3>Roasted Turkey</h3>
+							<strong>Turkey - 15 lb</strong>
+							<p>earum aliquid assumenda dolorem fugit provident commodi numquam,<br>
+							<span id="price" class="text-primary">$100 with stuffing, $75 without stuffing</span></p>
+					
+							<strong>Turkey - 27 lb</strong>
+							<p>earum aliquid assumenda dolorem fugit provident commodi numquam,<br>
+							<span id="price">$160 with stuffing, $125 without stuffing</span></p>
+							
+							<h3>Sides</h3>
+							<strong>Mashed Potatoes</strong>
+							<p>earum aliquid assumenda dolorem fugit provident commodi numquam,<br>
+							<span id="price">$3.99 per pound</span></p>
+						
+							<strong>Turkey Gravy</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">$9.99 per quart, $5.99 per pint</span></p>
+						
+							<strong>Roasted Sweet Potatoes</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">$5.99 per pound</span></p>
+						
+							<strong>Butternut Squash Puree</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">$5.99 per pound</span></p>
+
+							<strong>Autumn Squash and Lentil Soup</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">$7.99 per quart, $4.99 per pint</span></p>
+
+							<strong>Green Beans with Fennel, Almonds and Garlic</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">???</span></p>
+						
+							<strong>Roasted Brussels Sprouts</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">$6.99 per pound</span></p>
+
+							<strong>Stuffing - Regular or Foccacia / Sundried Tomato</strong>
+							<p>(what's regular?) Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">$6.99 per pound</span></p>
+						
+							<strong>Wild Rice Salad</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">$8.99 per pound</span></p>
+						
+							<strong>Mixed Green Salad with Balsamic Vinaigrette</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">small (serves 8 - 10) $xxxx, large (serves 15 - 20), $xxxx</span></p>
+
+							<strong>Cranberry Sauce</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+							<span id="price">half-pint $2.99, pint $4.99, quart $9.99</span></p>
+					
+						</div> <!-- END THANKSGIVING 2015 menu-items DIV -->
+					
+						<!-- <small>&#42; These items may be served raw or undercooked. Consuming raw or 
+						undercooked fish or meat may increase your risk of foodborne illness.</small> -->
+						<br />
+						<br />
+						<p>Download our {{ link_to('/assets/pdf/JK-MENU.pdf', 'Thanksgiving 2015') }} menu</p>
+						<img src="{{asset('assets/img/jk-menu-snap.jpg')}}" >
+						<br />
+						<br />
+					</div><!-- col-lg -->
+				</div><!-- row -->
+			</div><!-- id -->
+		</div><!-- container -->
+		{{-- END NEW HANDCODED MENU --}}
+		
 		{{-- ORIGINAL MENU GENERATION - Currently non-operational - reactivate to use database-driven menu (5/14/2015) --}}
 		{{-- 
 		<!-- ==== SECTION DIVIDER1 -->
@@ -213,7 +320,7 @@
 		</div><!-- container -->
 		--}}
   		
-		{{-- CATERING SECTION - COMMENTING OUT UNTIL J GIVES ME THE CONTENT --}}
+		{{-- CATERING SECTION --}}
 		{{--
 		<!-- ==== SECTION DIVIDER2 -->
 		<section class="section-divider textdivider divider2">
