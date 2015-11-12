@@ -242,7 +242,7 @@
 
 							<strong>Autumn Squash Soup</strong>
 							<p>Squash soup seasoned with Cinnamon, Allspice and Clove and finished with Maple Syrup 
-							and cream<br>
+							and Cream<br>
 							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
 
 							<strong>Lentil Soup</strong>
