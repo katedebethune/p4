@@ -229,19 +229,19 @@
 							<span id="price" class="text-primary">$3.99 per pound</span></p>
 						
 							<strong>Turkey Gravy</strong>
-							<p>Pan drippings combined with a touch of white wine, herbs and spices<br>
+							<p>Pan drippings combined with a touch of White Wine, Herbs and Spices<br>
 							<span id="price" class="text-primary">$9.99 per quart, $5.99 per pint</span></p>
 						
 							<strong>Roasted Sweet Potatoes</strong>
-							<p>Roasted with maple syrup and tossed with Cranberries, Candied Walnuts and Spinach<br>
+							<p>Roasted with Maple Syrup and tossed with Cranberries, Candied Walnuts and Spinach<br>
 							<span id="price" class="text-primary">$5.99 per pound</span></p>
 						
 							<strong>Butternut Squash Puree</strong>
-							<p>Butternut Squash roasted and pureed with a touch of butter and brown sugar<br>
+							<p>Butternut Squash roasted and pureed with a touch of Butter and Brown Sugar<br>
 							<span id="price" class="text-primary">$5.99 per pound</span></p>
 
 							<strong>Autumn Squash Soup</strong>
-							<p>Squash soup seasoned with Cinnamon, Allspice and Clove and finished with maple syrup 
+							<p>Squash soup seasoned with Cinnamon, Allspice and Clove and finished with Maple Syrup 
 							and cream<br>
 							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
 
@@ -250,12 +250,12 @@
 							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
 
 							<strong>Green Beans with Fennel, Almonds and Garlic</strong>
-							<p>Green Beans cooked until just tender, tossed with shaved fennel, toasted almonds, garlic and 
-							our lemon vinaigrette<br>
+							<p>Green Beans cooked until just tender, tossed with shaved Fennel, toasted Almonds, Garlic and 
+							our Lemon Vinaigrette<br>
 							<span id="price" class="text-primary">$6.99 per pound</span></p>
 						
 							<strong>Roasted Brussels Sprouts</strong>
-							<p>Oven roasted with garlic and chili flakes<br>
+							<p>Oven roasted with Garlic and Chili Flakes<br>
 							<span id="price" class="text-primary">$6.99 per pound</span></p>
 
 							<strong>Stuffing - Regular or Foccacia / Sundried Tomato</strong>
@@ -264,7 +264,7 @@
 							<span id="price" class="text-primary">$6.99 per pound</span></p>
 						
 							<strong>Wild Rice Salad</strong>
-							<p>A seasoned blend of wild rice<br>
+							<p>A seasoned blend of Wild Rice<br>
 							<span id="price" class="text-primary">$8.99 per pound</span></p>
 						
 							<strong>Mixed Green Salad with Balsamic Vinaigrette</strong>
@@ -277,7 +277,7 @@
 
 							<h3>Desserts & Baked Goods</h3>
 							<strong>Pies from Bisousweet Bakery</strong>
-							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime or Pumpkin <strong>(order by November 13th)</strong></br>
+							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime or Pumpkin <strong>(order by November 15th)</strong></br>
 							<span id="price" class="text-primary">$19.99 per pie</span></p>
 
 							<strong>Breads and Rolls from Iggy's</strong>
