@@ -260,7 +260,7 @@
 
 							<strong>Stuffing - Regular or Foccacia / Sundried Tomato</strong>
 							<p><strong>Regular: </strong>Bread Stuffing with Carrots, Onions, Celery and Herbs<br>
-							<strong>Foccacia: </strong>Foccacia with Sundried Tomatoes, Rosemary and other Mediterranean flavors<br>
+							<strong>Foccacia: </strong>Foccacia Stuffing with Sundried Tomatoes, Artichoke Hearts and Basil<br>
 							<span id="price" class="text-primary">$6.99 per pound</span></p>
 						
 							<strong>Wild Rice Salad</strong>
