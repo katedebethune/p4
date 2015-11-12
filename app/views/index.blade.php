@@ -221,7 +221,7 @@
 							<p>All natural turkey, grass-fed and free-range, free of antibiotics and hormones. Roasted to 
 							perfection. Available without stuffing, or stuffed with our Traditional or Foccacia and 
 							Sundried Tomato Stuffing<br>
-							<span id="price" class="text-primary">$125 (add $35 to have it stuffed)</span></p>
+							<span id="price" class="text-primary">$125 (add $35 to have it stuffed!)</span></p>
 							
 							<h3>Sides</h3>
 							<strong>Mashed Potatoes</strong>
@@ -277,8 +277,8 @@
 
 							<h3>Desserts & Baked Goods</h3>
 							<strong>Pies from Bisousweet Bakery</strong>
-							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime or Pumpkin</br>
-							<span id="price" class="text-primary">$19.99 per pie (order by November 13th)</span></p>
+							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime or Pumpkin <strong>(order by November 13th)</strong></br>
+							<span id="price" class="text-primary">$19.99 per pie</span></p>
 
 							<strong>Breads and Rolls from Iggy's</strong>
 							<p>Choose from Iggy's Cranberry Pecan, Raisin Pecan or Olive<br>
