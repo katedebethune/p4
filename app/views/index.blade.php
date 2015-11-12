@@ -200,13 +200,9 @@
 					
 					<div class="col-lg-offset-2 col-lg-8">
 					
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam soluta repellat, 
-					excepturi architecto provident, quidem unde vel, possimus, quisquam 
-					quae tempora quas. Perspiciatis ullam quis, in consequatur 
-					minima nulla temporibus quia praesentium, rem, sint corrupti 
-					earum aliquid assumenda dolorem fugit provident commodi numquam, 
-					asperiores expedita quidem veritatis officiis. Enim nesciunt libero 
-					illo odio aspernatur, quisquam doloribus minima accusamus doloremque quia. 
+					<p>Leave the cooking to us! Here at Judith's Kitchen we love Thanksgiving and the opportunity
+					it gives families and friends to gather and share precious time together over a truly special
+					meal. We are proud to offer our 2015 Thanksgiving menu.
 					</p>
 					
 					<!-- regular daily items and a seasonal specials. The itesm you can count on
@@ -214,74 +210,98 @@
 					<!-- NEW DIV TO FACILITATING STRIPING 6/8/2015 -->
 						<div id="menu-items">	
 							<h3>Roasted Turkey</h3>
-							<strong>Turkey - 15 lb</strong>
-							<p>earum aliquid assumenda dolorem fugit provident commodi numquam,<br>
-							<span id="price" class="text-primary">$100 with stuffing, $75 without stuffing</span></p>
-					
-							<strong>Turkey - 27 lb</strong>
-							<p>earum aliquid assumenda dolorem fugit provident commodi numquam,<br>
-							<span id="price">$160 with stuffing, $125 without stuffing</span></p>
+							
+							<p>The perfect centerpiece for your Thanksgiving dinner, cooked to tender perfection with
+							a crispy skin. Available without stuffing, or stuffed with our Traditional or 
+							Foccacia and Sundried Tomato Stuffing <strong>(Order by November 18th)</strong><br>
+							<span id="price" class="text-primary"><strong>15 lb - </strong>$75 (add $25 to have it stuffed!)</span><br>
+							<span id="price" class="text-primary"><strong>27 lb - </strong>$125 (add $35 to have it stuffed!)</span></p>
+
+							<strong>All Natural Turkey - 20 lb</strong>
+							<p>All natural turkey, grass-fed and free-range, free of antibiotics and hormones. Roasted to 
+							perfection. Available without stuffing, or stuffed with our Traditional or Foccacia and 
+							Sundried Tomato Stuffing<br>
+							<span id="price" class="text-primary">$125 (add $35 to have it stuffed)</span></p>
 							
 							<h3>Sides</h3>
 							<strong>Mashed Potatoes</strong>
-							<p>earum aliquid assumenda dolorem fugit provident commodi numquam,<br>
-							<span id="price">$3.99 per pound</span></p>
+							<p>Creamy and flavorful, the essential accompaniment to our Roasted Turkeys<br>
+							<span id="price" class="text-primary">$3.99 per pound</span></p>
 						
 							<strong>Turkey Gravy</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">$9.99 per quart, $5.99 per pint</span></p>
+							<p>Pan drippings combined with a touch of white wine, herbs and spices<br>
+							<span id="price" class="text-primary">$9.99 per quart, $5.99 per pint</span></p>
 						
 							<strong>Roasted Sweet Potatoes</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">$5.99 per pound</span></p>
+							<p>Roasted with maple syrup and tossed with Cranberries, Candied Walnuts and Spinach<br>
+							<span id="price" class="text-primary">$5.99 per pound</span></p>
 						
 							<strong>Butternut Squash Puree</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">$5.99 per pound</span></p>
+							<p>Butternut Squash roasted and pureed with a touch of butter and brown sugar<br>
+							<span id="price" class="text-primary">$5.99 per pound</span></p>
 
-							<strong>Autumn Squash and Lentil Soup</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">$7.99 per quart, $4.99 per pint</span></p>
+							<strong>Autumn Squash Soup</strong>
+							<p>Squash soup seasoned with Cinnamon, Allspice and Clove and finished with maple syrup 
+							and cream<br>
+							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
+
+							<strong>Lentil Soup</strong>
+							<p>Lightly curried Lentil Soup with Spinach, Sweet Potatoes and Tomatoes<br>
+							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
 
 							<strong>Green Beans with Fennel, Almonds and Garlic</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">???</span></p>
+							<p>Green Beans cooked until just tender, tossed with shaved fennel, toasted almonds, garlic and 
+							our lemon vinaigrette<br>
+							<span id="price" class="text-primary">$6.99 per pound</span></p>
 						
 							<strong>Roasted Brussels Sprouts</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">$6.99 per pound</span></p>
+							<p>Oven roasted with garlic and chili flakes<br>
+							<span id="price" class="text-primary">$6.99 per pound</span></p>
 
 							<strong>Stuffing - Regular or Foccacia / Sundried Tomato</strong>
-							<p>(what's regular?) Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">$6.99 per pound</span></p>
+							<p><strong>Regular: </strong>Bread Stuffing with Carrots, Onions, Celery and Herbs<br>
+							<strong>Foccacia: </strong>lorem ipsum fill me in with a description<br>
+							<span id="price" class="text-primary">$6.99 per pound</span></p>
 						
 							<strong>Wild Rice Salad</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">$8.99 per pound</span></p>
+							<p>A seasoned blend of wild rice<br>
+							<span id="price" class="text-primary">$8.99 per pound</span></p>
 						
 							<strong>Mixed Green Salad with Balsamic Vinaigrette</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">small (serves 8 - 10) $xxxx, large (serves 15 - 20), $xxxx</span></p>
+							<p>Greens with Tomato, Cucumber, Onion and optional additional items<br>
+							<span id="price" class="text-primary">small (serves 4 to 6) $15, medium (serves 8 to 10) $25, large (serves 16 - 20), $45</span></p>
 
 							<strong>Cranberry Sauce</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-							<span id="price">half-pint $2.99, pint $4.99, quart $9.99</span></p>
+							<p>Slow cooked with Orange, Apple and Cinnamon<br>
+							<span id="price" class="text-primary">half-pint $2.99, pint $4.99, quart $9.99</span></p>
+
+							<h3>Desserts & Baked Goods</h3>
+							<strong>Pies from Bisousweet Bakery</strong>
+							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime or Pumpkin</br>
+							<span id="price" class="text-primary">$19.99 per pie (order by November 13th)</span></p>
+
+							<strong>Breads and Rolls from Iggy's</strong>
+							<p>Choose from Iggy's Cranberry Pecan, Raisin Pecan or Olive<br>
+							Available in loaves or rolls<br>
+							<span id="price" class="text-primary">Prices vary, please inquire</span></p>
+
 					
 						</div> <!-- END THANKSGIVING 2015 menu-items DIV -->
 					
 						<!-- <small>&#42; These items may be served raw or undercooked. Consuming raw or 
 						undercooked fish or meat may increase your risk of foodborne illness.</small> -->
+						<!--
 						<br />
 						<br />
 						<p>Download our {{ link_to('/assets/pdf/JK-MENU.pdf', 'Thanksgiving 2015') }} menu</p>
 						<img src="{{asset('assets/img/jk-menu-snap.jpg')}}" >
 						<br />
-						<br />
+						<br /> -->
 					</div><!-- col-lg -->
 				</div><!-- row -->
 			</div><!-- id -->
 		</div><!-- container -->
-		{{-- END NEW HANDCODED MENU --}}
+		{{-- END THANKSGIVING MENU 11/10/2015 --}}
 		
 		{{-- ORIGINAL MENU GENERATION - Currently non-operational - reactivate to use database-driven menu (5/14/2015) --}}
 		{{-- 
@@ -465,7 +485,7 @@
 						          <p><img class="img-responsive" src="assets/img/bg/IMG_5005.JPG" alt=""></p>
 						          <p>Sandwiches are wrapped in Flour Tortillas and served in halves. 
 						          Halves are substantial and usually enough to serve one person. Small (12 halves) $55, 
-						          Medium (16 halves) $75, and Large (24 halves) $105.
+						          Medium (20 halves) $85, and Large (28 halves) $120.
  								  </p>
 						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
 						        </div>

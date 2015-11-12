@@ -11,7 +11,7 @@ $( document ).ready(function() {
  * Overlay for event-based messages, e.g. special closings
  */
 
-
+/*
 window.addEventListener("load", function load(event) {
   var overlay = document.createElement('div');
   overlay.setAttribute('id', 'overlay');
@@ -35,5 +35,6 @@ window.addEventListener("load", function load(event) {
   }
   
 });
+*/
 
 
