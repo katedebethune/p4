@@ -647,12 +647,16 @@ a:after {
 
 @media screen and (max-width:769px) {
 	#headerwrap h1 {
-		font-size: 80px;
+		font-size: 2em;
 	}
 	#headerwrap p {
 		font-size: 30px;
 		line-height: 38px;
 	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+	.header{background-attachment: fixed;}
 }
 
 
