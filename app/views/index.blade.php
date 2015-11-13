@@ -26,9 +26,12 @@
 	    	<div id="home" >
 				<header class="clearfix">
 						<!-- <h1><span class="glyphicon glyphicon-heart"></span></h1> -->
-						<!-- <p>Judith's Kitchen</p> -->
+						<br /><br />
+						<h1>{{HTML::image('assets/img/logo-sm-2.png') }} <br>
+						Welcome to Judith's Kitchen</h1>
+						{{-- HTML::image('assets/img/logo-sm-2.png') --}}
 						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-						<!-- <p>Coming Soon to West Newton</p> -->
+						<!-- <p>Coming Soon to West Newton</p>  -->
 				</header>
 			</div><!-- /home -->	    
 	    </div><!-- /headerwrap -->
@@ -40,7 +43,7 @@
 				<div class="row white">
 				<br>
 					
-					<h1 class="centered">WELCOME TO JUDITH'S KITCHEN</h1>
+					<h1 class="centered">ABOUT JUDITH'S KITCHEN</h1>
 					
 					<hr>
 					
@@ -62,7 +65,7 @@
 						later served as the founding chef of Orleans in Somerville. 
 						She has also served as manager of prepared foods for Whole Foods Market, 
 						and most recently as manager of prepared foods at 
-						Foodie’s Urban Market in the South End.</p>
+						Foodie’s Urban Market in the South End. 
 					</div>  <!-- col-lg-6 -->
 					
 				
@@ -164,12 +167,13 @@
 					
 						<small>&#42; These items may be served raw or undercooked. Consuming raw or 
 						undercooked fish or meat may increase your risk of foodborne illness.</small>
+						<!--
 						<br />
 						<br />
 						<p>Download a {{ link_to('/assets/pdf/JK-MENU.pdf', 'printable copy') }} of this menu</p>
 						<img src="{{asset('assets/img/jk-menu-snap.jpg')}}" >
 						<br />
-						<br />
+						<br /> -->
 					</div><!-- col-lg -->
 				</div><!-- row -->
 			</div><!-- id -->

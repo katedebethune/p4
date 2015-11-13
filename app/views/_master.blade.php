@@ -16,9 +16,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 	
 	{{-- ADDITIONAL SHIELD THEME ASSETS ADDED HERE --}}
-	<link media="only screen and (max-device-width: 480px)" href="assets/css/main-small-device.css" type= "text/css" rel="stylesheet">
-    <link media="screen and (min-device-width: 481px)" href="assets/css/main.css" type="text/css" rel="stylesheet">
-    {{-- HTML::style('assets/css/main.css') --}}
+	<!-- <link media="only screen and (max-device-width: 480px)" href="assets/css/main-small-device.css" type= "text/css" rel="stylesheet"> -->
+    <!-- <link media="screen and (min-device-width: 481px)" href="assets/css/main.css" type="text/css" rel="stylesheet"> -->
+    {{ HTML::style('assets/css/main.css') }}
     {{ HTML::style('assets/css/icomoon.css') }}
     {{ HTML::style('assets/css/animate-custom.css') }}
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>

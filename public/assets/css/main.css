@@ -271,14 +271,15 @@ a:after {
 #headerwrap {
 	/* background: url(../img/bg/JKK-web-banner3.jpg) no-repeat center top; */
 	/* background: url(../img/bg/JKK-banner-1500-x-720.jpg) no-repeat center top; */
-	background: url(../img/bg/jkk_banner_30_lower.jpg) no-repeat center top;
+	/* background: url(../img/bg/jkk_banner_30_lower.jpg) no-repeat center top; */
+	background: url(../img/bg/interior-crop.png) no-repeat center top;
 	margin-top: -50px;
 	/* padding-top:120px; */
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	/* min-height: 550px; */
-	min-height: 520px;
+	min-height: 550px;
+	/* min-height: 520px; */
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -293,18 +294,20 @@ a:after {
 }
 
 #headerwrap h1 {
-	color:#ffffff;
+	/* color:#ffffff; */
+	color: white;
 	margin-top: 90px;
 	padding-bottom: 30px;
 	letter-spacing: 8px;
-	font-size: 100px;
+	font-size: 4em;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
 }
 
 #headerwrap p {
 	/* color:#ffffff; */
-	color:#c9c9c9;
+	/* color:#c9c9c9; */
+	color: white;
 	font-size: 40px;
 	font-weight: 600;
 	text-align: center;
