@@ -18,10 +18,10 @@ window.addEventListener("load", function load(event) {
   overlay.setAttribute('style', 'fontSize: 10px; background-color: #000; opacity: .5; filter: alpha(opacity=70); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;');
   document.body.appendChild(overlay);
   var msg = document.createElement('div');
-  var txt = document.createTextNode('Judith\'s Kitchen Thanksgiving Menu now available!! (Click to to view)');
+  var txt = document.createTextNode('Judith\'s Kitchen will close Wednesday at 6:00 PM for the Thanksgiving Holiday. We\'ll reopen Monday at 7:00. Have a wonderful holiday! (Click to close)');
   msg.appendChild(txt);
   msg.setAttribute('id', 'msg');
-  msg.setAttribute('style', 'position: absolute;background-color: #FFF9E8; padding: 10px; width: 200px; height: 120px; font-size: 1em; z-index: 11; top: 70%; left: 50%; margin-left: -100px; margin-top: -100px;');
+  msg.setAttribute('style', 'position: absolute;background-color: #FFF9E8; padding: 10px; width: 280px; height: 130px; font-size: 1em; z-index: 11; top: 70%; left: 50%; margin-left: -130px; margin-top: -100px;');
  
   document.body.appendChild(msg);
   
@@ -32,7 +32,7 @@ window.addEventListener("load", function load(event) {
     var b = document.getElementById('msg');
     document.body.removeChild(a);
     document.body.removeChild(b);
-    window.location = "#thanksgiving-menu"
+    window.location = "#menu"
   }
   
 });
