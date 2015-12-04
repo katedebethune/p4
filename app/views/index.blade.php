@@ -419,9 +419,34 @@
 		</div><!-- /row -->
 	</div><!-- /container -->
 		
+		<!-- ==== SECTION DIVIDER4 ==== -->
+		<section class="section-divider textdivider divider4">
+			<div class="container" >
+				<h1>CURRENTLY ON VIEW</h1>
+				<hr>
+				<p>Occassional Exhibitions by Local Artists</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		<div class="container" data-name="on-view">
+			<div id="on-view">
+				<div class="row">
+				<br>
+					<h1 class="centered">Jane Alter</h1>
+					<hr>
+					
+					<p>Judith's Kitchen is proud to support our local community of artists and artisans with occassional shows of artwork.
+					We're pleased to present paintings by Jane Alter now through the Holidays on view and for sale. 
+					Jane is a local artist who paints colorful and vibrant landscapes and seascapes with acrylics on canvas. 
+					Her hope is that these paintings will resonate with your sense of beauty and joy of life. Please come in and enjoy them. You may 
+					find one for your home or as a gift for someone special</p>
+				</div><!-- row -->
+			</div><!-- id -->
+		</div><!-- container -->
+
 		<!-- ==== SECTION DIVIDER6 ==== -->
 		<section class="section-divider textdivider divider6">
-			<div class="container">
+			<div class="container" >
 				<h1>THANKS FOR VISITING</h1>
 				<hr>
 				<p>Call us at: 617-916-9282</p>

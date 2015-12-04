@@ -438,7 +438,8 @@ a:after {
 }
 
 .divider4 {
-	background-image: url('../img/bg/fresh_apples.jpg')
+	/* background-image: url('../img/bg/fresh_apples.jpg') */
+	background-image: url('../img/bg/State-Beach_Acrylic_18hx24w_5725-v2_web.jpg')
 }
 
 .divider5 {
