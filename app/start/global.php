@@ -157,7 +157,7 @@ HTML::macro('nav_index_auth', function()
             <li><a href="#home" class="smoothScroll">Home</a></li>
 			<li> <a href="#about" class="smoothScroll"> About</a></li>
 			<li> <a href="#menu" class="smoothScroll">Menu</a></li>
-			<li> <a href="#thanksgiving-menu" class="smoothScroll">Thanksgiving 2015</a></li>
+			<!-- <li> <a href="#thanksgiving-menu" class="smoothScroll">Thanksgiving 2015</a></li> -->
 			<li> <a href="#catering" class="smoothScroll">Catering</a></li>
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
 			<!-- <li><a href=\'/orders\'>My Orders</a></li> -->
@@ -173,7 +173,7 @@ HTML::macro('nav_index_non_auth', function()
             <li><a href="#home" class="smoothScroll">Home</a></li>
 			<li> <a href="#about" class="smoothScroll"> About</a></li>
 			<li> <a href="#menu" class="smoothScroll">Menu</a></li>
-			<li> <a href="#thanksgiving-menu" class="smoothScroll">Thanksgiving 2015</a></li>
+			<!-- <li> <a href="#thanksgiving-menu" class="smoothScroll">Thanksgiving 2015</a></li> -->
 			<li> <a href="#catering" class="smoothScroll">Catering</a></li>
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
 			<!-- <li><a href=\'/signup\'>Sign up</a></li> -->
@@ -188,7 +188,7 @@ HTML::macro('nav_other_auth', function()
             <li><a href="/#home" class="smoothScroll">Home</a></li>
 			<li> <a href="/#about" class="smoothScroll"> About</a></li>
 			<li> <a href="/#menu" class="smoothScroll">Menu</a></li>
-			<li> <a href="#thanksgiving-menu" class="smoothScroll">Thanksgiving 2015</a></li>
+			<!-- <li> <a href="#thanksgiving-menu" class="smoothScroll">Thanksgiving 2015</a></li> -->
 			<li> <a href="/#catering" class="smoothScroll">Catering</a></li>
 			<li> <a href="/#contact" class="smoothScroll"> Contact</a></li>
 			<!-- <li><a href=\'/orders\'>My Orders</a></li> -->
@@ -204,7 +204,7 @@ HTML::macro('nav_other_non_auth', function()
             <li><a href="/#home" class="smoothScroll">Home</a></li>
 			<li> <a href="/#about" class="smoothScroll"> About</a></li>
 			<li> <a href="/#menu" class="smoothScroll">Menu</a></li>
-			<li> <a href="#thanksgiving-menu" class="smoothScroll">Thanksgiving 2015</a></li>
+			<!-- <li> <a href="#thanksgiving-menu" class="smoothScroll">Thanksgiving 2015</a></li> -->
 			<li> <a href="/#catering" class="smoothScroll">Catering</a></li>
 			<li> <a href="/#contact" class="smoothScroll"> Contact</a></li>
 			<!-- <li><a href=\'/signup\'>Sign up</a></li> -->

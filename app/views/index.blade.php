@@ -180,132 +180,7 @@
 		</div><!-- container -->
 		{{-- END NEW HANDCODED MENU --}}
 		
-		{{-- THANKSGIVING MENU 11/10/2015 --}}
-	
-		<!-- ==== SECTION DIVIDER1 -->
-		<section class="section-divider textdivider divider5">
-			<div class="container">
-				<h1>THANKSGIVING</h1>
-				<hr>
-				<p>Let Judith's Kitchen cook your Thanksgiving dinner for you!!</p>
-			</div><!-- container -->
-		</section><!-- section -->
-		
-		
-		<!-- ==== MENU ==== -->
-		<div class="container" data-name="thanksgiving-menu">
-			<div id="thanksgiving-menu">
-				<br>
-				<br>
-				<div class="row">
-					<h1 class="centered">THANKSGIVING MENU</h1>
-					<hr>
-					<br>
-					
-					<div class="col-lg-offset-2 col-lg-8">
-					
-					<p>Leave the cooking to us! Here at Judith's Kitchen we love Thanksgiving and the opportunity
-					it gives families and friends to gather and share precious time together over a truly special
-					meal. We are proud to offer our 2015 Thanksgiving menu.
-					</p>
-					
-					<!-- regular daily items and a seasonal specials. The itesm you can count on
-					plus lots of seasonal dishes.  -->	
-					<!-- NEW DIV TO FACILITATING STRIPING 6/8/2015 -->
-						<div id="menu-items">	
-							<h3>Roasted Turkey</h3>
-							
-							<p>The perfect centerpiece for your Thanksgiving dinner, cooked to tender perfection with
-							a crispy skin. Available without stuffing, or stuffed with our Traditional or 
-							Foccacia and Sundried Tomato Stuffing <strong>(Order by November 18th)</strong><br>
-							<span id="price" class="text-primary"><strong>15 lb - </strong>$75 (add $25 to have it stuffed!)</span><br>
-							<span id="price" class="text-primary"><strong>27 lb - </strong>$125 (add $35 to have it stuffed!)</span></p>
 
-							<strong>All Natural Turkey - 20 lb</strong>
-							<p>All natural turkey, grass-fed and free-range, free of antibiotics and hormones. Roasted to 
-							perfection. Available without stuffing, or stuffed with our Traditional or Foccacia and 
-							Sundried Tomato Stuffing<br>
-							<span id="price" class="text-primary">$125 (add $35 to have it stuffed!)</span></p>
-							
-							<h3>Sides</h3>
-							<strong>Mashed Potatoes</strong>
-							<p>Creamy and flavorful, the essential accompaniment to our Roasted Turkeys<br>
-							<span id="price" class="text-primary">$3.99 per pound</span></p>
-						
-							<strong>Turkey Gravy</strong>
-							<p>Pan drippings combined with a touch of White Wine, Herbs and Spices<br>
-							<span id="price" class="text-primary">$9.99 per quart, $5.99 per pint</span></p>
-						
-							<strong>Roasted Sweet Potatoes</strong>
-							<p>Roasted with Maple Syrup and tossed with Cranberries, Candied Walnuts and Spinach<br>
-							<span id="price" class="text-primary">$5.99 per pound</span></p>
-						
-							<strong>Butternut Squash Puree</strong>
-							<p>Butternut Squash roasted and pureed with a touch of Butter and Brown Sugar<br>
-							<span id="price" class="text-primary">$5.99 per pound</span></p>
-
-							<strong>Autumn Squash Soup</strong>
-							<p>Squash soup seasoned with Cinnamon, Allspice and Clove and finished with Maple Syrup 
-							and Cream<br>
-							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
-
-							<strong>Lentil Soup</strong>
-							<p>Lightly curried Lentil Soup with Spinach, Sweet Potatoes and Tomatoes<br>
-							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
-
-							<strong>Green Beans with Fennel, Almonds and Garlic</strong>
-							<p>Green Beans cooked until just tender, tossed with shaved Fennel, toasted Almonds, Garlic and 
-							our Lemon Vinaigrette<br>
-							<span id="price" class="text-primary">$6.99 per pound</span></p>
-						
-							<strong>Roasted Brussels Sprouts</strong>
-							<p>Oven roasted with Garlic and Chili Flakes<br>
-							<span id="price" class="text-primary">$6.99 per pound</span></p>
-
-							<strong>Stuffing - Regular or Foccacia / Sundried Tomato</strong>
-							<p><strong>Regular: </strong>Bread Stuffing with Carrots, Onions, Celery and Herbs<br>
-							<strong>Foccacia: </strong>Foccacia Stuffing with Sundried Tomatoes, Artichoke Hearts and Basil<br>
-							<span id="price" class="text-primary">$6.99 per pound</span></p>
-						
-							<strong>Wild Rice Salad</strong>
-							<p>A seasoned blend of Wild Rice<br>
-							<span id="price" class="text-primary">$8.99 per pound</span></p>
-						
-							<strong>Mixed Green Salad with Balsamic Vinaigrette</strong>
-							<p>Greens with Tomato, Cucumber, Onion and optional additional items<br>
-							<span id="price" class="text-primary">small (serves 4 to 6) $15, medium (serves 8 to 10) $25, large (serves 16 - 20), $45</span></p>
-
-							<strong>Cranberry Sauce</strong>
-							<p>Slow cooked with Orange, Apple and Cinnamon<br>
-							<span id="price" class="text-primary">half-pint $2.99, pint $4.99, quart $9.99</span></p>
-
-							<h3>Desserts & Baked Goods</h3>
-							<strong>Pies from Bisousweet Bakery</strong>
-							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime or Pumpkin <strong>(order by November 15th)</strong></br>
-							<span id="price" class="text-primary">$19.99 per pie</span></p>
-
-							<strong>Breads and Rolls from Iggy's</strong>
-							<p>Choose from Iggy's Cranberry Pecan, Raisin Pecan or Olive<br>
-							Available in loaves or rolls<br>
-							<span id="price" class="text-primary">Prices vary, please inquire</span></p>
-
-					
-						</div> <!-- END THANKSGIVING 2015 menu-items DIV -->
-					
-						<!-- <small>&#42; These items may be served raw or undercooked. Consuming raw or 
-						undercooked fish or meat may increase your risk of foodborne illness.</small> -->
-						<!--
-						<br />
-						<br />
-						<p>Download our {{ link_to('/assets/pdf/JK-MENU.pdf', 'Thanksgiving 2015') }} menu</p>
-						<img src="{{asset('assets/img/jk-menu-snap.jpg')}}" >
-						<br />
-						<br /> -->
-					</div><!-- col-lg -->
-				</div><!-- row -->
-			</div><!-- id -->
-		</div><!-- container -->
-		{{-- END THANKSGIVING MENU 11/10/2015 --}}
 		
 		{{-- ORIGINAL MENU GENERATION - Currently non-operational - reactivate to use database-driven menu (5/14/2015) --}}
 		{{-- 
@@ -580,8 +455,8 @@
 							<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/pages/Judiths-Kitchen/1618203295121492/">Judith's Kitchen</a> <br/>
 						</p>
 						<h3>Hours:</h3>
-						<p><strong>We will close Wednesday, November 25th at 6PM for Thanksgiving. We'll open again on Monday, November 30th at 7AM.</strong><br>
-						<p>Monday through Friday: 7AM - 9PM, &nbsp; &nbsp; Saturday: 8AM - 9PM, &nbsp; &nbsp;  Sunday: 8AM - 8PM </p>
+						<!-- <p><strong>We will close Wednesday, November 25th at 6PM for Thanksgiving. We'll open again on Monday, November 30th at 7AM.</strong><br> -->
+						<p>Monday through Thursday: 7AM - 8PM, &nbsp; Friday: 7AM - 9PM, &nbsp; Saturday: 8AM - 9PM, &nbsp;  Sunday: 8AM - 8PM </p>
 					</div><!-- col -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2948.7112137110316!2d-71.2292368!3d42.348679999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89e382fa19c2c639%3A0x54265bfdad654554!2s1371+Washington+St%2C+West+Newton%2C+MA+02465!3m2!1d42.348679999999995!2d-71.2292368!5e0!3m2!1sen!2sus!4v1439925266133" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div><!-- row -->
