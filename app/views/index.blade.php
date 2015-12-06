@@ -432,7 +432,7 @@
 			<div id="on-view">
 				<div class="row">
 				<br>
-					<h1 class="centered">Jane Alter</h1>
+					<h1 class="centered">JANE ALTER</h1>
 					<hr>
 					
 					<p>Judith's Kitchen is proud to support our local community of artists and artisans with occassional shows of artwork.
