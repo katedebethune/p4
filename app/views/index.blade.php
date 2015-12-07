@@ -424,7 +424,7 @@
 			<div class="container" >
 				<h1>CURRENTLY ON VIEW</h1>
 				<hr>
-				<p>Occassional Exhibitions by Local Artists</p>
+				<p>Occasional Exhibitions by Local Artists</p>
 			</div><!-- container -->
 		</section><!-- section -->
 		
