@@ -68,6 +68,7 @@
 						Foodie’s Urban Market in the South End. 
 					</div>  <!-- col-lg-6 -->
 					
+
 				
 				<!--
 					<h1 class="centered">WINE TASTING TONIGHT FROM 5:00 TO 8:00</h1>
@@ -121,13 +122,84 @@
 					from Iggy's, Pain d'Avignon, Bisousweet and other local bakeries. 
 					</p>
 					
-					<p><strong>
-					The following menu is a sampling of the dozens of dishes on offer . . .
-					</strong></p>
+					
 					
 					<!-- regular daily items and a seasonal specials. The itesm you can count on
 					plus lots of seasonal dishes.  -->	
 					<!-- NEW DIV TO FACILITATING STRIPING 6/8/2015 -->
+					<!-- 
+						<div class="col-lg-offset-2 col-lg-8 centered">
+						<h2>DAILY OFFERINGS</h2>
+						<br/>
+						</div>
+						<div class="col-md-4 menu-list">
+						
+						<ul>
+							<li>Chicken Salad</li>
+							<li>Tuna Salad</li>
+							<li>Kale Salad</li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 menu-list">
+						<ul>
+							<li>Grilled Flank Steak</li>
+							<li>Roasted Turkey Breast</li>
+							<li>Grilled Salmon</li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 menu-list">
+						<ul>
+							<li>Greens of the Day</li>
+							<li>Soup of the Day</li>
+							<li>Potatoes</li>
+						</ul>
+					</div>
+
+
+					<div class="col-lg-offset-2 col-lg-8 centered">
+						<p>&nbsp;</p>
+						<h2>ROTATING ITEMS</h2>
+						<br />
+						</div>
+						<div class="col-md-4 menu-list">
+						<ul>
+							<li>lorem</li>
+							<li>ipsum</li>
+							<li>dolor</li>
+							<li>quid</li>
+							<li>ascipping</li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 menu-list">
+						<ul>
+							<li>lorem</li>
+							<li>ipsum</li>
+							<li>dolor</li>
+							<li>quid</li>
+							<li>ascipping</li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 menu-list">
+						<ul>
+							<li>lorem</li>
+							<li>ipsum</li>
+							<li>dolor</li>
+							<li>quid</li>
+							<li>ascipping</li>
+						</ul>
+					</div>
+
+					-->
+
+					
+					
+					<p><strong>
+					The following menu is a sampling of the dozens of dishes on offer . . .
+					</strong></p>
 						<div id="menu-items">	
 							<strong>Kale Salad</strong>
 							<p>Kale, Shaved Parmesan Cheese, Garlic, Fresh Lemon Juice and Olive Oil </p>

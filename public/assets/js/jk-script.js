@@ -11,14 +11,14 @@ $( document ).ready(function() {
  * Overlay for event-based messages, e.g. special closings
  */
 
-/* 
+
 window.addEventListener("load", function load(event) {
   var overlay = document.createElement('div');
   overlay.setAttribute('id', 'overlay');
   overlay.setAttribute('style', 'fontSize: 10px; background-color: #000; opacity: .5; filter: alpha(opacity=70); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;');
   document.body.appendChild(overlay);
   var msg = document.createElement('div');
-  var txt = document.createTextNode('Judith\'s Kitchen will close Wednesday at 6:00 PM for the Thanksgiving Holiday. We\'ll reopen Monday at 7:00. Have a wonderful holiday! (Click to close)');
+  var txt = document.createTextNode('Judith\'s Kitchen will close Thursday at 5:00 PM for the Christmas Holiday. We\'ll reopen Saturday at 8:00. Have a wonderful holiday! (Click to close)');
   msg.appendChild(txt);
   msg.setAttribute('id', 'msg');
   msg.setAttribute('style', 'position: absolute;background-color: #FFF9E8; padding: 10px; width: 280px; height: 130px; font-size: 1em; z-index: 11; top: 70%; left: 50%; margin-left: -130px; margin-top: -100px;');
@@ -34,7 +34,7 @@ window.addEventListener("load", function load(event) {
     document.body.removeChild(b);
     window.location = "#menu"
   }
-  */
+
   
 });
 
