@@ -34,10 +34,11 @@ window.addEventListener("load", function load(event) {
     document.body.removeChild(b);
     window.location = "#menu"
   }
-  */
+
 
   
 });
+*/
 
 
 
