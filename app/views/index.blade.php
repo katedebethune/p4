@@ -127,7 +127,7 @@
 					<!-- regular daily items and a seasonal specials. The itesm you can count on
 					plus lots of seasonal dishes.  -->	
 					<!-- NEW DIV TO FACILITATING STRIPING 6/8/2015 -->
-					<!-- 
+					
 						<div class="col-lg-offset-2 col-lg-8 centered">
 						<h2>DAILY OFFERINGS</h2>
 						<br/>
@@ -165,41 +165,48 @@
 						</div>
 						<div class="col-md-4 menu-list">
 						<ul>
-							<li>lorem</li>
-							<li>ipsum</li>
-							<li>dolor</li>
-							<li>quid</li>
-							<li>ascipping</li>
+							<li>Grains & Beans</li>
+							<li>Meatballs</li>
+							<li>Chicken Loaf</li>
+							<li>Pasta Salad</li>
+							<li>Lasagna</li>
+							<li>Swordfish</li>
+							<li>Steak Tips</li>
 						</ul>
 					</div>
 
 					<div class="col-md-4 menu-list">
 						<ul>
-							<li>lorem</li>
-							<li>ipsum</li>
-							<li>dolor</li>
-							<li>quid</li>
-							<li>ascipping</li>
+							<li>Corn Salad</li>
+							<li>Tomato Mozzarella Salad</li>
+							<li>Winter Squash Salad</li>
+							<li>Fennel Salad</li>
+							<li>Mango Salad</li>
+							<li>Cole Slaw</li>
+							<li>Egg Salad</li>
 						</ul>
 					</div>
 
 					<div class="col-md-4 menu-list">
 						<ul>
-							<li>lorem</li>
-							<li>ipsum</li>
-							<li>dolor</li>
-							<li>quid</li>
-							<li>ascipping</li>
+							<li>Roasted Eggplant Salad</li>
+							<li>Beet Salad</li>
+							<li>Artichoke Salad</li>
+							<li>Grilled Chicken Breast</li>
+							<li>Grape Leaves</li>
+							<li>Stuffed Cabbage</li>
+							<li>Potato Salad</li>
 						</ul>
 					</div>
 
-					-->
+
+				
 
 					
-					
+					<!--
 					<p><strong>
 					The following menu is a sampling of the dozens of dishes on offer . . .
-					</strong></p>
+					</strong></p> 
 						<div id="menu-items">	
 							<strong>Kale Salad</strong>
 							<p>Kale, Shaved Parmesan Cheese, Garlic, Fresh Lemon Juice and Olive Oil </p>
@@ -218,10 +225,6 @@
 							<strong>Braised Leeks</strong>
 							<p>Whole Leeks braised in White Wine and Lemon with Fennel Seeds, Thyme and Chili Flakes </p>
 						
-							<strong>Spicy Jambalaya</strong>
-							<p>Spicy Chicken and Rice Dish with Sausage, Peppers, Onions and Tomatoes 
-							cooked in Herbed Chicken Stock</p>
-						
 							<strong>Rotisserie Chicken</strong>
 							<p>Whole Chicken marinated and roasted with Herbs and Spices </p>
 						
@@ -237,8 +240,9 @@
 					
 						</div> <!-- END NEW menu-items DIV -->
 					
+						<!--
 						<small>&#42; These items may be served raw or undercooked. Consuming raw or 
-						undercooked fish or meat may increase your risk of foodborne illness.</small>
+						undercooked fish or meat may increase your risk of foodborne illness.</small> -->
 						<!--
 						<br />
 						<br />
@@ -250,6 +254,8 @@
 				</div><!-- row -->
 			</div><!-- id -->
 		</div><!-- container -->
+		<br />
+		
 		{{-- END NEW HANDCODED MENU --}}
 		
 
