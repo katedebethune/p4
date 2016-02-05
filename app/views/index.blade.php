@@ -120,9 +120,8 @@
 					</p>
 
 					<h4>Irish Baked Goods from Montgomery's Authentic Irish Breads</h4>
-					<p>Are you a fan of the Keltic Krust? Judith's Kitchen is delighted to offer authentic Irish
-					baked goods from the kitchen of David McGimpsey. David was the owner of the Keltic Krust and 
-					we are delighted to bring you some of his classic offerings including <strong>Irish Brown Bread, Raisin Soda Bread, 
+					<p>Judith's Kitchen is delighted to offer authentic Irish baked goods from the kitchen of David McGimpsey, the original owner
+					of the Keltic Krust back in the 1990s. We will be selling some of his classic offerings including <strong>Irish Brown Bread 
 					</strong>and <strong>Scones</strong>. Montgomery's baked goods will be available on Saturday and Sunday only. </p>
 					
 					
