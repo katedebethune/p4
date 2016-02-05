@@ -46,8 +46,8 @@
 					<h1 class="centered">ABOUT JUDITH'S KITCHEN</h1>
 					
 					<hr>
-					
-					<div class="col-lg-6">
+					<div class="col-lg-offset-2 col-lg-8">
+					<!-- <div class="col-lg-6"> -->
 						<p class="lead">Judith's Kitchen is a market and cafe in West Newton, MA dedicated to providing fresh, delicious prepared foods
 						from the finest locally-sourced ingredients. We offer prepared foods, artisanal baked goods, fine wine and beer,
 						and a whole range of delectable, wholesome dishes for you and your family. </p>
@@ -55,7 +55,8 @@
 
 					
 					<br />
-					<div class="col-lg-6">
+					<div class="col-lg-offset-2 col-lg-8">
+					<!-- <div class="col-lg-6"> -->
 						<h2>Chef Judith Kalish</h2>
 						<p>Judith Kalish, a local chef and West Newton resident, 
 						loves nothing more than preparing beautiful meals from fresh ingredients 
