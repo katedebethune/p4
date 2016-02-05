@@ -514,7 +514,8 @@
 				<br>
 					<h1 class="centered">JANE ALTER</h1>
 					<hr>
-					<div class="col-lg-6">
+					<div class="col-lg-offset-2 col-lg-8">
+					<!-- <div class="col-lg-6"> -->
 						<p>Judith's Kitchen is proud to support our local community of artists and artisans with occasional shows of artwork.
 						We're pleased to present paintings by Jane Alter now through the Holidays on view and for sale. 
 						Jane is a local artist who paints colorful and vibrant landscapes and seascapes with acrylics on canvas. 
