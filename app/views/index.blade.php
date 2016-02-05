@@ -115,12 +115,15 @@
 					
 					Our menu  includes prepared foods, soups, salads, sandwiches and breakfast 
 					pastries as well as coffee & tea, wine & beer and other refreshing beverages.  
-					
-					 
-					
 					We are also delighted to offer artisanal breads, cookies, pastries and desserts
 					from Iggy's, Pain d'Avignon, Bisousweet and other local bakeries. 
 					</p>
+
+					<h4>Irish Baked Goods from Montgomery's Authentic Irish Breads</h4>
+					<p>Are you a fan of the Keltic Krust? Judith's Kitchen is delighted to offer authentic Irish
+					baked goods from the kitchen of David McGimpsey. David was the owner of the Keltic Krust and 
+					we are delighted to bring you some of his classic offerings including <strong>Irish Brown Bread, Raisin Soda Bread, 
+					</strong>and <strong>Scones</strong>. Montgomery's baked goods will be available on Saturday and Sunday only. </p>
 					
 					
 					
