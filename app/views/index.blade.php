@@ -121,10 +121,17 @@
 					</p>
 
 					<h4>Irish Baked Goods from Montgomery's Authentic Irish Breads</h4>
+					<div class="floatright">
+					 {{HTML::image('assets/img/murphy_sign.png') }} 
+					
+					
+						{{HTML::image('assets/img/bread.png') }}
+					</div>
 					<p>Judith's Kitchen is delighted to offer authentic Irish baked goods from the kitchen of David McGimpsey, the original owner
 					of the Keltic Krust back in the 1990s. We will be selling some of his classic offerings including <strong>Irish Brown Bread 
 					</strong>and <strong>Scones</strong>. Montgomery's baked goods will be available on Saturday and Sunday only. </p>
 					
+					<div class="clearfloat"> </div>
 					
 					
 					<!-- regular daily items and a seasonal specials. The itesm you can count on

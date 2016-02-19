@@ -123,6 +123,20 @@
 		}
 }
 
+.floatleft {
+	float: left;
+	margin-right: 1%;
+}
+
+.floatright {
+	float: right;
+	margin-left: 1%;
+}
+
+.clearfloat {
+	clear: both;
+}
+
 		
 		/* css for timepicker */
 		.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
