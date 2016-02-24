@@ -452,8 +452,8 @@
 						        <div class="modal-body">
 						          <p><img class="img-responsive" src="assets/img/bg/IMG_5005.JPG" alt=""></p>
 						          <p>Sandwiches are wrapped in Flour Tortillas and served in halves. 
-						          Halves are substantial and usually enough to serve one person. Small (12 halves) $55, 
-						          Medium (20 halves) $85, and Large (28 halves) $120.
+						          Halves are substantial and usually enough to serve one person. Small (8 halves) $45, 
+						          Medium (16 halves) $75, and Large (24 halves) $105.
  								  </p>
 						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
 						        </div>
@@ -521,15 +521,17 @@
 			<div id="on-view">
 				<div class="row">
 				<br>
-					<h1 class="centered">JANE ALTER</h1>
+					<h1 class="centered">DAN BORDEN</h1>
 					<hr>
 					<div class="col-lg-offset-2 col-lg-8">
 					<!-- <div class="col-lg-6"> -->
-						<p>Judith's Kitchen is proud to support our local community of artists and artisans with occasional shows of artwork.
-						We're pleased to present paintings by Jane Alter now through the Holidays on view and for sale. 
-						Jane is a local artist who paints colorful and vibrant landscapes and seascapes with acrylics on canvas. 
-						Her hope is that these paintings will resonate with your sense of the beauty and joy of life. Please come in and enjoy them. You may 
-						find one for your home or as a gift for someone special.</p>
+						<p>Judith’s Kitchen is pleased to present the work of Newton photographer Dan Borden 
+						(link to your website here). Borden uses an original Polaroid instant camera and analog 
+						techniques to capture what he terms “commonplace and even mundane” subjects, turning them 
+						into images that are both visually surprising and powerful. Dan is interested in finding 
+						new meaning in what we see everyday, using simple techniques and outdated technologies 
+						to reveal some of the beauty in the world that is hidden in plain sight. 
+						His work will be up through . . . we hope you enjoy it!</p>
 					</div>
 				</div><!-- row -->
 			</div><!-- id -->
