@@ -452,8 +452,8 @@
 						        <div class="modal-body">
 						          <p><img class="img-responsive" src="assets/img/bg/IMG_5005.JPG" alt=""></p>
 						          <p>Sandwiches are wrapped in Flour Tortillas and served in halves. 
-						          Halves are substantial and usually enough to serve one person. Small (8 halves) $45, 
-						          Medium (16 halves) $75, and Large (24 halves) $105.
+						          Halves are substantial and usually enough to serve one person. Small (4 sandwiches) $45, 
+						          Medium (8 sandwiches) $85, and Large (12 sandwiches) $125.
  								  </p>
 						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
 						        </div>
