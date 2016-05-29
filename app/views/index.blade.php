@@ -573,7 +573,7 @@
 							<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/pages/Judiths-Kitchen/1618203295121492/">Judith's Kitchen</a> <br/>
 						</p>
 						<h3>Hours:</h3>
-						<p><strong>We will be closed Monday, May 30th for Memorial Day. We'll open again on Tuesday, May 31st at 7AM.</strong><br> -->
+						<p><strong>We will be closed Monday, May 30th for Memorial Day. We'll open again on Tuesday, May 31st at 7AM.</strong><br>
 						<p>Monday through Thursday: 7AM - 8PM, &nbsp; Friday: 7AM - 9PM, &nbsp; Saturday: 8AM - 9PM, &nbsp;  Sunday: 8AM - 8PM </p>
 					</div><!-- col -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2948.7112137110316!2d-71.2292368!3d42.348679999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89e382fa19c2c639%3A0x54265bfdad654554!2s1371+Washington+St%2C+West+Newton%2C+MA+02465!3m2!1d42.348679999999995!2d-71.2292368!5e0!3m2!1sen!2sus!4v1439925266133" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
