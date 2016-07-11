@@ -521,17 +521,18 @@
 			<div id="on-view">
 				<div class="row">
 				<br>
-					<h1 class="centered">DAN BORDEN</h1>
+					<h1 class="centered">JIM YOUNGERMAN</h1>
 					<hr>
 					<div class="col-lg-offset-2 col-lg-8">
 					<!-- <div class="col-lg-6"> -->
-						<p>Judith’s Kitchen is pleased to present the work of Newton photographer 
-						<a href="http://www.eurekastudios99.com/" target="blank">Dan Borden</a>. Borden uses 
-						1960's era Polaroid instant cameras and multiple exposure techniques (not Photoshop&#8482;) 
-						to create images of commonplace subjects that are both visually surprising and powerful. 
-						Dan is interested in finding new meaning in what 
-						we see everyday, using simple techniques and outdated technologies to reveal the beauty 
-						in the world that is often hidden in plain sight. Come in and check it out!</p>
+						<p>Judith’s Kitchen is pleased to present the work  
+						<a href="http://www.jimyoungerman.com/" target="blank">Jim Youngerman</a>. Youngerman's work has 
+						been exhibited throughout the United States and Europe for more than four decades. His paintings 
+						and drawings use simple lines in a lyrical, figurative, quasi-cartoon style to expose paradox and 
+						probe the deeper meaning of his subjects. <em>Arts Magazine</em> said " . . . his caricture style of drawing
+						reinforces the presence of a strange imagination" and <em>Art News</em> characterized his work as ". . . true
+						American surrealism in it's influences - from comic strips to de Chirico."  On display througout the summer - please
+						come in and check it out!</p>
 					</div>
 				</div><!-- row -->
 			</div><!-- id -->
