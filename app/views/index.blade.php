@@ -308,7 +308,7 @@
 							a crispy skin. Available without stuffing, or stuffed with our Traditional or 
 							Foccacia and Sundried Tomato Stuffing <strong>(Order by November 18th)</strong><br>
 							<span id="price" class="text-primary"><strong>15 lb - </strong>$75 (add $25 to have it stuffed!)</span><br>
-							<!-- <span id="price" class="text-primary"><strong>27 lb - </strong>$125 (add $35 to have it stuffed!)</span></p> -->
+							<!-- <span id="price" class="text-primary"><strong>27 lb - </strong>$125 (add $35 to have it stuffed!)</span>--></p> 
 
 							<strong>All Natural Turkey - 20 lb</strong>
 							<p>All natural turkey, grass-fed and free-range, free of antibiotics and hormones. Roasted to 
