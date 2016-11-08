@@ -308,7 +308,7 @@
 							a crispy skin. Available without stuffing, or stuffed with our Traditional or 
 							Foccacia and Sundried Tomato Stuffing <strong>(Order by November 18th)</strong><br>
 							<span id="price" class="text-primary"><strong>15 lb - </strong>$75 (add $25 to have it stuffed!)</span><br>
-							<span id="price" class="text-primary"><strong>27 lb - </strong>$125 (add $35 to have it stuffed!)</span></p>
+							<!-- <span id="price" class="text-primary"><strong>27 lb - </strong>$125 (add $35 to have it stuffed!)</span></p> -->
 
 							<strong>All Natural Turkey - 20 lb</strong>
 							<p>All natural turkey, grass-fed and free-range, free of antibiotics and hormones. Roasted to 
@@ -336,20 +336,27 @@
 							<strong>Autumn Squash Soup</strong>
 							<p>Squash soup seasoned with Cinnamon, Allspice and Clove and finished with Maple Syrup 
 							and Cream<br>
-							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
+							<span id="price" class="text-primary">$8.99 per quart, $4.99 per pint</span></p>
 
 							<strong>Lentil Soup</strong>
 							<p>Lightly curried Lentil Soup with Spinach, Sweet Potatoes and Tomatoes<br>
-							<span id="price" class="text-primary">$7.99 per quart, $4.99 per pint</span></p>
+							<span id="price" class="text-primary">$8.99 per quart, $4.99 per pint</span></p>
 
-							<strong>Green Beans with Fennel, Almonds and Garlic</strong>
-							<p>Green Beans cooked until just tender, tossed with shaved Fennel, toasted Almonds, Garlic and 
-							our Lemon Vinaigrette<br>
+							<strong>Turkey Chowder</strong>
+							<p>Description needed <br>
+							<span id="price" class="text-primary">$9.99 per quart, $5.99 per pint</span></p>
+
+							<strong>Sautéed Green Beans with Grilled Mushroom and Garlic.</strong>
+							<p>Green Beans cooked until just tender, with savory Grilled Mushrooms and Garlic<br>
 							<span id="price" class="text-primary">$6.99 per pound</span></p>
 						
 							<strong>Roasted Brussels Sprouts</strong>
 							<p>Oven roasted with Garlic and Chili Flakes<br>
 							<span id="price" class="text-primary">$6.99 per pound</span></p>
+
+							<strong>Stuffed Roasted Acorn Squash filled with Wild Rice and Veggies</strong>
+							<p>Description needed<br>
+							<span id="price" class="text-primary">$7.99 per pound</span></p>
 
 							<strong>Stuffing - Regular or Foccacia / Sundried Tomato</strong>
 							<p><strong>Regular: </strong>Bread Stuffing with Carrots, Onions, Celery and Herbs<br>
@@ -362,15 +369,15 @@
 						
 							<strong>Mixed Green Salad with Balsamic Vinaigrette</strong>
 							<p>Greens with Tomato, Cucumber, Onion and optional additional items<br>
-							<span id="price" class="text-primary">small (serves 4 to 6) $15, medium (serves 8 to 10) $25, large (serves 16 - 20), $45</span></p>
+							<span id="price" class="text-primary">small $15, large $30</span></p>
 
 							<strong>Cranberry Sauce</strong>
 							<p>Slow cooked with Orange, Apple and Cinnamon<br>
-							<span id="price" class="text-primary">half-pint $2.99, pint $4.99, quart $9.99</span></p>
+							<span id="price" class="text-primary">half-pint $3.99, pint $5.99, quart $9.99</span></p>
 
 							<h3>Desserts & Baked Goods</h3>
 							<strong>Pies from Bisousweet Bakery</strong>
-							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime or Pumpkin <strong>(order by November 15th)</strong></br>
+							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime, Pecan, or Pumpkin <strong>(order by November 15th)</strong></br>
 							<span id="price" class="text-primary">$19.99 per pie</span></p>
 
 							<strong>Breads and Rolls from Iggy's</strong>
