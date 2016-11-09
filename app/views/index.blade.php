@@ -306,7 +306,7 @@
 							
 							<p>The perfect centerpiece for your Thanksgiving dinner, cooked to tender perfection with
 							a crispy skin. Available without stuffing, or stuffed with our Traditional or 
-							Foccacia and Sundried Tomato Stuffing <strong>(Order by November 18th)</strong><br>
+							Foccacia and Sundried Tomato Stuffing <strong>(Order by November 14th)</strong><br>
 							<span id="price" class="text-primary"><strong>15 lb - </strong>$75 (add $25 to have it stuffed!)</span><br>
 							<!-- <span id="price" class="text-primary"><strong>27 lb - </strong>$125 (add $35 to have it stuffed!)</span>--></p> 
 
@@ -343,7 +343,7 @@
 							<span id="price" class="text-primary">$8.99 per quart, $4.99 per pint</span></p>
 
 							<strong>Turkey Chowder</strong>
-							<p>Description needed <br>
+							<p>Creamy and delicious - with Butternut Squash, Swiss Chard, Potatoes and Herbs <br>
 							<span id="price" class="text-primary">$9.99 per quart, $5.99 per pint</span></p>
 
 							<strong>Sautéed Green Beans with Grilled Mushroom and Garlic.</strong>
@@ -355,7 +355,8 @@
 							<span id="price" class="text-primary">$6.99 per pound</span></p>
 
 							<strong>Stuffed Roasted Acorn Squash filled with Wild Rice and Veggies</strong>
-							<p>Description needed<br>
+							<p>Roasted Acorn Squash cooked with a touch of Maple Syrup stuffed with Wild Rice Blend, 
+							Veggies and Dried Cranberries<br>
 							<span id="price" class="text-primary">$7.99 per pound</span></p>
 
 							<strong>Stuffing - Regular or Foccacia / Sundried Tomato</strong>
@@ -377,7 +378,7 @@
 
 							<h3>Desserts & Baked Goods</h3>
 							<strong>Pies from Bisousweet Bakery</strong>
-							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime, Pecan, or Pumpkin <strong>(order by November 15th)</strong></br>
+							<p>Choose from Apple Crumb, Apple Double Crust, Chocolate Cream, Key Lime, Pecan, or Pumpkin <strong>(order by November 14th)</strong></br>
 							<span id="price" class="text-primary">$19.99 per pie</span></p>
 
 							<strong>Breads and Rolls from Iggy's</strong>
