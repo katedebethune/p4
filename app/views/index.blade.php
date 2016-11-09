@@ -336,11 +336,11 @@
 							<strong>Autumn Squash Soup</strong>
 							<p>Squash soup seasoned with Cinnamon, Allspice and Clove and finished with Maple Syrup 
 							and Cream<br>
-							<span id="price" class="text-primary">$8.99 per quart, $4.99 per pint</span></p>
+							<span id="price" class="text-primary">$9.99 per quart, $5.99 per pint</span></p>
 
 							<strong>Lentil Soup</strong>
 							<p>Lightly curried Lentil Soup with Spinach, Sweet Potatoes and Tomatoes<br>
-							<span id="price" class="text-primary">$8.99 per quart, $4.99 per pint</span></p>
+							<span id="price" class="text-primary">$9.99 per quart, $5.99 per pint</span></p>
 
 							<strong>Turkey Chowder</strong>
 							<p>Creamy and delicious - with Butternut Squash, Swiss Chard, Potatoes and Herbs <br>
