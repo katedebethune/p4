@@ -1,5 +1,6 @@
 <?php
-
+/* Must be configured manually on production side */
+/* Added to .gitignore on 2/13/2015 */
 return array(
 
     'connections' => array(
